@@ -1,0 +1,34 @@
+﻿l_russian:
+ decree_road_maintenance:0 "Дорожня служба"
+ decree_road_maintenance_desc:0 "Займається розширенням та технічним обслуговуванням дорожніх мереж."
+ decree_greener_grass_campaign:0 "Кампанія кращого життя"
+ decree_greener_grass_campaign_desc:0 "Створює сферу імідж привабливого для міграції місця."
+ decree_promote_social_mobility:0 "Підтримати соціальну мобільність"
+ decree_promote_social_mobility_desc:0 "Заохотити прагнення населення до підвищення робітничих кваліфікацій."
+ decree_promote_national_values:0 "Підтримати національні цінності"
+ decree_promote_national_values_desc:0 "Підвищити швидкість культурної асиміляції та релігійного звернення."
+ decree_emergency_relief:0 "Допомога у надзвичайних обставин"
+ decree_emergency_relief_desc:0 "Заохотити благодійність, спрямовану на підтримку та турботу про найменш забезпечених мешканців області."
+ decree_encourage_manufacturing_industry:0 "Підтримати обробну промисловість"
+ decree_encourage_manufacturing_industry_desc:0 "Підвищити товарообіг сектору обробної промисловості та послуг."
+ decree_encourage_agricultural_industry:0 "Підтримати сільськогосподарську промисловість"
+ decree_encourage_agricultural_industry_desc:0 "Підвищити товарообіг сектора сільського господарства та плантацій."
+ decree_encourage_resource_industry:0 "Підтримати добувну промисловість"
+ decree_encourage_resource_industry_desc:0 "Підвищити товарообіг сектора видобувної промисловості."
+ decree_enlistment_efforts:1 "Кампанія на заклик"
+ decree_enlistment_efforts_desc:1 "Залучення рекрутів та навчання місцевих військ за допомогою фінансових стимулів та заохочення"
+ decree_violent_suppression:0 "Жорстоке придушення"
+ decree_violent_suppression_desc:0 "Задіяти національну гвардію для керування розгніваним натовпом."
+
+ move_capital_lens_option:0 "Перенести столицю"
+ move_capital_lens_option_tooltip:0 "#header $move_capital_lens_option$#!\n$TOOLTIP_DELIMITER$\n#concept Ви можете перенести [Concept('concept_capital_state', 'столицю держави')] в іншу область, і вона отримає певні переваги.#!"
+ 
+ move_market_capital_lens_option:0 "Перемістити ринкову столицю"
+ move_market_capital_lens_option_tooltip:0 "#header $move_market_capital_lens_option$#!\n$TOOLTIP_DELIMITER$\n#concept Ви можете змінити [Concept('concept_market_capital', 'столицю')] державного [Concept('concept_market', 'ринку')].#!"
+  
+
+# === [LocEditor:OrphanedKeys] Keys that do not exist in English ===
+ decree_lens_option:0 "Видати указ"
+ decree_lens_option_tooltip:0 "#header [concept_decree]#!\n$TOOLTIP_DELIMITER$\n#concept Ваші [Concept('concept_decree', 'укази')] можуть змінювати життя областей на краще.#!"
+ decree_lens_option_decree_road_maintenance:0 "Видайте [Concept('concept_decree', 'указ')] "#variable $decree_road_maintenance$#!"."
+ decree_lens_option_decree_greener_grass_campaign:0 "Видайте [Concept('concept_decree', 'указ')] «#variable $decree_greener_grass_campaign$#!»."

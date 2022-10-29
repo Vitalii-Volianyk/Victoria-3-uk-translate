@@ -1,0 +1,12 @@
+﻿l_russian:
+ MODIFIERNODE_NAME:0 "#v $NAME$#!"
+
+ MODIFIERNODE_SHOW_DETAILS:0 "Клацніть, щоб переглянути подробиці"
+  
+ MODIFIERNODE_GRAPH_ITEM_TOOLTIP:0 "#header $NAME$#!\n\nЗагальна кількість: #v $TOTAL_COUNT$#!\nОновлена кількість: #v $UPDATED_COUNT$#!\nЗалежить від: $DEPENDENCIES$\nЗалежні: $DEPENDENTS$\n\n$MODIFIERNODE_SHOW_DETAIL $"
+
+ MODIFIERNODE_NAME_HEADER:0 "Назва"
+ MODIFIERNODE_TOTAL_COUNT_HEADER:0 "Загальна кількість"
+ MODIFIERNODE_TOTAL_COUNT_TOOLTIP:0 "Кількість вузлів модифікаторів цієї категорії, присутніх у грі на даний момент"
+ MODIFIERNODE_UPDATED_COUNT_HEADER:0 "Оновлена кількість"
+ MODIFIERNODE_UPDATED_COUNT_TOOLTIP:0 "Кількість вузлів модифікаторів цієї категорії, оновлених на останньому етапі"

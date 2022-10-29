@@ -1,0 +1,444 @@
+﻿l_english:
+
+# Generic Law Passing Events
+
+
+ generic_laws.1.t:0 "Підбадьорлива мова надихає публіку"
+ generic_laws.1.d:0 "Сьогодні вдень [SCOPE.sCharacter('orator_ig_leader_scope').GetFullName], лідер групи «[SCOPE.gsInterestGroup('orator_ig_scope').GetName]», вимовляє пишну промову за введення закону «[SCOPE.sLaw('current_law_sco ]»."
+ generic_laws.1.f:0 "З'явившись перед публікою на головній площі міста [SCOPE.sCharacter('orator_ig_leader_scope').GetCountry.GetCapital.GetCityHubName], [SCOPE.sCharacter('orator_ig_leader_scope'). ').GetHerHis] найбільш озлоблених політичних опонентів. Витяги з мови вже розійшлися на цитати по всьому [ROOT.GetCountry.GetCustom('RU_CL_DP')], роздмухуючи вогонь і без того гарячих дебатів."
+ generic_laws.1.a:0 "Це значно полегшить перехід до реформ."
+ generic_laws.1.b:0 "[SCOPE.sCharacter('orator_ig_leader_scope').GetFullNameNoFormatting] і [SCOPE.sCharacter('orator_ig_leader_scope').GetHerHis] багато що виграють від таких виступів."
+ rising_support_for_law_minor:0 "Публіка замислилась"
+ rising_support_for_law_major:0 "Публіка переконана"
+ rising_support_for_ig_minor:0 "Підтримка народу зростає"
+ skilled_orator:0 "Визнаний оратор"
+
+ generic_laws.2.t:0 "Розкрито таємні домовленості"
+ generic_laws.2.d:0 "Видатні члени угруповання «[SCOPE.gsInterestGroup('corrupt_ig_scope').GetName]» — відкриті прихильники закону «[SCOPE.sLaw('current_law_scope').GetName]», у близьких союзниках яких [SCOPE.sCharacpe_'ader .GetFullName], — виявилися замішаними у корупційному скандалі, тому що обмінювали політичну підтримку на особисті «подарунки»."
+ generic_laws.2.f:0 "«Яка головна мета людини? Розбагатіти. Яким шляхом? По можливості нечесним, але якщо доведеться, то й чесним». # Mark Twain
+ generic_laws.2.a:0 "І що? Такою є природа політики."
+ generic_laws.2.b:0 "Кинути їх вовкам. Потрібно сховати кінці у воду."
+ ignored_corruption:0 "Корупцію залишено без уваги"
+ corrupt_connections_exposed:0 "Розкрито корупційні зв'язки"
+ corrupt_connections_exposed_minor:0 "Розкрито корупційні зв'язки"
+ dealing_with_corruption:0 "Боротьба з корупцією"
+
+ generic_laws.3.t:1 "Вимоги членів опозиції"
+ generic_laws.3.d:0 "Більш прагматично налаштовані члени угруповання «[SCOPE.gsInterestGroup('opposition_demands_ig_scope').GetName]», які противилися ухваленню закону «[SCOPE.sLaw('current_law_scope').GetName]», запропонували змінити свою позицію в обмін на певні політичні. Ці поступки, однак, будуть непопулярні у групи «[SCOPE.gsInterestGroup('opposition_demands_supporting_ig_scope').GetName]»."
+ generic_laws.3.f:0 "«Компроміс — хороша парасолька, але поганий дах. Це тимчасовий засіб досягнення мети, часто доречний у партійній політиці і майже завжди недоречний в управлінні державою». # James Russell Lowell
+ generic_laws.3.a:0 "Поступитися їх вимогам. Білль має пройти."
+ generic_laws.3.b:0 "Компроміс – інструмент слабких."
+ cross_bench_support:0 "Підтримка незалежної партії"
+ concessions_obtained:0 "Отримано поступки"
+ political_advances_spurned:0 "Політичні поступки відкинуті"
+ unpopular_compromises:0 "Непопулярні компроміси"
+ steadfast_conviction:0 "Непохитна переконаність"
+
+
+ generic_laws.4.t:0 "Популярний драматург підтримує реформи"
+ generic_laws.4.d:0 "У ході дебатів, що оточують закон "[SCOPE.sLaw('current_law_scope').GetName]", один з провідних драматургів країни, що міцно асоціюється з партією "[SCOPE.gsInterestGroup('playwright_ig_scope').GetName]", поставив високо оцінену п'є , політична тематика якої не залишає сумнівів: автор пристрасно хотів би побачити цей закон ухваленим."
+ generic_laws.4.f:0 "«Нехай у нього погляди фанатика, але, сер, з його прозою не посперечаєшся!»"
+ generic_laws.4.a:0 "[SCOPE.sLaw('current_law_scope').GetNameNoFormatting] тепер буде у всіх на слуху."
+ generic_laws.4.b:0 "Тепер партія «[SCOPE.gsInterestGroup('playwright_ig_scope').GetNameNoFormatting]» з'явиться в хорошому світлі."
+ generic_laws.4.c:0 "Зробимо все, щоб п'єса набула широкого міжнародного визнання."
+ rising_support_for_ig:0 "Лісове зображення"
+ popular_support_for_law:0 "Народна підтримка закону"
+ renowned_playwright:0 "Уславлений драматург"
+
+
+ generic_laws.5.t:0 "Бюрократична плутанина"
+ generic_laws.5.d:0 "Законотворці, які працюють над ухваленням закону «[SCOPE.sLaw('current_law_scope').GetName]», зіткнулися з численними бюрократичними ускладненнями, які надзвичайно ускладнюють роботу над реформою."
+ generic_laws.5.f:0 ""Повністю розвинений бюрократичний апарат у порівнянні з іншими формами організації - абсолютно те ж, що машина в порівнянні з немеханічними засобами виробництва".r
+ generic_laws.5.a:0 "Будь проклята ця заплутана правова система!"
+ generic_laws.5.b:0 "Прорватися бодай крізь частину бюрократичних перепон."
+ mired_in_bureaucracy:0 "Загрязли в бюрократії"
+ mired_in_bureaucracy_minor:0 "Бюрократичні перешкоди"
+ cutting_red_tape:0 "Робота проти системи"
+
+ generic_laws.6.t:0 "[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] втручається в політичний процес"
+ generic_laws.6.d:0 "[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] особисто цікавиться дебатами про закон «[SCOPE.sLaw('current_law_scope').GetName]» і вирішує використати свій королівський вплив, щоб гарантувати прийняття закону."
+ generic_laws.6.f:0 "[ROOT.GetCountry.GetRuler.GetFullNameNoFormatting] рідко втручається безпосередньо в законодавчий процес, покладаючись натомість на систему делегування повноважень та особистий вплив, щоб ефективно керувати державою. З юридичної точки зору [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] має право вільно користуватися своїми королівськими повноваженнями, але такий прецедент обов'язково насторожить і республіканців, і супротивників закону."
+ generic_laws.6.a:0 "[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] править нами і воля монарха буде виконана!"
+ generic_laws.6.b:0 "Потрібно відмовити монарха від таких дій. Якщо [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] вчинить так, це принесе більше шкоди, ніж користі."
+ royal_prerogative:0 "Використана королівська прерогатива"
+ backed_by_court:0 "За королівським указом"
+ ruler_restrained:0 "Повноваження правителя обмежені"
+
+
+ generic_laws.7.t:0 "Підтримка закону у масах"
+ generic_laws.7.d:0 "Політична воля та бажання нижніх класів завжди залишаться малозрозумілими. Через незрозумілу причину в #tooltip:[ROOT.GetCountry.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [ROOT.GetCountry.GetCustom('RU_CL_PP')]#! різко зросла підтримка закону «[SCOPE.sLaw('current_law_scope').GetName]» — цьому сприяли харизматичні промовці та жваві дебати в невеликих громадських клубах."
+ generic_laws.7.f:0 "«Що вони зараз підтримують? Втім, хто ми такі, щоби скаржитися. Їхня підтримка не була неодмінною умовою успіху, але вона нам зовсім не зашкодить»."
+ generic_laws.7.a:0 "Громадська підтримка пришвидшує реформи!"
+ generic_laws.7.b:0 "Використовувати цю основу, щоб заспокоїти маси"
+ grassroots_support:0 "Підтримка у масах"
+ grassroots_support_for_movement:0 "Підтримка у масах"
+ wave_of_popular_support:0 "Хвиля народної підтримки"
+
+
+ generic_laws.8.t:0 "Невдале публічне звернення"
+ generic_laws.8.d:0 "[SCOPE.sCharacter('publicaddress_ig_leader_scope').GetFullName] вимовляє звичайну, здавалося б, мова про переваги закону "[SCOPE.sLaw('current_law_scope').GetName]", але та в результаті різко негативно позначається на популярності угруповання "[S .gsInterestGroup('publicaddress_ig_scope').GetName]»."
+ generic_laws.8.f:0 "Насилу вимовивши погано підготовлену мову, [SCOPE.sCharacter('publicaddress_ig_leader_scope').GetFullNameNoFormatting] досягає лише того, що [SCOPE.sCharacter('publicaddress_ig_leader_scope').GetHerHis|l] аргументи розбиваються. Тепер всі запитують: хто винен у цьому фіаско — власне закон «[SCOPE.sLaw('current_law_scope').GetNameNoFormatting]» або [SCOPE.gsInterestGroup('publicaddress_ig_scope').GetNameNoFormatting], як загалом політично некомпетентна"
+ generic_laws.8.a:0 "Виновата погано підготовлена мова!"
+ generic_laws.8.b:0 "[SCOPE.sCharacter('publicaddress_ig_leader_scope').GetFullNameNoFormatting] - ось хто винен у провалі виступу."
+ hapless_orator:0 "Поганий оратор"
+ poorly_formulated_law:0 "Погано сформульований закон"
+ poorly_formulated_law_minor:0 "Підтримка фіглярів"
+ tainted_by_incompetence:0 "Прикра некомпетентність"
+
+ generic_laws.9.t:1 "[SCOPE.sCulture('non_accepted_culture_scope').GetName|U] обурені запропонованим законом"
+ generic_laws.9.d:2 "Активісти-[SCOPE.sCulture('non_accepted_culture_scope').GetName|l] стверджують, що ухвалення закону «[SCOPE.sLaw('current_law_scope').GetName]» вкрай негативно позначиться життя їх громади. Вони агітують своїх родичів протестувати проти цього закону у всій країні."
+ generic_laws.9.f:1 "«Дай їм палець, і вони вимагатимуть всю руку. Дай їм руку, і не встигнеш озирнутися, як вони перетворять її на зброю, заб'ють оточуючих до смерті і в пошуках нових поступок візьмуться оббирати їхні трупи!»"
+ generic_laws.9.a:0 "Що ж до їхніх міркувань? Ухвалюйте закон примусово!"
+ generic_laws.9.b:0 "Внести кілька символічних поправок."
+ generic_laws.9.c:0 "Визнати їх докази та доопрацювати закон."
+ displeased_establishment:0 "Невдоволення впливових кіл"
+ forceful_approach:0 "Насильницький підхід"
+ minority_protests:0 "Протести меншості"
+
+ generic_laws.10.t:0 "Розбрат із групою «[SCOPE.gsInterestGroup('defectors_ig_scope').GetNameNoFormatting]»"
+ generic_laws.10.d:0 "Впливову фракцію угрупованні «[SCOPE.gsInterestGroup('defectors_ig_scope').GetName]» дратує нейтралітет їхніх сопартійців у питанні закону «[SCOPE.sLaw('current_law_scope').GetName]». Сама ця фракція виступає за закон і тепер має намір створити окрему політичну партію, метою якої буде його прийняття."
+ generic_laws.10.f:0 "«Як ви можете стояти і дивитися, як світ проноситься перед очима? Невже ви не маєте честі? Почуття обов'язку перед товаришами? Я проти такої безамбітності — і, наважусь сказати, це не тільки моя думка»."
+ generic_laws.10.a:0 "З їхньою підтримкою білль пройде."
+ generic_laws.10.b:0 "[SCOPE.gsInterestGroup('defectors_support_ig_scope').GetName] вітає цих бунтарів."
+ member_flight:0 "Розкол у рядах"
+ member_exodus:0 "Результат членів партії"
+ member_influx:0 "Приплив членів партії"
+ pro_law_factionalism:0 "Вигідна роздробленість"
+ pro_law_factionalism_minor:0 "Вигідна роздробленість"
+
+ generic_laws.11.t:0 "Незгодні розходяться у думках"
+ generic_laws.11.d:0 "Стороннім спостерігачам партія "[SCOPE.gsInterestGroup('dissenters_ig_scope').GetName]" може здатися твердо згуртованої з питання закону "[SCOPE.sLaw('current_law_scope').GetName]", але за зовнішньою єдністю давно назріває розкол. Тепер у групи незгодних урвався терпець і вони офіційно оголосили про незгоду із сопартійцями щодо реформи."
+ generic_laws.11.f:0 "«Скільки ми стояли пліч-о-пліч? Скільки разів ми подавали вам руку допомоги? А наші побоювання при цьому залишені без відповіді, наші бажання залишені поза увагою. Якщо нас не почують тут, то почують в іншому місці»."
+ generic_laws.11.a:0 "Сепаратисти! Диявол би їх узяв!"
+ generic_laws.11.b:0 "Треба відчинити гаманець ширше. Можливо, когось із них вдасться переманити назад."
+ political_discord:0 "Політичні розбіжності"
+ political_discord_minor:0 "Політичні розбіжності"
+ party_fragmentation:0 "Розкол у партії"
+ party_fragmentation_minor:0 "Розкол у партії"
+ greasing_palms:0 "Підмастити, кого треба"
+
+ generic_laws.12.t:0 "Сумнівні зв'язки"
+ generic_laws.12.d:0 "Дратуючи юридичної тяганини, що супроводжує роботу над законом "[SCOPE.sLaw('current_law_scope').GetName]", [SCOPE.sCharacter('underhanded_instigator_leader_scope').GetFullName] з групи "[SCOPE.gsInterestGroup" » звертається до нас із пропозицією прискорити процес, залучаючи свої особисті зв'язки у держапараті."
+ generic_laws.12.f:0 "«Декілька слів у потрібні вуха — все, про що я прошу. Все в рамках закону, зрозуміло, хоч я і не можу гарантувати, що наші противники цьому зрадіють»."
+ generic_laws.12.a:0 "Надати дозвіл діяти. Не можна гаяти часу."
+ generic_laws.12.b:0 "Ні, або робити все як належить, або взагалі не робити."
+ dishonest_methods:0 "Нечесні методи"
+ underhanded_tactics:0 "Неохайна тактика"
+ by_the_book:0 "За інструкцією"
+
+# Tanzimat Events
+
+ je_sick_man_bureaucracy:0 "Танзімат: бюрократичні реформи"
+ sick_man.2.e:0 "Бюрократія – основа нашої імперії"
+ je_sick_man_bureaucracy_reason:0 "Наша бюрократія — строката суміш архаїчних законів і систем, а також продажні та непідзвітні нам беї, які практично не керують провінціями Імперії. Щоб долати численні труднощі правління, потрібно модернізувати адміністративну систему."
+ outmoded_bureaucracy:0 "Архаїчна бюрократія"
+ cizye_tax:0 "Податок-джиза"
+ ottoman_bureaucracy:0 "Османська бюрократія"
+ sick_man_of_europe:0 "Хвора людина Європи"
+
+ tanzimat_events.1.t:0 "Система «Ільтизам»"
+ tanzimat_events.1.d:0 "У зборі грошей наша адміністрація століттями залежала від відкупу податків, але ця вкрай неефективна система бажає багато кращого. На столі у великого візира повно пропозицій реформ, і нація з нетерпінням чекає на нашу відповідь."
+ tanzimat_events.1.f:1 "Ще з часів правління Мехмеда II права на збирання податків продавалися на аукціоні тому, хто заплатить більше. Відкупник, своєю чергою, отримував право забирати частину податків собі. В результаті виділилися в окрему касту могутні, незалежні і найчастіше продажні, що значно знизило прибуток держави. Багато хто згоден, що систему треба змінювати, але мало тих, хто згоден між собою в способах її зміни, і ще менше тих, хто готовий протистояти еліті, що володіє землями."
+ tanzimat_events.1.a:0 "Скасувати відкуп податків, але [SCOPE.gsInterestGroup('governors').GetNameNoFormatting] нехай залишаються на місці."
+ tanzimat_events.1.b:0 "Не будити лихо, поки воно тихо."
+ tanzimat_events.1.c:0 "Скасувати як саму систему, і її назва."
+ iltizam_abolished:0 "Система «Ільтизам» скасована"
+ new_system_old_faces:0 "Нова система, старі особи"
+ retained_taxation_rights:0 "Право на збирання податків збережено"
+ rescinded_taxation_rights:0 "Право на збір податків скасовано"
+ governors_pleased:0 "Реформа користується обмеженою підтримкою губернаторів"
+ governors_satisfied:0 "Реформа користується широкою підтримкою губернаторів"
+
+ tanzimat_events.2.t:0 "Османський Земельний кодекс"
+ tanzimat_events.2.d:0 "Наша існуюча система землеволодіння стара, внутрішньо суперечлива і відчайдушно потребує реформування. Прихильники модернізації вимагають дій. Як відреагує Висока Порта?"
+ tanzimat_events.2.f:0 "Землеволодіння в Османській імперії - складна система, в яку входять орендовані та общинні землі, звільнені від податків села, трофейні території та безліч інших категорій земель. Визнаючи негативний вплив поточної ситуації на державне управління та прибуток, ключові постаті в Константинополі прагнуть реформ. Сільське ж населення, побоюючись призову на військову службу та підвищення податків, неодмінно буде проти будь-якої зміни існуючого стану справ."
+ tanzimat_events.2.a:0 "Реформувати систему, але визнати й колишні категорії земель."
+ tanzimat_events.2.b:0 "Стара система добре служила нам."
+ tanzimat_events.2.c:0 "Ухвалити сучасний Земельний кодекс."
+ tanzimat.2.tt1:0 "Деякі селяни можуть чинити опір реформі."
+ traditional_land_system_retained:0 "Збережено традиційну земельну систему"
+ reformed_land_code:0 "Реформований Земельний кодекс"
+ modern_land_code:0 "Сучасний Земельний кодекс"
+
+ tanzimat_events.4.t:0 "Едикт про реформи"
+ tanzimat_events.4.d:1 "Тепер, коли в нас запущено процес переходу до професійнішої бюрократичної системи, на обговорення винесено гостре питання: підняття статусу немусульман та допуск їх до чиновницьких посад."
+ tanzimat_events.4.f:0 "Однією з головних, якщо не головним своїм завданням [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] вважає збереження Великої Держави перед заворушеннями, бунтами та іноземною інтервенцією. Для цього нам, ймовірно, потрібно буде зробити кроки щодо покращення статусу меншин у нашій імперії — інакше вони можуть стати пішаками у грі іноземних держав."
+ tanzimat_events.4.a:0 "Рівні права перед законом! Хоча б на папері."
+ tanzimat_events.4.b:0 "Пообіцяти їм реформу, але без фанатизму."
+ tanzimat_events.4.c:0 "Це просто поступки під личиною реформи. Відмовити!"
+ tanzimat.4.tt1:0 "Збільшивши статус зими, ми викликаємо протести радикальних сунітів."
+ equality_under_the_law:0 "Рівність перед законом"
+ promises_of_reform_ott:0 "Обіцянки реформи"
+ establishment_favours_reform:0 "Впливові кола сприяють реформі"
+
+ tanzimat_events.5.t:0 "Чутки про повстання"
+ tanzimat_events.5.d:1 "Місто [SCOPE.sState('paranoia_state_scope').GetCityHubName] оповите хмарою параної: місцевий імам стверджує, що спільнота сповідуючих [SCOPE.sReligion('discriminated_religion_scope').GetName|l] вступила в змову з #tooltippable_name sCountry('neighbor_country').GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [SCOPE.sCountry('neighbor_country').GetCustom('RU_CL_TP')]#!#!, в результаті чого [ROOT.GetCountry.GetRu| втратити владу."
+ tanzimat_events.5.f:0 "«Хіба супротивники Аллаха рівні у своїй значущості ісламу? Так можуть думати деякі продажні паші у місті [ROOT.GetCountry.GetCapital.GetCityHubName], але ми, істинно правовірні, знаємо правду. Вже зараз невіруючі в наших лавах замишляють проти нас і хочуть разом зі своїми іноземними господарями розрізати велику імперію на шматки, як кондитер нарізає пахлаву»."
+ tanzimat_events.5.a:0 "Це ж просто чутки, правда?"
+ tanzimat_events.5.b:0 "Треба впасти на підозрюваних у зраді з усією силою. У таких справах напівзаходи неприпустимі."
+ tanzimat.5.tt1:0 "Радикальні суніти можуть взяти справи до рук."
+ tanzimat.5.tt2:0 "Ваші дії порадують радикалів-сунітів."
+
+ tanzimat_events.6.t:1 "Бунт у кварталі, де мешкають [SCOPE.sCulture('mob_victim_culture').GetName|l]"
+ tanzimat_events.6.d:1 "Розлютившись рішенням Високої Порти підняти законний статус зими і розбурхавшись чутками про повстання, яке починають іноземці, натовп людей, релігія яких — [SCOPE.sReligion('mob_religion').GetName|l], влаштувала заворушення в #tooltippable: .sCulture('mob_victim_culture').GetTooltipTag],DATA_CULTURE_NAME_TOOLTIP,CultureTooltip [SCOPE.sCulture('mob_victim_culture').GetCustom('RU_CUL_ADJ')|l]ом#!#! кварталі міста [SCOPE.sState('mob_state_scope').GetCityHubName]."
+ tanzimat_events.6.f:0 "«Вони прийшли після полуденної молитви, озброївшись палицями та кийками, — їх, без сумніву, під'юджував якийсь місцевий войовничий проповідник. Хвала Аллаху, обійшлося синцями та псуванням майна, але мені зовсім не подобається той натовп біля західних воріт»."
+ tanzimat_events.6.a:0 "Цю справу має вирішувати місцевий губернатор."
+ tanzimat_events.6.b:0 "Зібрати армію та негайно втрутитися."
+ tanzimat_events.6.c:0 "Нехай натовп довершить розпочате."
+ tanzimat.6.tt1:0 "Ваші дії можуть спричинити розвиток ситуації."
+ tanzimat.6.tt2:0 "Ваші дії, швидше за все, не дадуть ситуації розвинутися."
+ tanzimat.6.tt3:0 "Ваша бездіяльність швидше за все призведе до ескалації конфлікту."
+ mobilizing_the_militia:1 "Мобілізація ополчення"
+ deploying_the_army:0 "Відправлення армії"
+
+ tanzimat_events.7.t:0 "Різанина в місті [SCOPE.sState('massacre_state_scope').GetCityHubName]"
+ tanzimat_events.7.d:1 "Жах! У нападі люті величезний натовп людей, релігія яких - [SCOPE.sReligion('sunni_religion').GetName|l], напала на своїх сусідів, чия релігія - [SCOPE.sReligion('massacre_victims').GetName]. Вулиці міста [SCOPE.sState('massacre_state_scope').GetCityHubName] почервоніли від крові, всюди в місті пожежі."
+ tanzimat_events.7.f:0 "«Якщо хтось уб'є віруючого навмисно, то відплатою йому буде Геенна, в якій він перебуватиме вічно. Аллах розгнівається на нього, прокляне його і приготує йому великі муки»." # An-Nisa 4:93, al-Quran
+ tanzimat_events.7.a:0 "Розігнати натовп - якщо доведеться, то й стріляниною."
+ tanzimat_events.7.b:0 "Знатимуть, як задумувати зраду."
+
+ tanzimat_events.8.t:0 "У місті [SCOPE.sState('orderrestored_state_scope').GetName] відновлено порядок"
+ tanzimat_events.8.d:0 "Вулиці міста [SCOPE.sState('orderrestored_state_scope').GetCityHubName] повернулися до норми. Лавки відбудовані і заповнені заново, про недовіру і ненависть поступово змінюються словами примирення."
+ tanzimat_events.8.f:0 "«Мерзавці розгромили мою крамницю і образили мене! Але принаймні на цьому для мене все закінчилося. Мій син бачив, як солдати забрали щонайменше двох, які брали участь у погромах, — їх, схоже, видали свої ж. Можливо, в цьому світі все-таки є частка справедливості. А тепер передай мені цукор — цей чай гіркий, як сирі оливки»."
+ tanzimat_events.8.a:0 "Слава Аллаху!"
+
+ tanzimat_events.9.t:0 "Селяни пручаються реєстрації землі"
+ tanzimat_events.9.d:0 "Побоюючись підвищення податків і призову на військову службу, селяни з регіону [SCOPE.sState('peasant_state').GetName] відмовляються реєструвати свої землі і тим самим позбавляють нас таких необхідних податків."
+ tanzimat_events.9.f:0 "«Дві сотні років моя сім'я працює на цій землі і платить, що має, відповідно до традиції. Але тепер паші з міста [ROOT.GetCountry.GetCapital.GetCityHubName] вигадали новий хитрий спосіб висмоктати з нас останні гроші, а моїх синів заберуть, щоб ті померли в якихось далеких землях»."
+ tanzimat_events.9.a:0 "Нехай місцеві шейхи викуплять землю. Податки мають надходити."
+ tanzimat_events.9.b:0 "[SCOPE.sCharacter('peasant_smashing_general').GetFullName] і [SCOPE.sCharacter('peasant_smashing_general').GetHerHis] люди придушать заворушення."
+ tanzimat_events.9.c:0 "Облишмо їх. [SCOPE.sState('peasant_state').GetNameNoFormatting] — кому це взагалі цікаво?"
+ peasant_unrest:0 "Селяни пручаються реєстрації"
+ expanding_holdings:0 "Розширення володінь"
+
+ tanzimat_events.10.t:0 "Заклик зими"
+ tanzimat_events.10.d:0 "Із запровадженням військового призову держава має вирішити, чи варто брати до армії немусульман, і якщо так, то в якій ролі."
+ tanzimat_events.10.f:0 "Немусульмани з числа підданих Імперії традиційно звільнялися від військового обов'язку, замість неї вони сплачували Високій Порті особливий податок — джизью. Прихильники модернізації армії пропонують закликати до неї всіх підданих Османа, але це позбавить імперську скарбницю важливого джерела доходу."
+ tanzimat_events.10.a:0 "Ті, кому це по кишені, можуть сплачувати податок за звільнення від призову."
+ tanzimat_events.10.b:0 "На службу будуть закликатися всі піддані, незалежно від їхньої віри."
+ draft_exemption_tax:0 "Військова служба"
+
+##################### Production Events
+
+ notification_country_shared_plastics_tech_name:0 "Держава [SCOPE.sCountry('plastic_origin').GetName] ділиться з нами своїми знаннями про пластики"
+ notification_country_shared_plastics_tech_desc:0 "Наукова делегація з [SCOPE.sC('plastic_origin').GetCustom('RU_CL_RP')] прибула до міста [SCOPE.sCountry('plastic_neighbor').GetCapital.GetCityHubName] з кресленнями та схемами з виробництва пластику."
+ notification_country_shared_plastics_tech_tooltip:1 "#header $notification_country_shared_plastics_tech_name$#!\n$TOOLTIP_DELIMITER$\n$notification_country_shared_plastics_tech_desc$"
+
+ notification_country_shared_radio_tech_name:0 "Держава [SCOPE.sCountry('radio_production_origin').GetName] ділиться з нами своїми знаннями про радіо"
+ notification_country_shared_radio_tech_desc:0 "Наукова делегація з [SCOPE.sC('radio_production_origin').GetCustom('RU_CL_RP')] прибула до міста [SCOPE.sCountry('radio_production_neighbor').GetCapital.GetCityHubName] з кресленнями та схемами з виробництва радіотехніки."
+ notification_country_shared_radio_tech_tooltip:1 "#header $notification_country_shared_radio_tech_name$#!\n$TOOLTIP_DELIMITER$\n$notification_country_shared_radio_tech_desc$"
+
+
+##################### Warlord China
+  
+ notification_warlord_china_explosion_point_add_name:0 "[SCOPE.GetRootScope.GetCountry.GetName] дестабілізувати[SCOPE.GetRootScope.GetCountry.GetCustom('RU_CL_END_T')]ся."
+ notification_warlord_china_explosion_point_add_desc:0 "Через погане керування [SCOPE.GetRootScope.GetCountry.GetAdjectiveNoFormatting|l]ними справами наше правління стало нелегітимним і країна підсунулася ще ближче до повного колапсу."
+ notification_warlord_china_explosion_point_add_tooltip:1 "#header $notification_warlord_china_explosion_point_add_name$#!\n$TOOLTIP_DELIMITER$\n$notification_warlord_china_explosion_point_add_desc$"
+
+ notification_warlord_china_explosion_point_remove_name:0 "[SCOPE.GetRootScope.GetCountry.GetName] стабілізатору[SCOPE.GetRootScope.GetCountry.GetCustom('UA_CL_END_T')]ся."
+ notification_warlord_china_explosion_point_remove_desc:0 "Наше вміле управління державою легітимізувало нас в очах народу, і країна потихеньку відійшла від колапсу, який здавався неминучим."
+ notification_warlord_china_explosion_point_remove_tooltip:1 "#header $notification_warlord_china_explosion_point_remove_name$#!\n$TOOLTIP_DELIMITER$\n$notification_warlord_china_explosion_point_remove_desc$"
+
+##################### Boxer Rebellion
+
+ je_boxer_rebellion:0 "Іхетуаньське повстання"
+ je_boxer_rebellion_reason:1 "Принизлива поступка китайських земель іноземним «варварам» призвела до утворення груп ополчення, які мають бойові мистецтва. Ці ополченці мають намір позбавити країну від будь-якого іноземного впливу.\n\nЯкщо вимоги ополчення не будуть задоволені, [ROOT.GetCountry.GetName] повністю відчує наслідки відмови."
+
+ dyn_c_empire_of_china:0 "Китайська імперія"
+ dyn_c_empire_of_china_adj:0 "Китайськ"
+
+ boxer_rebellion_events.1.t:0 "Іхетуанський рух"
+ boxer_rebellion_events.1.d:1 "На думку багатьох, [ROOT.GetCountry.GetName] дедалі більше потрапляє під чужоземний вплив. [SCOPE.sCulture('han_culture').GetName] організують групи ополчення для боротьби із засиллям «варварів», яких вони мають намір прогнати назад у море. Лунає чимало голосів, що стверджують, що [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFullName] лють не зазнали на собі правителі-[SCOPE.sCulture('manchu_culture').GetName|l]."
+ boxer_rebellion_events.1.f:1 "«Коли іноземні варвари проповідують свою релігію, вони кажуть, що хочуть спонукати нас робити добро, але насправді втручаються у справи нашого уряду, творять хаос, руйнують наші звичаї та обманюють наш народ. Вони хочуть звернути жителів Китаю до варварів»." # Boxer era Han school teacher
+ boxer_rebellion_events.1.a:0 "Відродити Цин! Геть іноземців!"
+ boxer_rebellion_events.1.b:0 "Ці фанатики не доведуть нас до добра."
+
+ boxer_rebellion_events.2.t:0 "Небесний мандат"
+ boxer_rebellion_events.2.d:0 "Прапори Жовтого дракона знову майорять над дахами всіх міст Середньої держави. Пляма імперіалізму змита з наших берегів всюди, від сяючих перлин, що принизують Південну Дельту, до величезних міст вздовж берега Східного моря."
+ boxer_rebellion_events.2.f:0 "«Коли останній іноземний диявол викинутий буде з країни з ганьбою, об'єднана держава [ROOT.GetCountry.GetNameNoFormatting] підніметься, поклавши кінець розбратам»." # Boxer poem
+ boxer_rebellion_events.2.a:1 "Нехай править [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFullName] десять тисяч років!"
+ boxer_rebellion_events.2.b:1 "Нехай існує [ROOT.GetCountry.GetName] десять тисяч років!"
+ revere_the_emperor:0 "Вшанування імператора"
+ united_in_righteousness:0 "Об'єднувальна праведність"
+
+ boxer_rebellion_events.3.t:0 "Цін та Хань"
+ boxer_rebellion_events.3.d:1 "Там, де звучали фанатичні заклики відродити династію Цин, їм на зміну прийшли гасла, в яких видаються головним ворогом. Ми не змогли реалізувати прагнення «боксерів», і наш зв'язок з #tooltippable_name #tooltip:[SCOPE.sCulture('han_culture').GetTooltipTag],DATA_CULTURE_NAME_TOOLTIP,CultureTooltip [SCOPE.sCulture('han_culture'). |l]ними#!#! підданими тепер ослаблена."
+ boxer_rebellion_events.3.f:0 "«Я не полінуся повторити знову і знову, що всередині ми — раби маньчжурів і страждаємо від їхньої тиранії, зовні нас дошкуляють іноземні держави. Ми поневолені двічі»." # Zou Rong
+ boxer_rebellion_events.3.a:0 "Чи буде кінець цим приниженням?"
+ boxer_rebellion_events.3.b:0 "Гарнізон міста [ROOT.GetCountry.GetCapital.GetNameNoFormatting] бунтує та штурмує Заборонене місто."
+ boxer_rebellion_events.3.tt1:0 "Маньчжури вигнані з влади та герцог Яньшен, нащадок Конфуція по основній лінії, проголошений імператором."
+
+ boxer_rebellion_events.4.t:0 "Падіння династії Цин"
+ boxer_rebellion_events.4.d:1 "Одним розчерком пера завершилися два тисячоліття імператорського правління. Останнього імператора, що належав до #tooltippable_name #tooltip:[SCOPE.sCulture('manchu_culture').GetTooltipTag],DATA_CULTURE_NAME_TOOLTIP,CultureTooltip [SCOPE.sCulture('manchu_culture').GetCustom('RU_| культурі, що проводжають із Забороненого міста, і світ тепер звертає погляд на Схід. [ROOT.GetCountry.GetName] зустрічає нову епоху. Що чекає попереду?"
+ boxer_rebellion_events.4.f:0 "«Щоб відновити національну незалежність, спочатку треба відновити китайську націю. Щоб відновити китайську націю, потрібно вигнати варварів-маньчжурів у Гори Чанбай. Щоб повалити варварів, спершу потрібно позбутися тиранічного, диктаторського, мерзенного та продажного уряду Цин»." # Sun Yat Sen
+ boxer_rebellion_events.4.a:1 "[SCOPE.sCulture('manchu_culture').GetName] більше не замикають нами."
+ boxer_rebellion_events.4.b:0 "Настав час примирення."
+
+##################### Contextual Election Events
+
+ election_contextual_events.1.t:0 "Хліб, олія, бюлетень" # High Food Prices
+ election_contextual_events.1.d:0 "[SCOPE.sGoods('basic_foodstuff').GetName|U] все дорожче і дорожче, і група «[SCOPE.sParty('high_food_price_party').GetName]» постійно скаржиться на утиск з боку противників: ті стверджують, що партія занадто легковажна належить до добробуту громадян."
+ election_contextual_events.1.f:0 "«[SCOPE.sGoods('basic_foodstuff').GetNameNoFormatting|U] дорого коштує? Дурниця! У молодості в нас було куди найменше, а працювати доводилося вдвічі більше! Хто там ниє про „обурливі“ ціни на продукти? Винятково істеричні домогосподарки!"
+ election_contextual_events.1.a:0 "Значить, нехай їдять щось інше!"
+ election_contextual_events.1.b:0 "Відкриємо безкоштовні їдальні. На повний шлунок людина рідше помиляється."
+ alms_for_the_poor:0 "Допомога нужденним"
+
+ election_contextual_events.2.t:0 "Відкладене шахрайство" # High Debts
+ election_contextual_events.2.d:0 "Через чутки, ніби партія «[SCOPE.sParty('public_debt_party').GetName]» займається лихварством у неймовірних масштабах і тим самим вішає на майбутні покоління непідйомне ярмо, електорат біжить від них, як від прокажених."
+ election_contextual_events.2.f:0 "«Блаженні юні, бо вони успадковують борг нації».» # Herbert Hoover)
+ election_contextual_events.2.a:0 "Позики - наріжний камінь будь-якої здорової економіки!"
+ election_contextual_events.2.b:0 "Знайдіть цапа-відбувайла, натовпу потрібна жертва."
+ fiscally_irresponsible:0 "Фінансова безвідповідальність"
+
+ election_contextual_events.3.t:0 "Пацифіст засуджує війну" # Waging a War of Aggression
+ election_contextual_events.3.d:0 "[SCOPE.sCharacter('pacifist_ig_leader').GetFullName], — лідер гурту «[SCOPE.gsInterestGroup('opposition_pacifist_ig').GetName]» і [SelectLocalization(SCOPE.sCharacter('opposition_pacifist_ig'',IsFacfіcіc'a'')). 'знаменитий пацифіст')], завалює претензіями групу «[SCOPE.sParty('government_war_party').GetName]», стверджуючи, ніби [ROOT.GetCountry.GetAdjectiveNoFormatting]ие війська, що беруть участь в [SCOPE.sWar('pac) GetAdjectiveNoFormatting]ой війні, творять справжні безчинства."
+ election_contextual_events.3.f:1 "«Ми... Нам наказали збудувати бранців, сер. Старі, молодь — деякі не старші за мого власного сина. Там були вільні стрілки, які постійно псували життя нашим військам. Командир називав їх убивцями. Розбійники з великої дороги, зі злістю в серцях та рушницями в руках. Загалом, заручники потрібні були, щоб приборкати їх! Але того вечора, коли загинув третій солдат, командир наказав відвести заручників... відвести... в комору... і... Господи помилуй»."
+ election_contextual_events.3.a:0 "Що зробили наші війська? З ким?!"
+ election_contextual_events.3.b:0 "Цікавий підхід. Засекретимо його."
+ election_contextual_events.3.c:0 "Цікавий підхід. Засекретимо його."
+ principled_pacifist:0 "Принциповий пацифіст"
+ martyrized_pacifist:0 "Пацифіст-мученик"
+ election_contextual_events.3.tt.1:0 "Непатріотичний наклеп не дістанеться народу."
+ election_contextual_events.3.tt.2:0 "Незважаючи на наші зусилля, відбувається витік інформації."
+
+ election_contextual_events.4.t:0 "По кому дзвонить дзвін" # Old IG leader
+ election_contextual_events.4.d:0 "Лідер групи «[SCOPE.gsInterestGroup('decrepit_leader_ig').GetName]», [SelectLocalization(SCOPE.sCharacter('decrepit_leader').IsFemale, літня', 'літній')] [SCOPE.sCharacter('decre ], раптово [SelectLocalization(SCOPE.sCharacter('decrepit_leader').IsFemale, померла', 'помер' )] у середині кампанії, і партія «[SCOPE.sParty('decrepit_leader_party').GetName]» залишилася. Тепер усі розмови обертаються навколо вибору [SCOPE.sCharacter('decrepit_leader').GetHerHis] наступника."
+ election_contextual_events.4.f:0 "«Несподівано? Пф! Старому мішку з кістками давно був час до творця! Нарешті до партії піділлють свіжої крові!"
+ election_contextual_events.4.a:0 "Поставити на найпопулярнішого, але некомпетентного кандидата."
+ election_contextual_events.4.b:0 "Крісло отримує цілеспрямований, але зарозумілий молодик."
+ well_connected:0 "Хороші зв'язки"
+ imperious_upstart:0 "Деспотичний вискочка"
+
+ election_contextual_events.5.t:0 "Земля нужденних" # Low Standard of Living
+ election_contextual_events.5.d:0 "Лідер групи «[SCOPE.gsInterestGroup('low_sol_opposition_ig').GetName]» [SCOPE.sCharacter('low_sol_opposition_leader').GetFullName] голосно заявляє, що партія «[SCOPE.sParty('low_sol_party')» країною, бо рівень життя катастрофічно низький, а сили волі, щоб упоратися із занепадом, вистачить лише партії «[SCOPE.sParty('low_sol_opposition_party').GetName]»."
+ election_contextual_events.5.f:0 "«Сьогодні дорогою сюди мені довелося бачити сцени настільки гнітючі, що їх навіть важко описати. Колись благородні солдати билися у бруді через недоїдки. Зневірені сім'ї абияк туляться в тісних, запорошених нетрях, ледь не стоячи один у одного на ногах! Погана їжа, злидні та розпач. Ось що супроводжувало мене всю дорогу сюди. Дорогі громадяни, ось що залишила нам у спадок партія «[SCOPE.sParty('low_sol_party').GetNameNoFormatting]»."
+ election_contextual_events.5.a:0 "А чому ви звинувачуєте нас? Чому б їм не спробувати менше бідувати?"
+ election_contextual_events.5.b:0 "Подумаєш, просто пара яєць в адміністрації згасла."
+ indifferent_to_destitution:0 "Байдужість до злиднів"
+ defender_of_the_downtrodden:0 "На варті знедолених"
+
+ election_contextual_events.6.t:0 "Край достатку" # High Standard of Living
+ election_contextual_events.6.d:0 "Високий рівень життя в країні викликає глибоке задоволення цим статус-кво, а [SCOPE.sCharacter('high_sol_leader').GetFullName] і правляча партія «[SCOPE.sParty('high_sol_party').GetName]» можуть розраховувати на широку підтримку на широку підтримку вибори."
+ election_contextual_events.6.f:0 "«Зміни? Навіщо мені зміни? Я ситий, моя дружина щаслива, і я люблю свою роботу. Навіщо мені все кидати заради якихось мрій?"
+ election_contextual_events.6.a:0 "Навіщо лагодити те, що не зламано?"
+ election_contextual_events.6.b:0 "[SCOPE.sCharacter('high_sol_leader').GetFullNameNoFormatting] - людина великих звершень!"
+ champion_of_prosperity:0 "Поборник процвітання"
+ patrons_of_prosperity:0 "Покровителі процвітання"
+
+ election_contextual_events.7.t:0 "Купони коаліції" # Winning a War
+ election_contextual_events.7.d:0 "Обстановка на війні «[SCOPE.sWar('ongoing_election_war').GetName]» складається на нашу користь, і всю країну опанував войовничий настрій. Правляча партія «[SCOPE.sParty('ongoing_election_war_party').GetName]» розіслала листи підтримки кандидатам у парламент, які, на їхню думку, підтримують війну, і це має залучити патріотично налаштованих виборців."
+ election_contextual_events.7.f:0 "«До н[SCOPE.sCharacter('pacifist_ig_leader').GetHerHis], отже, листа не дійшло? Хто б міг запідозрити, що цей боягуз — нікчемний безхребетний пацифіст? Наші хлопці там вмирають, а [SCOPE.sCharacter('pacifist_ig_leader').GetSheHe] що робить? Перебирає купи папірців і чекає, коли можна буде тихенько урвати те, за що ми платимо кров'ю. Ні, нашим людям потрібен той, хто бореться за них, як вони борються за нас»."
+ election_contextual_events.7.a:0 "Згуртуємось навколо пар... тобто прапора!"
+ election_contextual_events.7.b:0 "Ти за нас чи за наших супротивників?"
+ jingoist_rhetoric:0 "Джингоїстські промови"
+ dove_of_peace_in_time_of_war:0 "Голуб світу під час війни"
+
+ election_contextual_events.8.t:0 "Річки джину та пива" # Enacting Temperance Policies
+ election_contextual_events.8.d:0 "Через антиалкогольну політику партії «[SCOPE.sParty('temperance_party').GetName]» їхні шанси на виборах під загрозою — електорат, що страждає на спрагу, потягнувся до партії «[SCOPE.sParty('anti_temperance_party').GetName]» в надії, що зі зміною уряду зміниться і політика помірності."
+ election_contextual_events.8.f:0 "«Опиратися спокусі? Знаєте, у мене одна спокуса: щосили штовхнути цих пихатих непитущів-моралізаторів самі знаєте куди. Я хочу випити. І я вип'ю. А якщо ви мені забороните, то я піду до тих, хто дозволить!"
+ election_contextual_events.8.a:0 "Немає пива - немає голосу!"
+ election_contextual_events.8.b:0 "Провести брудну кампанію проти безсоромних кутил."
+
+##################### Military JEs
+
+ je_rifling:0 "Нарізні стволи"
+ je_rifling_reason:0 "Хоча ідеї нарізних стволів вже кілька століть, лише нещодавні стрибки розвитку промисловості та технологій дозволили перейти до їх виробництва та широкомасштабного застосування. Тепер точність стрілянини наших збройних сил зросте до неймовірних масштабів."
+ je_machine_guns:0 "Автоматичні кулемети"
+ je_machine_guns_reason:0 "Для управління автоматичним кулеметом достатньо однієї людини, а скорострільність його досягає сотень патронів за хвилину. При встановленні у зміцненій позиції він здатний зупинити практично будь-яку атаку."
+
+ military_tech_events.401.t:1 "Модернізація арсеналу"
+ military_tech_events.401.d:0 "З того часу, як [SCOPE.sBuilding('rifle_factory').GetName|l] області [SCOPE.sState('rifle_state').GetName] виробляють гвинтівки замість гладкоствольних мушкетів, йде нова епоха. Її головний товар - [SCOPE.sGoods('small_arms_good').GetName] - виробляє [ROOT.GetCountry.GetNameNoFormatting]."
+ military_tech_events.401.f:0 "«Вистрілити можна хоч за тисячу ярдів.\n\nМожна розбити артилерію на передовій, можна зупинити штикову атаку до її початку.\n\nПереваг неймовірно багато!\n\nЯкщо ми не підвищимо виробничі потужності до адекватного рівня, нас чекає катастрофічний провал на поле бою"."
+ military_tech_events.401.a:0 "Арсенал міста [SCOPE.sState('rifle_state').GetCityHubName] прославиться на весь світ."
+ military_tech_events.401.b:0 "[ROOT.GetCountry.GetNameNoFormatting] опиниться на вістря військових інновацій."
+ modern_rifle_arsenal:0 "Арсенал сучасних гвинтівок"
+ arsenal_proving_ground:0 "Випробувальний полігон арсеналу"
+
+ military_tech_events.402.t:0 "Кисть диявола"
+ military_tech_events.402.d:0 "[SCOPE.sCharacter('machine_gun_general').GetPrimaryRoleTitle] [SCOPE.sCharacter('machine_gun_general').GetFullName] - людина, якій вдалося переламати хід війни "[SCOPE.sWar("machine_gun_war"). організації загонів кулеметників Вони викошували цілі взводи ворога, перш ніж тим вдавалося хоча б наблизитися до наших позицій."
+ military_tech_events.402.f:1 "«Якби мені сказали, що можна створити рушницю, яка буде: Тягти стрічку з патронами до потрібної позиції, витягувати заряджений патрон, доставляти його до стовбура, подавати в стовбур, правильно закривати патронник, зводити курок, спускати курок, відстрілювати патрон, витягувати і викидати гільзу, а потім подавати новий патрон - і все це в десяту частку секунди - мені було б дуже смішно. Тільки я не сміюся. Тому що мені довелося на власні очі переконатися, що така рушниця існує»." # Francis Pratt
+ military_tech_events.402.a:0 "Ми коситимемо ворогів, як траву."
+ military_tech_events.402.b:0 "Що б не трапилося, у нас є кулемет Максим, а у них — ні.» # Hilaire Belloc
+ military_tech_events.402.c:0 "[SCOPE.sCharacter('machine_gun_general').GetFullName] володіє цим знаряддям, як ніхто інший."
+ machine_gun_expertise_low:0 "Кулеметник-експерт"
+ machine_gun_expertise_high:0 "Кулеметник-експерт"
+
+ je_ironclads:0 "Броненосці"
+ je_ironclads_reason:0 "Закуті в метал пароплави, на які встановлені великокаліберні гармати, що стріляють у тому числі артилерійськими бомбами, стали переконливим свідченням того, що епоха вітрильних битв залишилася далеко позаду."
+ je_monitors:0 "Монітори"
+ je_monitors_reason:0 "Судна з невеликим осадом для оборони берегів. Монітор - доступний засіб для будь-якої держави, якій бракує коштів або виробничих потужностей для забезпечення флоту броненосцами."
+
+ military_tech_events.403.t:0 "Доктрина заліза та пара"
+ military_tech_events.403.d:0 "Поява кораблів з обшитими металом корпусами стала справжньою революцією у світі морських боїв. [SCOPE.sCharacter('ironclad_admiral').GetPrimaryRoleTitle|U] [SCOPE.sCharacter('ironclad_admiral').GetFullName] переконує нас, що відтепер традиційні снаряди для нас практично не перешкода, і [ROOT.GetCounty. до абсолютного домінування на морі."
+ military_tech_events.403.f:0 "«Нехай дерев'яні кораблі із залізними людьми здатні перемогти залізні кораблі із дерев'яними людьми, але броня нам не завадить»."
+ military_tech_events.403.a:0 "Наш лад кораблів буде непереможним."
+ military_tech_events.403.b:0 "Металеві носи? Металеві тарани! Що може йти не так?"
+ military_tech_events.403.c:0 "[ROOT.GetCountry.GetNameNoFormatting] править морями!"
+ ramming_doctrine:0 "Таран - наше все"
+ armoured_doctrine:0 "Броньований лад"
+ armoured_high_seas_fleet:0 "Броньований флот відкритого моря"
+
+ military_tech_events.404.t:0 "Рішення: низька осадка"
+ military_tech_events.404.d:0 "Нехай монітор, розроблений спеціально для прибережної оборони, обмежений можливостями, але біля берегів він дуже ефективний. [SCOPE.sCharacter('monitor_admiral').GetPrimaryRoleTitle|U] [SCOPE.sCharacter('monitor_admiral').GetFullName] повідомляє Адміралтейству в місті [ROOT.GetCountry.GetCapital.GetCityHubName], що [SCOPE.sCharacter('monitor_admiral'). .GetHerHis] флот прожене будь-якого ворога з [ROOT.GetCountry.GetAdjectiveNoFormatting|l]їх вод."
+ military_tech_events.404.f:0 ""Сер, нехай він і виглядає, як коробка на плоту, запевняю вас, що 15-дюймові гармати в цій коробці швидко відбивають у ворога бажання сміятися"."
+ military_tech_events.404.a:0 "Безпечне узбережжя – безпечна торгівля."
+ military_tech_events.404.b:0 "Нехай вони стануть основою нашої військово-морської доктрини."
+ military_tech_events.404.c:0 "Перемагає не той, хто має кораблі краще, а хто їх більше."
+ safer_shores:0 "Безпечні береги"
+ defensive_doctrine:0 "Оборонна військово-морська доктрина"
+ quantity_over_quality:0 "Кількість перевищує якість"
+
+
+
+##################### Indonesia
+
+ net_expand_east_indies:0 "Розширення адміністрації Ост-Індії."
+ net_expand_east_indies_desc:0 "Ми володіємо територіями в Ост Індії. Ними було б простіше керувати через колоніальний суб'єкт."
+ expand_east_indies_tt:1 "Передати управління всіма володіннями та васалами в Ост-Індії нашої колонії."
+
+ malay_culture:0 "Малайськ" # includes a lot of cultures that are not Malay. Might revise in future
+
+ IDN:0 "Індонезія"
+ IDN_ADJ:0 "Індонезійськ"
+
+ dyn_c_majapahit:0 "Маджапахіт"
+ dyn_c_majapahit_adj:0 "Маджапахітськ"
+
+ dyn_c_srivijaya:0 "Шривіджа"
+ dyn_c_srivijaya_adj:0 "Шрівіджайськ"
+
+ dyn_c_sumatra:0 "Суматра"
+ dyn_c_sumatra_adj:0 "Суматранск"
+
+ dyn_c_kalimantan:0 "Калімантан"
+ dyn_c_kalimantan_adj:0 "Калімантанськ"
+
+ dyn_c_boni:0 "Бо-ні"
+ dyn_c_boni_adj:0 "Бонійськ"
+
+ dyn_c_mataram:0 "Матарам"
+ dyn_c_mataram_adj:0 "Матарам"
+
+##################### Arabia
+ yemenite:0 "Єменськ"
+ dyn_c_qasimid_state:0 "Держава Касімідів"
+ dyn_c_qasimid_state_adj:0 "Касимідськ"
+
+##################### India
+
+ BHT:0 "Індія"
+ BHT_ADJ:0 "Індійськ"
+
+#################### Sudan
+
+ dyn_c_funj_state:0 "Фунг"
+ dyn_c_funj_state_adj:0 "Фунгійськ"
+
+#################### Misc. Journal Entries
+
+ has_activated_dynamite:0 "Вибрано виробничий метод «Динаміт»"
+ has_activated_public_trading:0 "Вибрано виробничий метод «Публічна компанія»"
+
+# === [LocEditor:OrphanedKeys] Keys that do not exist in English ===
+ respectful_approach:0 "Невдоволення впливових кіл"
+ draft_excemption_tax:0 "Військова служба"

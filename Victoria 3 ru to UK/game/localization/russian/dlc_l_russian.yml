@@ -1,0 +1,7 @@
+﻿l_russian:
+ DLC001_PREORDER:0 "Ремастований саундтрек Victoria 2"
+ DLC002_AMERICAN_BUILDINGS:0 "Набір американських споруд"
+
+# === [LocEditor:OrphanedKeys] Keys that do not exist in English ===
+ DLC002_SIGNUP_BONUS:0 "Бонус за реєстрацію: вигляд дирижабля"
+ DLC003_AMERICAN_BUILDINGS:0 "Набір американських споруд"

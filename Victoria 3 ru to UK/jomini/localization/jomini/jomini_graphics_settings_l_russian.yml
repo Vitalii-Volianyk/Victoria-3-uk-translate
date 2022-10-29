@@ -1,0 +1,6 @@
+﻿l_russian:
+  SETTING_REFRACTION:0 "Заперечення"
+  SETTING_REFRACTION_QUALITY:0 "Якість заломлення"
+  SETTING_MAPOBJECT_QUALITY:0 "Об'єкти на карті"
+  SETTING_MAP_SSAO:0 "SSAO для картки"
+  SETTING_DOF:0 "Глибина поля"

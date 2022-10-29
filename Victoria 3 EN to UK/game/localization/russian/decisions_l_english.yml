@@ -1,0 +1,50 @@
+﻿l_english:
+ DECISION_TOOLTIP_FORMAT:1 "#header $NAME$#!\n$TOOLTIP_DELIMITER$\n$TRIGGER_SUMMARY$\n\nПри прийнятті:\n$EFFECT_SUMMARY$"
+
+ dummy_decision:0 "Пробне рішення"
+ dummy_decision_desc:0 "J'adore les boulettes chinoises"
+ dummy_decision_tooltip:0 "Ця підказка пояснює, чому Франція (пардон, будь-яка велика держава з французькою основною культурою) може анексувати Китай. Теоретично це має працювати хоча б в одній альтернативній реальності."
+
+ grand_exhibition_decision:0 "Влаштувати Всесвітню виставку"
+ grand_exhibition_decision_desc:0 "Провести Всесвітню виставку та показати світові свої досягнення. Чим більшою кількістю технологій ви зможете похвалитися, тим успішнішою буде виставка."
+ grand_exhibition_decision_custom_tooltip:0 "Потрібно, щоб було що показати."
+
+
+ revive_olympic_games_decision:0 "Відродити Олімпійські ігри"
+ revive_olympic_games_decision_desc:0 "Відродити стародавні Олімпійські ігри у новій епосі."
+
+ ban_opium:0 "Заборона на торгівлю опіумом"
+ ban_opium_desc:0 "Настав час покінчити з епідемією вживання опіуму, що охопила країну. Уряд має повністю заборонити торгівлю цим зіллям як імпорт, так і місцеве виробництво."
+ remove_opium_ban:0 "Скасування заборони опіуму"
+ remove_opium_ban_desc:0 "Буде розумно відмовитися від заборони опіуму, якщо цього вимагатиме дипломатична ситуація або економічне становище."
+
+ establish_film_industry:0 "Закласти кіноіндустрію"
+ establish_film_industry_desc:0 "Нова технологія кінематографа відчиняє двері нової індустрії за умови, що ми зможемо її утримувати."
+ gdp_higher_than_film_check:0 "ВВП понад 5 мільйонів"
+ custom_loc_hollywood:0 "Голівуд"
+ custom_loc_film_industry_name_default:0 "Кіноіндустрія"
+
+
+ lowlands_land_reclamation:0 "Меліорація земель"
+ lowlands_land_reclamation_desc:0 "Поєднанням різних методів можна осушувати низини, перетворюючи море на придатні землі."
+ lowlands_land_reclamation_custom_tooltip:0 "Почнеться меліорація земель."
+ notification_lowlands_land_reclamation_notification_desc:0 "Меліорація земель завершена"
+ notification_lowlands_land_reclamation_notification_tooltip:0 "Ви отримали орні землі."
+ notification_lowlands_land_reclamation_notification_name:0 "Меліорація земель"
+ lowlands_land_reclamation_requirement_tooltip:0 "Володіє Голландією, Гелре та Фрісландом"
+
+ niger_river_expedition:0 "Експедиція річкою Нігер"
+ niger_river_expedition_desc:0 "Надіслати експедицію з метою нанесення на карту річки Нігер."
+
+
+ west_america_expedition:0 "Скласти карту американського західного фронтиру"
+ west_america_expedition_desc:0 "Відправити експедицію з метою нанести на карту невідомі регіони та вивчити північноамериканський західний фронтир."
+
+ suez_survey_decision:0 "Вивчити Суецький перешийок"
+ suez_survey_decision_desc:0 "Провести вивчення та скласти карту можливого каналу через Суецький перешийок."
+
+ panama_survey_decision:0 "Вивчити Панамський перешийок"
+ panama_survey_decision_desc:0 "Провести вивчення та скласти карту можливого каналу через Панамський перешийок."
+
+# === [LocEditor:OrphanedKeys] Keys that do not exist in English ===
+ remove_opium_ban_opium_desc:0 "Буде розумно відмовитися від заборони опіуму, якщо цього вимагатиме дипломатична ситуація або економічне становище."

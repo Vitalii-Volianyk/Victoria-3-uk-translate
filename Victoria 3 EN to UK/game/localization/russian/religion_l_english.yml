@@ -1,0 +1,22 @@
+﻿l_english:
+ catholic:0 "Католицтво"
+ protestant:0 "Протестантизм"
+ orthodox:0 "Православ'я"
+ oriental_orthodox:1 "Східне православ'я"
+ sunni:0 "Сунізм"
+ shiite:0 "Шиїзм"
+ jewish:0 "Юдаїзм"
+ mahayana:0 "Махаянський буддизм"
+ gelugpa:0 "Гелугський буддизм"
+ theravada:0 "Тхеравадський буддизм"
+ hindu:0 "Індуїзм"
+ shinto:0 "Синтоїзм"
+ sikh:0 "Сикхізм"
+ animist:0 "Анімізм"
+ eastern:0 "Східні вірування"
+ buddhist:0 "Буддизм"
+ christian:0 "Християнство"
+ muslim:0 "Іслам"
+
+# === [LocEditor:OrphanedKeys] Keys that do not exist in English ===
+ coptic:0 "Коптське християнство"

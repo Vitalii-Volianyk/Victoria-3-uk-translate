@@ -1,0 +1,11 @@
+﻿l_english:
+ MULTIPLAYER_LOBBY_CHOOSE_RANDOM_CHARACTER:0 "Випадкова держава"
+ MULTIPLAYER_LOBBY_PLAY_OBSERVER:1 "Гра [Concept('concept_observer_mode', 'в режимі спостерігача')]"
+ MULTIPLAYER_LOBBY_PLAY_RANDOM_COUNTRY:0 "Грати за випадкову [Concept('concept_country', 'країну')]"
+ MULTIPLAYER_LOBBY_NOT_READY:0 "#N Не вибрано державу#!"
+ NO_COUNTRY_SELECTED:0 "Не вибрано країну"
+ MULTIPLAYER_LOBBY_READY:0 "[LobbyPlayer.GetPlayable.GetCountry.GetNameNoFlag]"
+ MULTIPLAYER_LOBBY_JOIN_PROGRESS:0 "Підключення... [LobbyPlayer.GetTransferProgress|0%]"
+ MULTIPLAYER_LOBBY_PLAYED_BY:0 "Під керуванням гравця [Country.GetPlayer.GetName]"
+ MULTIPLAYER_LOBBY_PLAYED_BY_YOU:0 "Ваша держава"
+ MULTIPLAYER_LOBBY_OPEN_GAME_RULES:0 "Погляньте правила гри"

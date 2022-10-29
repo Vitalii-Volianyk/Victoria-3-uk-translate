@@ -1,0 +1,7 @@
+﻿l_english:
+ FRONTEND_MP_GAME_SETUP_HOST_HEADER:0 "Створити мережну гру"
+ FRONTEND_MP_GAME_SETUP_HOST_NEW_GAME:0 "Нова гра"
+ FRONTEND_MP_GAME_SETUP_HOST_SAVED_GAME:0 "Завантажити збереження"
+ FRONTEND_MP_GAME_SETUP_GAME_SETTINGS:0 "Налаштування гри"
+ FRONTEND_MP_GAME_SETUP_VERSION:0 "Версія: [GetGameVersionInfoShort]"
+ MULTIPLAYER_GUI_PUBLIC_MICROSOFT_ONLY_TT:0 "Тільки в Microsoft Store"

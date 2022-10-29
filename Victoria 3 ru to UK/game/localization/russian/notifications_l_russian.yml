@@ -1,0 +1,10 @@
+﻿l_russian:
+ notification_tooltip_footer:1 "\n\n#instruction Натисніть ПКМ, щоб сховати#!"
+ proposal_tooltip_footer:1 "\n\n#instruction Натисніть ПКМ, щоб відхилити#!"
+ zoom_to_tooltip_footer:0 "\n\n#instruction Натисніть ПКМ, щоб наблизити місце#!"
+
+ MESSAGE_CLICK_TOOLTIP:1 "[SelectLocalization(FeedMessageItem.IsExpanded,'MESSAGE_CLICK_TO_HIDE','MESSAGE_CLICK_TO_SHOW')]\n$MESSAGE_CLICK_TO_DISMISS$\n#I Натисніть Shift+ПКМ, щоб прибрати все.#!"
+ MESSAGE_CLICK_TO_HIDE:0 "#I Клацніть, щоб сховати.#!"
+ MESSAGE_CLICK_TO_SHOW:0 "#I Клацніть, щоб показати.#!"
+ MESSAGE_CLICK_TO_DISMISS:0 "#I Клацніть ПКМ, щоб видалити.#!"
+ MESSAGE_CLEAR_ALL_TOOLTIP:0 "#I Клацніть, щоб видалити. \nКлацніть ПКМ, щоб забрати все.#!"

@@ -1,0 +1,73 @@
+﻿l_russian:
+  # DELETE:
+    # pm_disabled_gin
+    # pm_disabled_elastics
+    # pm_masticators
+    # pm_rubber_bands
+    # pm_luxury_clothes
+
+  # Agriculture Buildings
+ pm_primary:0 "Первинний"
+ pmg_secondary_building_rye_farm:0 "Вторинний"
+ pmg_secondary_building_wheat_farm:0 "Вторинний"
+ pmg_secondary_building_rice_farm:0 "Вторинний"
+ pmg_secondary_building_maize_farm:0 "Вторинний"
+ pmg_secondary_building_millet_farm:0 "Вторинний"
+ pm_no_secondary:0 "Обмежитися однією культурою"
+ pm_potatoes:0 "Картопля"
+ pm_vineyards:0 "Виноградники"
+ pm_vineyards_building_maize_farm:0 "Виноградники"
+ pm_apple_orchards:0 "Яблоневі сади"
+ pm_citrus_orchards:0 "Сади цитрусів"
+ pm_fig_orchards:0 "Фігові сади"
+ pm_mulberry_groves:0 "Тутові гаї"
+
+ pmg_automation:0 "Автоматизація"
+ pmg_automation_building_food_industry:0 "Автоматизація"
+ pmg_automation_building_textile_mills:0 "Автоматизація"
+ pmg_automation_building_furniture_manufacturies:0 "Автоматизація"
+ pmg_automation_building_tooling_workshops:0 "Автоматизація"
+ pmg_automation_building_paper_mills:0 "Автоматизація"
+ pmg_automation_building_steel_mills:0 "Автоматизація"
+ pmg_automation_building_motor_industry:0 "Автоматизація"
+ pm_civilian_priority:0 "Громадянські пріоритети"
+ pm_military_priority:0 "Військові пріоритети"
+
+  # Textile Mills
+ pm_craftsman_sewing:0 "Швачки"
+ pm_sewing_machines:0 "Швейні машини"
+ pm_electric_sewing_machines:0 "Електричні швейні машинки"
+ pm_traditional_looms:0 "Традиційні ткацькі верстати"
+ pm_mechanized_looms:0 "Механізовані ткацькі верстати"
+ pm_automatic_power_looms:0 "Автоматичні механічні ткацькі верстати"
+
+  # Glassworks
+ pm_leaded_glass:0 "Вітражне скло"
+ pm_manual_glassblowing:0 "Ручне видування скла"
+
+  # Chemical Plants
+ pm_leblanc_process:0 "Процес Леблану"
+ pm_no_explosives_production:0 "Пріоритет на виробництво добрив"
+ pm_ammonia-soda_process:0 "Аміачний метод"
+ pm_vacuum_evaporation:0 "Вакуумне випарювання"
+ pm_brine_electrolysis:0 "Електроліз рапи"
+ pmg_fertilizer_production:0 "Виробництво добрив"
+ pm_no_artificial_fertilizers:0 "Немає штучних добрив"
+ pm_artificial_fertilizers:0 "Штучні добрива"
+ pm_improved_fertilizer:0 "Поліпшені добрива"
+ pm_nitrogen_fixation:0 "Процес зв'язування азоту"
+ pm_dyes_production:0 "Виробництво фарб"
+ pm_no_synthetic_dyes:0 "Немає синтетичних фарб"
+ pmg_synthetic_dyes:0 "Синтетичні фарби"
+ pm_silk_production:0 "Виробництво шовку"
+ pm_no_artificial_fibers:0 "Пріоритет виробництва фарб"
+ pm_rayon:0 "Віскозне волокно"
+
+  # Foundries
+ pm_steamworks:0 "Паровики"
+ pm_no_artillery_production:0 "Пріоритет на виробництво ручної зброї"
+ pm_artillery_production:0 "Виробництво артилерії"
+
+  # Motor Industries
+ pmg_automobile_production:0 "Виробництво автомобілей"
+ pm_automobile_production:0 "Виробництво автомобілей"

@@ -1,0 +1,7 @@
+﻿l_russian:
+ custom_loc_great_power:0 "Велика держава"
+ custom_loc_major_power:0 "Велика держава"
+ custom_loc_minor_power:0 "Мала держава"
+ custom_loc_insignificant_power:0 "Ніщозна держава"
+ 
+ qualifications_officers_peasant_levies:0 "[GetPopType('officers').GetName] — це в основному колишні [GetPopType('aristocrats').GetName]"

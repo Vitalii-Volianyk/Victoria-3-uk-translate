@@ -1,0 +1,5 @@
+﻿l_russian:
+  SETTING_VALUE_WARNING:0 "$VALUE|0X$"
+  SETTING_VALUE_PERCENTAGE_WARNING:0 "$VALUE|%0X$"
+  RECOMMENDED_GUI_SCALE_TOO_HIGH:1 "#X Масштабування зі значенням більше $VALUE|%0$ призведе до виходу елементів інтерфейсу за межі екрана#!"
+  RECOMMENDED_GUI_SCALE:1 "Масштабування зі значенням більше $VALUE|%0$ призведе до виходу елементів інтерфейсу за межі екрана"
