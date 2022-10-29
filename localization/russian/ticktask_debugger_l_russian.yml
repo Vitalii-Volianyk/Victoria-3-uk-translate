@@ -1,0 +1,32 @@
+﻿l_russian:
+ TICKTASK_NAME:0 "#v $NAME$#!"
+
+ TICKTASK_RATE_TICK:0 "Кожен хід"
+ TICKTASK_RATE_DAY:0 "Раз на день"
+ TICKTASK_RATE_WEEK:0 "Раз на тиждень"
+ TICKTASK_RATE_MONTH:0 "Раз на місяць"
+ TICKTASK_RATE_YEAR:0 "Раз на рік"
+  
+ TICKTASK_PRIO_EARLY:0 "Щороку"
+ TICKTASK_PRIO_DEFAULT:0 "За замовчуванням"
+ TICKTASK_PRIO_LATE:0 "Запізнилося"
+  
+ TICKTASK_PERSISTED:0 "Переходить у збереження"
+  
+ TICKTASK_SHOW_DETAILS:0 "Клацніть, щоб переглянути подробиці"
+  
+ TICKTASK_GRAPH_ITEM_TOOLTIP:0 "#header $NAME$#!\nКаталог: #v $INDEX$#!\n\nПерейшло: #v $PERSISTED$#!\nПріоритет: #v $PRIORITY$#!\nПеріодичність: #v $RATE $#!\n\nВиконується після: #v $AFTER$#!\nВиконується до: #v $BEFORE$#!\nЗалежить від: $DEPENDENCIES$\nВизначає: $DEPENDENTS$\n\n$TICKTASK_SHOW_DETAILS$"
+
+ TICKTASK_INDEX_HEADER:0 "Каталог"
+ TICKTASK_INDEX_TOOLTIP:0 "Порядок виконання завдань"
+ TICKTASK_NAME_HEADER:0 "Назва"
+ TICKTASK_EXECUTION_RATE_HEADER:0 "Періодичність"
+ TICKTASK_EXECUTION_RATE_TOOLTIP:0 "Як часто виконується завдання"
+ TICKTASK_EXECUTION_PRIORITY_HEADER:0 "Пріоритет"
+ TICKTASK_EXECUTION_PRIORITY_TOOLTIP:0 "Впливає на порядок виконання завдань"
+ TICKTASK_HIGHEST_LOCK_TIME_HEADER:0 "Час закріплення"
+ TICKTASK_HIGHEST_LOCK_TIME_TOOLTIP:0 "Максимальна тривалість закріплення стану гри завданням у мілісекундах"
+ TICKTASK_AVERAGE_TIME_HEADER:0 "Час виконання"
+ TICKTASK_AVERAGE_TIME_TOOLTIP:0 "Середня сума часу виконання цього завдання в мілісекундах"
+ TICKTASK_TIMES_EXECUTED_HEADER:0 "## виконання"
+ TICKTASK_TIMES_EXECUTED_TOOLTIP:0 "Кількість виконання цього завдання"

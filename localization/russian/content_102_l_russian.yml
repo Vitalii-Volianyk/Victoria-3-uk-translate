@@ -1,0 +1,17 @@
+﻿	l_russian:
+ oscar_wilde_events.1.t:1 "Кожен вбиває те, що любить"
+ oscar_wilde_events.1.wilde:2 "Ексцентричний драматург [SCOPE.sCharacter('oscar_wilde').GetFullName] [SelectLocalization(SCOPE.sCharacter('oscar_wilde').IsFemale, 'була засуджена'м'' каторжної праці за гомосексуалізм.Якщо [SCOPE.sCharacter('oscar_wilde').GetSheHe] не дочекається помилування, [ROOT.GetCountry.GetNameNoFlag] теж опиниться в кайданах — кайданах пересічності."
+ oscar_wilde_events.1.flavor_wilde:1 "В [SCOPE.sCharacter('oscar_wilde').GetHerHis] роботах чітко простежуються сатирична традиція і самобутня дотепність нашого народу.\n\n"
+ oscar_wilde_events.1.flavor_author:0 "Жахлива краса грецької трагедії - тієї самої трагедії, в якій залишилася частинка моєї душі.\n\n"
+ oscar_wilde_events.1.flavor_quote:0 "Ці книги оголюють ганьбу того самого світу, що звинувачує їх у своєму розкладанні»."
+ oscar_wilde_tt:0 "[SCOPE.sCharacter('oscar_wilde').GetFullName] вийде на волю."
+ oscar_wilde_events.1.a:0 "Геній заслуговує на поблажливість."
+ oscar_wilde_events.1.b:0 "Не можна, щоб нас запідозрили у незгоді з суддями."
+ oscar_wilde_events.1.c:0 "Вважати це злочином - ось справжнє варварство..."
+ happy_arts_protected:0 "Схвалює захист людей мистецтва"
+ unhappy_defended_homosexuality:0 "Не схвалює терпимість до гомосексуалів"
+ imprisoning_gentlemen:0 "Джентльмен ув'язнений"
+ upheld_ruling:0 "Підтримка судового рішення"
+
+# === [LocEditor:OrphanedKeys] Keys that do not exist in English ===
+ oscar_wilde_events.1.author:2 "Сумно відомий автор [SCOPE.sCharacter('oscar_wilde').GetFullName] [SelectLocalization(SCOPE.sCharacter('oscar_wilde').IsFemale, 'переборщила', 'переборщила" [SelectLocalization(SCOPE.sCharacter('oscar_wilde').IsFemale, 'виявилася', 'виявився' )] у в'язниці за обвинуваченням у гомосексуалізмі.Однак [ROOT.GetCountry.GetCapital.GetCityHubName] знає його роботи і більшість його У літературних колах існує думка, що влада вчинила з автором надто жорстоко.

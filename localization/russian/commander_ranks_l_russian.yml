@@ -1,0 +1,34 @@
+﻿	l_russian:
+  # commander_rank_x = базовий префікс
+  # _general = суфікс для загального типу ролі
+  # _admiral = суфікс для типу ролі адмірала
+  # _ruler = суфікс для генералів-правителів (особливий ранг)
+  # _fallback = суфікс, якщо жоден тригер динамічного опису не відповідає
+  
+ commander_rank_1:0 "Звання командира 1"
+ commander_rank_1_general:0 "Бригадний генерал"
+ commander_rank_1_admiral:0 "Коммодор"
+ commander_rank_1_fallback:0 "$commander_rank_1_general$ / $commander_rank_1_admiral$?"
+ 
+ commander_rank_2:0 "Звання командира 2"
+ commander_rank_2_general:0 "Генерал-майор"
+ commander_rank_2_admiral:0 "Контр-адмірал"
+ commander_rank_2_fallback:0 "$commander_rank_2_general$ / $commander_rank_2_admiral$?"
+ 
+ commander_rank_3:0 "Звання командира 3"
+ commander_rank_3_general:0 "Генерал-лейтенант"
+ commander_rank_3_admiral:0 "Віце-адмірал"
+ commander_rank_3_fallback:0 "$commander_rank_3_general$ / $commander_rank_3_admiral$?"
+ 
+ commander_rank_4:0 "Звання командира 4"
+ commander_rank_4_general:0 "Генерал"
+ commander_rank_4_admiral:0 "Адмірал"
+ commander_rank_4_fallback:0 "$commander_rank_4_general$ / $commander_rank_4_admiral$?"
+ 
+ commander_rank_5:0 "Звання командира 5"
+ commander_rank_5_general:0 "Фельдмаршал"
+ commander_rank_5_admiral:0 "Гросс-адмірал"
+ commander_rank_5_fallback:0 "$commander_rank_5_general$ / $commander_rank_5_admiral$?"
+ 
+ commander_rank_ruler:0 "Главнокомандуючий"
+ commander_rank_ruler_fallback:0 "$commander_rank_ruler$?"

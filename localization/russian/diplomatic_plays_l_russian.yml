@@ -1,0 +1,437 @@
+﻿	l_russian: 
+ ALREADY_STARTED_DIPLO_PLAY:1 "Держава вже залучена до [Concept('concept_diplomatic_play', 'дипломатичну гру')]!" 
+ WAR_CANNOT_YIELD_IN_DIPLOMATIC_PLAY:1 "Эта [concept_diplomatic_play|l] привела к войне" 
+ ACTOR_CANNOT_YIELD_IN_DIPLOMATIC_PLAY:1 "Держава [COUNTRY.GetName] не може поступитися в цій [Concept('concept_diplomatic_play', 'дипломатической игре')]" 
+ ACTOR_CANNOT_DECLARE_NEUTRALITY_IN_DIPLOMATIC_PLAY:2 "Держава [COUNTRY .GetName] не може оголосити про свій нейтралітет у цій [Concept('concept_diplomatic_play', 'дипломатичній грі')], тому що вона вже підтримала одну зі сторін" 
+ ACTOR_NOT_INVOLVED_IN_DIPLOMATIC_PLAY:1 "Держава [COUNTRY.
+ ACTOR_ALREADY_HAS_THIS_STANCE_IN_DIPLOMATIC_PLAY:1 "[COUNTRY.GetName] вже займає[COUNTRY.GetCustom('UA_CL_END_T')] цю позицію" 
+ ACTOR_CIVIL_WAR_DIPLOMATIC_PLAY:1 "Держави, охоплені громадянської" ]" 
+ TARGET_CIVIL_WAR_DIPLOMATIC_PLAY:1 "Держава, охоплена громадянською війною, не може бути об'єктом [Concept('concept_diplomatic_play', 'дипломатичної гри')]" 
+ ACTOR_IS_TARGETED_BY_ENEMY_WARGOAL:1 "Ми не підтримуємо #to DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [COUNTRY.GetFlagTextIcon][COUNTRY.GetCustom('RU_CL_RP')]#!,оскільки наша країна є об'єктом [Concept('concept_war_goal', 'мети війни')] «[WAR_GOAL.GetName]»#!"
+ TRUCE_WITH_TARGET:1 "У #tooltippable_name #tooltip:[COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [COUNTRY.GetFlagTextIcon][COUNTRY.GetCustom('RU_CL_RP')]#! є перемир'я з #TOP: DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [TARGET_COUNTRY.GetFlagTextIcon][TARGET_COUNTRY.GetCustom('RU_CL_TP')]#!#!. Він триватиме до #variable [COUNTRY.GetTruceDate(TARGET_COUNTRY.Self)
+ HOSTILE_RELATIONS_WITH_TARGET:1 "[Concept('concept_relations', 'Відносини')] між #tooltippable_name #tooltip:[COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip[COUNTRY.GetFlagTextI tooltippable_name #tooltip:[TARGET_COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [TARGET_COUNTRY.GetFlagTextIcon][TARGET_COUNTRY.GetCustom('RU_CL_TP')]#!#!надто низькі (ворожі) 'дипломатичній грі')]#!"
+ CORDIAL_RELATIONS_WITH_TARGET:4 "[Concept('concept_relations', 'Відносини')] між #tooltippable_name #tooltip:[COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip[COUNTRY.GetFlagTextIcon tooltippable_name #tooltip:[TARGET_COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [TARGET_COUNTRY.GetFlagTextIcon][TARGET_COUNTRY.GetCustom('RU_CL_TP')]#!#, занадто хороші ($relations , 'дипломатичну гру')]#!" 
+ ALLIANCE_WITH_TARGET:1 "Держава [COUNTRY.GetName] полягає в [Concept('concept_alliance', 'союзі')] з #tooltippable_name #tooltip:[TARGET_COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTool
+ DEFENSIVE_PACT_WITH_TARGET:1 "Держава [COUNTRY.GetName] полягає в [Concept('concept_defensive_pact', 'оборонному пакті')] з #tooltippable_name #tooltip:[TARGET_COUNTRY.GetTooltipTag],DATA_COUNT 'UA_CL_TP')|v]#!#!" 
+ HUMILIATED_BY_TARGET:2 "Держава [COUNTRY.GetName] нещодавно зазнала [Concept('concept_humiliation', 'приниження')] з боку #tooltip:[TARGET_COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTool #!"
+ OWES_OBLIGATION_TO_TARGET:2 "[COUNTRY.GetName] має [COUNTRY.GetCustom('UA_CL_END_T')] [Concept('concept_obligation', 'зобов'язання')] перед #tooltippable_name #tooltip:[TARGET_COUNTRY.GetTooltipTag GetFlagTextIcon][TARGET_COUNTRY.GetCustom('RU_CL_TP')|v]#!#!" 
+ RIVALS_WITH_TARGET:1 "Держава [COUNTRY.GetName] [Concept('concept_rivalry', 'суперничає')] з #tooltippable_name #tooltip:[TARGET_COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTool )|v]#!#!"
+ TARGET_IS_OUR_SUBJECT:1 "[TARGET_COUNTRY.GetName|v] є[TARGET_COUNTRY.GetCustom('RU_CL_END_T')]ся [Concept('concept_subject', 'суб'єктом')] #tooltippable_name #tooltip:[COUNT COUNTRY.GetFlagTextIcon][COUNTRY.GetCustom('RU_CL_RP')]#!#!" 
+ MUST_SUPPORT_OVERLORD:1 "Ми $SUBJECT_TYPE|v$ #tooltippable_name #tooltip:[COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [COUNTRY.GetCustom('RU_CL_RP')]#!# 
+ ! GetName|v] вже вибрав[COUNTRY.GetCustom('RU_CL_END_FEM')] вас об'єктом [Concept('concept_diplomatic_play', 'дипломатичної гри')]"
+ DIPLO_PLAY_SWITCH_COUNTRY_NOT_TARGET:1 "Тільки об'єкт [Concept('concept_diplomatic_play', 'дипломатична гра')] може змінити країну" 
+ DIPLO_PLAY_SWITCH_COUNTRY_ESCALATION:1 "Змінити країну можна, тільки поки ескалація нижче $vari #i 
+ DIPLO_PLAY_SWITCH_COUNTRY_NOT_AI:1 "Змінити країну можна тільки на країну під керуванням ІІ" 
+ DIPLO_PLAY_CANNOT_TARGET_SELF:1 "Об'єктом [Concept('concept_diplomatic_play', 'дипломатичної гри'):AL не можна вибрати власну країну 
+ "
+ DIPLO_PLAY_AT_WAR_WITH:1 "Держава [COUNTRY.GetName] перебуває у стані війни з #tooltippable_name #tooltip:[TARGET_COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [TARGET_COUNTRY.GetFla!| " 
+ DIPLO_PLAY_HUMILIATED_BY:1 "Держава [COUNTRY.GetName] була [Concept('concept_humiliation', 'принижено')] країною [TARGET_COUNTRY.GetName|v]" 
+ DIPLO_PLAY_ALLIED_WITH:1 "Держава [CoUNT. :[TARGET_COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [TARGET_COUNTRY.GetFlagTextIcon][TARGET_COUNTRY.GetCustom('RU_CL_TP')|v]#!#!"
+ DIPLO_PLAY_WAR_ALLIED_WITH:1 "[COUNTRY.GetName] участі[COUNTRY.GetCustom('RU_CL_END_T')] у війні з одного боку з #tooltippable_name #tooltip:[TARGET_COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME 'UA_CL_TP')|v]#!#!#!" 
+ DIPLO_PLAY_OPPOSING_SIDES:1 "Держава [COUNTRY.GetName] протистоїть #tooltippable_name #tooltip:[TARGET_COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [TARGET_COUNTRY.GetFlagText
+ DIPLO_PLAY_SAME_SIDES:1 "[COUNTRY.GetName] підтримує[COUNTRY.GetCustom('UA_CL_END_T')] #tooltippable_name #tooltip:[TARGET_COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [TARG ! в іншій дипломатичній грі#!" 
+ ALREADY_IN_DIPLO_PLAY:1 "Обидві держави, [COUNTRY.GetName] і [TARGET_COUNTRY.GetName], вже залучені в іншу дипломатичну гру" 
+ DIPLO_PLAY_ADD_WARGOAL 
+ :0 "Додати [Concept('concept_war_goal', 'МЕТА війни нейтралітет" 
+ DIPLO_PLAY_BACK_DOWN:0 "Відступити" 
+ DIPLO_PLAY_GIVE_IN:0 "Здатися" 
+ DIPLO_PLAY_SUPPORT:0 "Підтримати"
+ ADD_WARGOAL_HEADER:0 "#bold Додати [Concept('concept_war_goal', 'мета війни')]#!" 
+ SWAY_COUNTRY:0 "[Concept('concept_sway', 'Переконання')]" 
+ SWAY_COUNTRY_HEADER:0 "#bold [concept_sway] країни [SwayCountryPanel.GetCountry.GetName]#!" 
+ DIPLO_PLAY_MANEUVERS_INITIATOR_TOOLTIP:1 "#header [Concept('concept_maneuver', 'Маневри')] ініціатора гри#!\n[Concept('concept_maneuver', 'Маневри')], доступні #tooltip:[DiplomaticPlay.Get ,CountryTooltip [DiplomaticPlay.GetInitiator.GetCustom('UA_CL_DP')|v]#!: [DiplomaticPlay.GetNumInitiatorManeuversRemaining|v]."
+ DIPLO_PLAY_MANEUVERS_TARGET_TOOLTIP:1 "#header [Concept('concept_maneuver', 'Маневри')] об'єкта гри#!\n[Concept('concept_maneuver', 'Маневри')], доступні #tooltip:[DiplomaticPlay.GetTARget. ,CountryTooltip [DiplomaticPlay.GetTarget.GetCustom('UA_CL_DP')|v]#!: [DiplomaticPlay.GetNumTargetManeuversRemaining|v]." 
+ DIPLO_PLAY_JOIN_WRONG_PHASE:0 "#N Вибрати сторону в [Concept('concept_diplomatic_play', 'дипломатичній грі')] можна лише на етапі «#variable $DIPLO_PLAY_MIDDLE_PHASE$#!»#!" 
+ DIPLO_PLAY_SWAY_WRONG_PHASE:0 "#N Переконувати треті сторони в [Concept('concept_diplomatic_play', 'дипломатичній грі')] можна лише на етапі «#variable $DIPLO_PLAY_MIDDLE_PHASE$#!»#!"
+ DIPLO_PLAY_OVERLORD_JOIN_WRONG_PHASE:0 "#N Сюзерен одного з провідних учасників [Concept('concept_diplomatic_play', 'дипломатичної гри')] може вибрати сторону тільки на етапі «#variable $DIPLO_PLAY_OPENING_PHASE$#!»#!" 
+ DIPLO_PLAY_YIELD_WRONG_PHASE:0 "#N В [Concept('concept_diplomatic_play', 'дипломатичній грі')] не можна відступити на етапі «#variable $DIPLO_PLAY_OPENING_PHASE$#!»#!" 
+ DIPLO_PLAY_ADD_WARGOAL_WRONG_PHASE:1 "#N В [Concept('concept_diplomatic_play', 'дипломатичній грі')] не можна додавати нові [Concept('concept_war_goal', 'мети війни')] на етапі "#variable $DIPLO_PLAY_CLOS
+ DIPLO_PLAY_BACKER_PROMISED_INITIATOR_OBLIGATION:1 "Держава [Country.GetName] може розраховувати на [Concept('concept_obligation', 'зобов'язання')], якщо підтримає ініціатора цієї [Concept('concept_diplomatic_play'", 'дипломатичної гри' 
+ : Country.GetName] може розраховувати на [Concept('concept_obligation', 'зобов'язання')], якщо підтримає об'єкт цієї [Concept('concept_diplomatic_play', 'дипломатичної гри')]" 
+ DIPLOMATIC_PLAY_ESCALATION_PAUSE:0 "Ескалація зупинена на [Diplomatic v] буд." 
+ DIPLOMATIC_PLAY_ESCALATION_NO_PAUSE:0 "Ескалація розвивається…" 
+  
+ DIPLO_PLAY_OPENING_PHASE:1 "[Concept('
+ DIPLO_PLAY_MIDDLE_PHASE:1 "[Concept('concept_diplomatic_maneuvers', 'Дипломатичні маневри')]" 
+ DIPLO_PLAY_CLOSING_PHASE:1 "[Concept('concept_countdown_to_war', 'Підготовка до війни' 
+
+ :" COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [COUNTRY.GetFlagTextIcon][COUNTRY.GetCustom('RU_CL_VP')]#!#! на ваш бік, погодьтеся взяти на себе [Concept('concept_obligation', 'зобов'язання'). [ConcatIfNeitherEmpty( '\n$TOOLTIP_DELIMITER$\n', '$ERRORS$' )]" 
+ DIPLO_PLAY_SWAY_OFFER_WAR_GOAL_DESC:0 "[WAR_GOAL.GetSwayDesc][ConcatIfNeitherEmpty( '\n$ERRORS$' )]" 
+
+ texan_war_of_independence:0 "Війна за незалежність Техасу"
+  
+ WARGOAL_NO_TREATY_PORT:1 "У вибраній області немає провінцій з [Concept('concept_treaty_port', 'договірним портом')]" 
+ WARGOAL_IS_TREATY_PORT:1 " У вибраній області є [Concept('concept_treaty_port', 'NO_SHORT_UB") 
+ _WAR [TARGET_COUNTRY.GetName] не є[TARGET_COUNTRY.GetCustom('RU_CL_END_T')]суб'єктом" 
+ WARGOAL_IS_SUBJECT_OF:1 " [COUNTRY.GetName] є[COUNTRY.GetCustom('RU_CL_END_T')]суб'єктом #TAol GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [TARGET_COUNTRY.GetCustom('RU_CL_RP')]#!#!" 
+ WARGOAL_NOT_SUBSERVIENT_SUBJECT:0 " [COUNTRY.GetName] не є[COUNTRY.GetCustom('UA_CL_END_T'
+ WARGOAL_WRONG_COUNTRY_RANK:1 " $COUNTRY_NAME|v$ — не $RANK|vl$" 
+ WARGOAL_WRONG_COUNTRY_TYPE:1 " $COUNTRY_NAME|v$ — не $TYPE|vl$" 
+ WARGOAL_HOLDER_DOES_NOT_EXIST:1 " Ні [Concept ], яка мала б право висунути цю [Concept('concept_war_goal', 'мету війни')]" 
+ WARGOAL_TARGET_DOES_NOT_EXIST:1 " Ні [Concept('concept_country', 'країни')], яка була б відповідним об'єктом для даної [Concept( 'concept_war_goal', 'мети війни')]" 
+ WARGOAL_TARGET_IG_DOES_NOT_EXIST:1 " Ні [Concept('concept_interest_group', 'зацікавленої групи')], яка була б відповідним об'єктом для даної [Concept('concept_war_goal', 'мети війни" "
+ WARGOAL_IG_TYPE_NOT_IN_GOVERNMENT:1 " #v $IG_TYPE$#! не в уряді #tooltippable_name #tooltip:[COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [COUNTRY.GetCustom('UA_CL_RP')" 
+ WARGOAL_TARGET_WILL_NOT_EXIST:1 " При досягненні обраних цілей війни держава [COUNTRY.GetName] виявиться анексовано" 
+ WARGOAL_TARGET_WILL_NOT_EXIST_AFTER_WARGOAL:1 " При досягненні цієї мети війни держава [COUNTRY.GetName] виявиться 
+ : .GetName] не [Concept('concept_rivalry', 'суперничає')] з #tooltippable_name #tooltip:[TARGET_COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [TARGET_COUNTRY.GetCustom('
+ WARGOAL_NOT_UNIFICATION_CANDIDATE:1 " [COUNTRY.GetName] не є[COUNTRY.GetCustom('RU_CL_END_T')]ся [Concept('concept_unification_candidate', 'кандидатом на об'єднання')] для країни [CountryFormation.GetName]" 
+ WARGOAL Country.GetName] має бути єдиною [Concept('concept_unification_candidate', 'кандидатом на об'єднання')] для країни [CountryFormation.GetName]" 
+ WARGOAL_COUNTRY_HAS_SLAVERY:1 " [COUNTRY.GetName] практику[COUNTRY.GetCustom('RU або іншу форму [Concept('concept_slavery', 'рабовласництва')]" 
+ WARGOAL_COUNTRY_NO_SLAVERY:1 " [COUNTRY.GetName] не практикує[COUNTRY.GetCustom('RU_CL_END_T')] ніякої форми [Concept('concept_slavery', 'рабовласництва')]"
+ WARGOAL_COUNTRY_HAS_LAW:0 "[COUNTRY.GetName] прийняв[COUNTRY.GetCustom('RU_CL_END_FEM')] закон # [LAW_TYPE.GetName]!#!" 
+ WARGOAL_COUNTRY_HAS_NOT_LAW:0 " [COUNTRY.GetName] не прийняв[COUNTRY.GetCustom('UA_CL_END_FEM')] закон [LAW_TYPE.GetName]!" 
+ WARGOAL_STAKEHOLDER_DOES_NOT_EXIST:1 " Для цієї [Concept('concept_war_goal', 'мети війни')] немає відповідних зацікавлених осіб!" 
+ WARGOAL_TARGET_DOES_NOT_OWN_STATE:1 " Держава #variable $COUNTRY_NAME$#! не володіє областю #variable $STATE_NAME$#!" 
+ WARGOAL_NEEDS_INTEREST_MARKER_IN_REGION:0 "Держава #variable $COUNTRY_NAME$#! має [Concept('concept_interest', 'цікавість')] у регіоні #variable $REGION_NAME$#!"
+ OTHER_WARGOAL_ON_SAME_TARGET:1 " Держава #variable $COUNTRY_NAME$#! має іншу [Concept('concept_war_goal', 'мету війни')], яка виключає цю і також торкається держави #variable $TARGET_NAME$#!" 
+ WARGOAL_TOO_LOW_RANK:1 " Рейтинг країни [COUNTRY.GetName] недостатньо високий!" 
+ WARGOAL_TOO_HIGH_RANK:1 " Рейтинг країни [COUNTRY.GetName] занадто високий!" 
+ WARGOAL_HOLDER_HAS_NO_CLAIM:1 " У держави #variable $COUNTRY_NAME$#! відсутні [Concept('concept_claim', 'претензії')] на регіон #variable $STATE_REGION_NAME$#!" 
+ WARGOAL_HOLDER_HAS_CLAIM:1 " У держави #variable $COUNTRY_NAME$#! є [Concept('concept_claim', 'претензії')] на регіон #variable $STATE_REGION_NAME$#!"
+ WARGOAL_HOLDER_HAS_NO_COLONIAL_CONQUEST:1 " Держава #variable $COUNTRY_NAME$#! не може влаштувати колоніальне завоювання області #variable $STATE_NAME$#!" 
+ WARGOAL_HOLDER_HAS_COLONIAL_CONQUEST:1 " Держава #variable $COUNTRY_NAME$#! може влаштувати колоніальне завоювання області #variable $STATE_NAME$#!" 
+ WARGOAL_COUNTRY_CREATION_INVALID:1 " Держава #variable $TARGET_NAME$#! не володіє областями, необхідними для утворення держави #variable $COUNTRY_NAME$#!" 
+ WARGOAL_TARGET_HAS_NOTHING_TO_RELEASE:1 " Останнім часом держава #variable $TARGET_NAME$#! не приєднувала області або суб'єкти, які можна було б звільнити" 
+ WARGOAL_RECENT_REGIME_CHANGE:0 "Держава [таRGET_COUNTRY.
+ WARGOAL_COUNTRY_IDEOLOGICAL_DIFFERENCE_TOO_SMALL:0 "[Concept('concept_government','Форми правління')] #tooltippable_name #tooltip:[COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [COUNT і #tooltippable_name #tooltip:[TARGET_COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [TARGET_COUNTRY.GetFlagTextIcon][TARGET_COUNTRY.GetCustom('RU_CL_RP')]#! 
+  
+ YY: »" 
+ JOIN_DIPLO_PLAY_DESC:0 "#header Спроба [Concept('concept_sway', 'переконання')]#!\n$WILL_ACCEPT$\n$TOOLTIP_DELIMITER$\n$DETAILS$" 
+ JOIN_DIPLO_PLAY_SCORE_DESC:0 |+$#!"
+ JOIN_DIPLO_PLAY_FACTOR_RELATIONS:0 "Відносини з #tooltippable_name #tooltip:[COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [COUNTRY.GetFlagTextIcon][COUNTRY.GetCustom('RU_CL| #!" 
+ JOIN_DIPLO_PLAY_FACTOR_SYMPATHY:0 "[concept_sympathy] по відношенню до [COUNTRY.GetFlagTextIcon][COUNTRY.GetCustom('UA_CL_DP')|v]#!: #bold $VALUE|+=$" 
+ JOIN_DIPLO_PLAY_FAC $VALUE|+=$#!" 
+ JOIN_DIPLO_PLAY_FACTOR_DEFENDER:0 "[COUNTRY.GetName|v] обороня[COUNTRY.GetCustom('RU_CL_END_T')]ся: #bold $VALUE|+=$#!" 
+ JOIN_DIPLO_PLAY_FACTOR_ALREADY_BACKER:0 "[COUNTRY_THIRD_PARTY.GetName] вже підтримується[COUNTRY_THIRD_PARTY.GetCustom('RU_CL_END_T'
+ JOIN_DIPLO_PLAY_FACTOR_INFAMY:1 "[COUNTRY.GetAdjectiveNoFormatting]ая [Concept('concept_infamy', 'дурна слава')]: #bold $VALUE|+=$#!" 
+ JOIN_DIPLO_PLAY_FACTOR_SUBJECT_RELATIONSHIP:0 "Суб'єктні відносини з #bold #tooltippable_name #tooltip:[COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip[!COUNTRY.GetFlagTextIcon][| $#!"
+ JOIN_DIPLO_PLAY_FACTOR_ATTITUDE:0 "[concept_attitude] #tooltippable_name #tooltip:[COUNTRY_THIRD_PARTY.GetAttitudeTowards(COUNTRY.Self).GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTool по відношенню до #tooltippable_name #tooltip:[COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [COUNTRY.GetFlagTextIcon][COUNTRY.GetCustom('RU_CL_DP')|v]#!#!: #bold $VALUE|+=#
+ JOIN_DIPLO_PLAY_FACTOR_ATTITUDE_BACKER:0 "[concept_attitude] #tooltippable_name #tooltip:[COUNTRY_THIRD_PARTY.GetAttitudeTowards(COUNTRY.Self).GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [COUNTRY_THIRD_PARTY.GetAttitudeTowards(COUNTRY.Self).GetCustom('RU_CL_RP')]#!#! по по відношенню до #tooltippable_name #tooltip:[COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [COUNTRY.GetFlagTextIcon][COUNTRY.GetCustom('UA_CL_DP')|v]#!#!, що виступає на підтримку: #bol| #!" 
+ JOIN_DIPLO_PLAY_FACTOR_OFFERED_WARGOAL:0 "Запропоновано [Concept('concept_war_goal', 'мета війни')]: #bold $VALUE|+=$#!" 
+ JOIN_DIPLO_PLAY_FACTOR_OFFERED_OBLIGATION:1 "Пропозиція [Concept('concept_obligation', 'зобов'язання')]: #bold $VALUE|+=$#!"
+ JOIN_DIPLO_PLAY_FACTOR_CURRENT_OFFERED_WARGOAL:0 "Протилежна сторона запропонувала [Concept('concept_war_goal', 'мета війни')]: #bold $VALUE|+=$#!" 
+ JOIN_DIPLO_PLAY_FACTOR_CURRENT_OFFERED_OBLIGATION:1 "Протилежна сторона запропонувала [Concept('concept_obligation', 'зобов'язання')]: #bold $VALUE|+=$#!" 
+ JOIN_DIPLO_PLAY_FACTOR_DOES_NOT_WANT_WARGOAL:0 "Не хоче цю [Concept('concept_war_goal', 'мета війни')]]: #bold $VALUE|+=$#!" 
+ JOIN_DIPLO_PLAY_FACTOR_DOES_NOT_WANT_OBLIGATION:0 "Не зможе скористатися #tooltippable_name [COUNTRY.GetAdjective|l]ними#! [Concept('concept_obligation', 'зобов'язаннями')]: #bold $VALUE|+=$#!"
+ JOIN_DIPLO_PLAY_FACTOR_DOES_NOT_TAKE_WARGOAL_SERIOUSLY:0 "Не вірить, що держава [COUNTRY.GetName] зможе допомогти захопити обіцяну [Concept('concept_war_goal', 'мета війни')]: #bold $VALUE|+=$# 
+ JOIN_DIPLO_PLAY_FACTOR_UNCERTAIN_WARGOAL:0 "Сомнюється, що держава [COUNTRY.GetName] зможе допомогти захопити обіцяну [Concept('concept_war_goal', 'мета війни')]: #bold $VALUE|+=$#!" 
+ JOIN_DIPLO_PLAY_FACTOR_IDEOLOGICAL_OPINION:0 "$DIPLOMATIC_ACCEPTANCE_IDEOLOGICAL_OPINION$: #bold $VALUE|+=$#!" 
+ JOIN_DIPLO_PLAY_FACTOR_IDEOLOGICAL_OPINION_NEGATIVE:0 "$DIPLOMATIC_ACCEPTANCE_IDEOLOGICAL_OPINION_NEGATIVE$: #bold $VALUE|+=$#!"
+ JOIN_DIPLO_PLAY_FACTOR_OWN_SECESSION_RISK:0 "Ризик розповсюдження #tooltippable_name [COUNTRY.GetAdjective|l]ого#! 'RU_CL_VP')]#!#!" 
+ JOIN_DIPLO_PLAY_FACTOR_NO_INTEREST_IN_RECOGNITION:0 "Не бачить сенсу у визнанні несоюзної країни [COUNTRY.GetName]: #bold $VALUE|+=$#!" 
+ 
+ DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_BASE_VALUE:0 "Базове значення: #bold $VALUE|+=$#!" 
+ DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_STRATEGY:0 "[concept_ai_strategy] $NAME|v$: #bold $VALUE|+=$#!" 
+ DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_WEAK_PREFERENCE:0 "
+ DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_DEBT:0 "Кількість #tooltippable_name [Country.GetAdjective|l]їх#! [Concept('concept_loans', 'позик')]: #bold $VALUE|+=$#!" 
+ DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_GOLD_RESERVES:0 "Кількість #tooltippable_name [Country.GetAdjective|l]ого#! [Concept('concept_gold_reserves', 'золотого запасу')]: #bold $VALUE|+=$# 
+ DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_DEVASTATION:0 "[concept_devastation] у [Country.GetFlagTextIcon][Country.GetCustom('RU_CL_PP')]: #bold $VALUE|+=$#!" 
+ DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_TURMOIL:0 "[concept_turmoil] у [Country.GetFlagTextIcon][Country.GetCustom('RU_CL_PP')]: #bold $VALUE|+=$#!"
+ DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_SUBJECT_CONFLICT:0 "[concept_diplomatic_play] за участю нашого [Concept('concept_subject', 'суб'єкта')]: #bold $VALUE|+=$#!" 
+ DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_ONGOING_CONFLICT:0 "#tooltippable_name [Country.GetAdjective]е#! участь у конфлікті $NAME|v$: #bold $VALUE|+=$#!" 
+ DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_WEAK_ARMY:0 "Слабкість #tooltippable_name [Country.GetAdjective|l]ой#! армії: #bold $VALUE|+=$#!" 
+ DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_STRONG_ARMY:0 "Сила #tooltippable_name [Country.GetAdjective|l]ой#! армії: #bold $VALUE|+=$#!" 
+ DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_PARTICIPANT_RANKS:0 "Низький [Concept('concept_rank', 'ранг')] учасників:
+ DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_CANNOT_BE_BELOW_VALUE:0 "[concept_neutrality] не може бути нижчим, ніж $VALUE|v$" 
+ DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_FORCE_BALANCE:0 "Відносна військова сила!" 
+ DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_LOYALISTS:0 "Кількість [Concept('concept_loyalist','лоялістів')] в #tooltippable_name #tooltip:[Country.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTool !: #bold $VALUE|+=$#!" 
+ DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_CIVIL_WAR_OR_UPRISING:0 "[concept_civil_war] або [concept_native_uprising|l]: #bold $VALUE|+=$#!" 
+ DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_SHORT_WAR:0 "
+
+ DIPLO_PLAY_CONFIDENCE_PLAYER:0 "#v Гравець#!" 
+ DIPLO_PLAY_CONFIDENCE_PLAYER_DESC:0 "[Country.GetName] знаходиться під керуванням гравця, і [concept_confidence|l] цієї держави відома лише гравцю." 
+ DIPLO_PLAY_CONFIDENCE_VERY_LOW:0 "#N Страх#!" 
+ DIPLO_PLAY_CONFIDENCE_VERY_LOW_DESC:0 "#header Рівень #tooltippable_name [Country.GetAdjective|l]ой#! [Concept('concept_confidence', 'впевненості')]: #N Страх#! ($SCORE|v$)#!\n$TOOL $\n$DETAILS$\n\n@information![Country.GetName] #N дуже песимістично оцінює[Country.GetCustom('RU_CL_END_T')] свої шанси на перемогу в цій [Concept('concept_diplomatic_play', 'дипломатичної грі')] за нинішніх обставин. Поступки практично неминучі,
+ DIPLO_PLAY_CONFIDENCE_LOW:0 "#N Побоювання#!" 
+ DIPLO_PLAY_CONFIDENCE_LOW_DESC:0 "#header Рівень #tooltippable_name [Country.GetAdjective|l]ой#! [Concept('concept_confidence', 'впевненості')]: #N Побоювання#! ($SCORE|v$)#!\n$TOOLTI $\n$DETAILS$\n\n@information![Country.GetName] #N песимістично#!оцінює[Country.GetCustom('RU_CL_END_T')] свої шанси на перемогу в цій [Concept('concept_diplomatic_play', 'дипломатичній грі ')] за нинішніх обставин.Поступки цілком можливі, особливо якщо поразка в [Concept('concept_war', 'війні')] загрожує цій стороні великими втратами." 
+ DIPLO_PLAY_CONFIDENCE_MEDIUM:0 "#V Невпевненість#!"
+ DIPLO_PLAY_CONFIDENCE_MEDIUM_DESC:0 "#header Рівень #tooltippable_name [Country.GetAdjective|l]ой#! [Concept('concept_confidence', 'впевненості')]: #V Невпевненість#! ($SCORE|v$)#!\n$TOOL $\n$DETAILS$\n\n@information![Country.GetName] #V невпевнено#! оцінює[Country.GetCustom('RU_CL_END_T')] свої шанси на перемогу в цій [Concept('concept_diplomatic_play', 'дипломатичній грі ')] за нинішніх обставин.Поступки можливі, особливо якщо поразка в [Concept('concept_war', 'війні')] загрожує цій стороні великими втратами." 
+ DIPLO_PLAY_CONFIDENCE_HIGH:0 "#P Впевненість#!"
+ DIPLO_PLAY_CONFIDENCE_HIGH_DESC:0 "#header Рівень #tooltippable_name [Country.GetAdjective|l]ой#! [Concept('concept_confidence', 'впевненості')]: #P Впевненість#! ($SCORE|v$)#!\n$TOOL $\n$DETAILS$\n\n@information![Country.GetName] #P оптимістично оцінює[Country.GetCustom('RU_CL_END_T')] свої шанси на перемогу в цій [Concept('concept_diplomatic_play', 'дипломатичній грі ')] за нинішніх обставин.Поступки малоймовірні, навіть якщо поразка в [Concept('concept_war', 'війні')] загрожує цій стороні великими втратами." 
+ DIPLO_PLAY_CONFIDENCE_VERY_HIGH:0 "#P Зарозумілість#!"
+ DIPLO_PLAY_CONFIDENCE_VERY_HIGH_DESC:0 "#header Рівень #tooltippable_name [Country.GetAdjective|l]ой#! [Concept('concept_confidence', 'впевненості')]: #P Зарозумілість#! $\n$DETAILS$\n\n@information![Country.GetName] #P дуже оптимістично#! оцінює[Country.GetCustom('RU_CL_END_T')] свої шанси на перемогу в цій [Concept('concept_diplomatic_play', 'дипломатичній грі')] за нинішніх обставин.Про поступки не може бути й мови, якщо баланс сил серед учасників не зміниться." 
+ 
+ WAR_NO_NEGOTIATED_PEACE:1 "В [Concept('concept_diplomatic_play', 'дипломатичній грі')] типу «$TYPE|v$» неможливі [Concept('concept_peace_deal', 'мирні домовленості')]."
+ WAR_PEACE_BOTH_SIDES_CLAIM_STATE:2 "[Concept('concept_peace_deal', 'Мирна пропозиція')] неможливо, обидві сторони мають претензії на [Concept('concept_state', 'області')] в регіоні [STATE.GetStateRegion.GetName]" 
+ WAR_PE [Concept('concept_peace_deal', 'Мирна пропозиція')] неможливо, оскільки мета війни «[WAR_GOAL.GetName|v]» недійсна" 
+ WAR_PEACE_ALREADY_ACTIVE_PEACE_DEAL:0 "[Concept('concept_peace_deal', 'Мирна пропозиція')] вже 
+ WAR_PEACE_ALREADY_WHITE_PEACE:0 "Ми вже висунули [Concept('concept_peace_deal', 'мирна пропозиція')] статус-кво" 
+ WAR_PEACE_PROPOSAL_COOLDOWN:0 "Ми зможемо висунути нове [Concept('concept_peace_deal', 'мирна пропозиція')] після #v $DATE$#!"
+ WAR_PEACE_MUST_PRESS_INDEPENDENCE:0 "Держава $COUNTRY_NAME$ #bold не прийме #! [Concept('concept_peace_deal', 'мирна пропозиція')], яка не забезпечує її незалежність." 
+ WAR_NAME_FORMAT_DEFAULT:0 "$INITIATOR$ — $TARGET$" 
+  
+ dp_open_market:0 "$war_goal_open_market_type_name$" 
+ dp_open_market_tooltip:1 "#header Почати [Concept('concept_diplomatic_play', 'дипломатичну $$'!" TOOLTIP_DELIMITER$\n$dp_open_market_desc$"
+ dp_open_market_desc:0 "Визначає початковий [Concept('concept_war_goal', 'метою війни')] примус цільової [Concept('concept_country', 'країни')] змінити [Concept('concept_law', 'закон')] "[GetLawGro 'lawgroup_trade_policy').GetName]» на «[GetLawType('law_free_trade').GetName]» та [Concept('concept_open_market', 'відкрити')] ринки для іноземної торгівлі." 
+    
+ dp_regime_change:0 "$war_goal_regime_change_type_name$" 
+ dp_regime_change_tooltip:1 "#header Почати [Concept('concept_diplomatic_play', 'дипломатичну гру')] $dp_regime_change$»#!\n$TOOL
+ dp_regime_change_desc:0 "Визначає початковий [Concept('concept_war_goal', 'метою війни')] примус цільової [Concept('concept_country', 'країни')] змінити [Concept('concept_government', 'уряд')] і [Concept 'concept_law', 'закони')] на відповідні нашим." 
+ 
+ dp_ban_slavery:0 "$war_goal_ban_slavery_type_name$" 
+ dp_ban_slavery_tooltip 
+ :1 "#header Почати [Concept('concept_diplomatic_play', 'дипломатичну гру')] $dp_ban_slavery$»#!\n$TOOLTIP_DE Визначає початковий [Concept('concept_war_goal', 'метою війни')] примус цільової [Concept('concept_country', 'країни')] скасувати рабство,
+  
+ dp_conquer_state:0 "$war_goal_conquer_state_type_name$" 
+ dp_conquer_state_tooltip 
+ :1 "#header Почати [Concept('concept_diplomatic_play', 'дипломатичну гру')] $dp_conquer_state$»#!\n$TOOLTIP_DE Визначає початковий [Concept('concept_war_goal', 'метою війни')] примус цільової [Concept('concept_country', 'країни')] передати під ваш контроль певну [Concept('concept_state', 'область')]." 
+  
+ dp_return_state:0 "$war_goal_return_state_type_name$" 
+ dp_return_state_tooltip:1 "#header Почати [Concept('concept_diplomatic_play', 'дипломатичну гру')] «$dp_return_state$»#!
+ dp_return_state_desc:0 "Визначає початковий [Concept('concept_war_goal', 'метою війни')] примус цільової [Concept('concept_country', 'країни')] повернути вам певну [Concept('concept_state', 'область')]." 
+
+ dp_independence:0 "$war_goal_independence_type_name$" 
+ dp_independence_tooltip 
+ :1 "#header Почати [Concept('concept_diplomatic_play', 'дипломатичну гру')] $dp_independence$»#!\n$TOOLTIP_DELIMITER$\n$ Визначає початковий [Concept('concept_war_goal', 'метою війни')] примус цільової [Concept('concept_country', 'країни')] дарувати вам незалежність." 
+   
+ dp_liberate_subject:0 "
+ dp_liberate_subject_tooltip:1 "#header Почати [Concept('concept_diplomatic_play', 'дипломатичну гру')] $dp_liberate_subject$»#!\n$TOOLTIP_DELIMITER$\n$dp_liberate_subject_desc$' dp_liberate_subject_desc$" 
+ dp_liberate_subject_tooltip:1 , 'метою війни')] примус цільової [Concept('concept_country', 'країни')] дарувати незалежність одному зі своїх [Concept('concept_subject', 'суб'єктів')]." 
+   
+ dp_take_treaty_port:0 "$war_goal_take_treaty_port_type_name$" 
+ dp_take_treaty_port_tooltip:1 "#header Почати [Concept('concept_diplomatic_play', 'дипломатичну гру'##TER_T_DE$$TO$$
+ dp_take_treaty_port_desc:0 "Визначає початковий [Concept('concept_war_goal', 'метою війни')] примус цільової [Concept('concept_country', 'країни')] передати [Concept('concept_treaty_port', 'договірний порт') Concept('concept_state_region', 'регіоні')]." 
+   
+ dp_force_recognition:0 "$war_goal_force_recognition_type_name$" 
+ dp_force_recognition_tooltip:1 "#header Почати [Concept('concept_diplomatic_play', 'дипломатичну гру')] «$dp_force_recognition$$$# 
+ ! Визначає початковий [Concept('concept_war_goal', 'метою війни')] примус цільової [Concept('concept_country', '
+   
+ dp_contain_threat:0 "$war_goal_contain_threat_type_name$" 
+ dp_contain_threat_tooltip 
+ :1 "#header Почати [Concept('concept_diplomatic_play', 'дипломатичну гру')] «$dp_contain_threat$»$! Визначає початковий [Concept('concept_war_goal', 'метою війни')] примус цільової [Concept('concept_country', 'країни')] звільнити все [Concept('concept_state', 'області')] і [Concept('concept_subject') , 'суб'єкти')], отримані за останні #v [GetDefine('NDiplomacy', 'WAR_GOAL_CONTAIN_THREAT_YEARS_SINCE_CONQUEST')]#! 
+  
+ dp_transfer_subject:0 "$war_goal_transfer_subject_type_name$"
+ dp_transfer_subject_tooltip:1 "#header Почати [Concept('concept_diplomatic_play', 'дипломатичну гру')] $dp_transfer_subject$»#!\n$TOOLTIP_DELIMITER$\n$dp_transfer_subject_desc$" 
+ dp_trans , 'метою війни')] примус цільової [Concept('concept_country', 'країни')] передати вам вибраний [Concept('concept_subject', 'суб'єкт')]." 
+  
+ dp_make_puppet:0 "$war_goal_make_puppet_type_name$" 
+ dp_make_puppet_tooltip:1 "#header Почати [Concept('concept_diplomatic_play', 'дипломатичну гру')] $dp_make_puppet$»#!\n$TOOL
+ dp_make_puppet_desc:0 "Визначає початковий [Concept('concept_war_goal', 'метою війни')] примус цільової [Concept('concept_country', 'країни')] стати вашою [Concept('concept_puppet', 'маріонеткою')]." 
+   
+ dp_make_dominion:0 "$war_goal_make_dominion_type_name$" 
+ dp_make_dominion_tooltip 
+ :1 "#header Почати [Concept('concept_diplomatic_play', 'дипломатичну гру')] «$dp_make_dominion$»#!\n$TOL Визначає початковий [Concept('concept_war_goal', 'метою війни')] примус цільової [Concept('concept_country', 'країни')] стати вашим [Concept('concept_dominion', 'домініоном')]."
+   
+ dp_make_vassal_tooltip:1 "#header Почати [Concept('concept_diplomatic_play', 'дипломатичну гру')] $dp_make_vassal$»#!\n$TOOLTIP_DELIMITER$\n$dp_make_vassal_desc$" 
+ dp_make_vas , 'метою війни')] примус цільової [Concept('concept_country', 'країни')] стати вашим [Concept('concept_vassal', 'васалом')]." 
+   
+ dp_annex_subject:0 "Аннексія суб'єкта" 
+ dp_annex_subject_tooltip 
+ :1 "#header Почати [Concept('concept_diplomatic_play', 'дипломатичну гру')] «$dp_annex_subject$»#!\n$TOOLTIP_DELIMITER$\n$dp початковий [Concept('concept_war_goal', '
+   
+ dp_revolution:0 "$war_goal_revolution_type_name$" 
+ dp_revolution_tooltip 
+ :1 "#header Почати [Concept('concept_diplomatic_play', 'дипломатичну гру')] $dp_revolution$»#!\n$TOOLTIP_DELIMITER$\n$ Визначає початковий [Concept('concept_war_goal', 'метою війни')] придушення [Concept('concept_revolution', 'революції')]." 
+   
+ dp_secession:0 "$war_goal_secession_type_name$" 
+ dp_secession_tooltip:1 "#header Почати [Concept('concept_diplomatic_play', 'дипломатичну гру')] $dp_secession$»#!\n$TOOLTIP_DELIMITER$\n$
+ dp_secession_desc:0 "Визначає початковий [Concept('concept_war_goal', 'метою війни')] придушення руху за [Concept('concept_secession', 'відділення')] і примус повернути всі відкололися від нас [Concept('concept_state', 'області ')]." 
+  
+ dp_unify_germany:0 "Об'єднання Німеччини" 
+ dp_unify_germany_tooltip 
+ :1 "#header Почати [Concept('concept_diplomatic_play', 'дипломатичну гру')] «$dp_unify_germany$»#!\n$TOOLTIP_DELIMITER$\n$TOOLTIP_DELIMITER$ початкової [Concept('concept_war_goal', 'метою війни')] анексію всіх малих німецьких держав." 
+   
+ dp_unify_italy:0 "Об'єднання Італії"
+ dp_unify_italy_tooltip:1 "#header Почати [Concept('concept_diplomatic_play', 'дипломатичну гру')] $dp_unify_italy$»#!\n$TOOLTIP_DELIMITER$\n$dp_unify_italy_desc$" 
+ dp_un , 'метою війни')] анексію всіх малих італійських держав. 
+ 
+ dp_unify_scandinavia:0 "Об'єднати Скандинавію" 
+ dp_unify_scandinavia_tooltip:1 "#header Почати [Concept('concept_diplomatic_play', 'дипломатичну гру')] «$dp_unify_scandinavia$»#!\n$ 
+ TOOLTI початкової [Concept('concept_war_goal', 'метою війни')] анексію всіх малих скандинавських держав."
+   
+ dp_unify_ethiopia_tooltip:1 "#header Почати [Concept('concept_diplomatic_play', 'дипломатичну гру')] $dp_unify_ethiopia$»#!\n$TOOLTIP_DELIMITER$\n$dp_unify_ethiopia_desc 
+ $ , 'метою війни')] анексію всіх малих ефіопських держав. 
+
+ dp_unify_china:0 "Об'єднання Китаю" 
+ dp_unify_china_tooltip 
+ :1 "#header Почати [Concept('concept_diplomatic_play', 'дипломатичну гру')] «$dp_unify_china$»#!\n$TOOLTIP_DELIMITER$\n$TOOLTIP_DELIMITER$\n початкової [Concept('concept_war_goal', 'метою війни')] анексію всіх малих китайських держав." 
+
+ dp_unify_arabia:0 "
+ dp_unify_arabia_tooltip:1 "#header Почати [Concept('concept_diplomatic_play', 'дипломатичну гру')] $dp_unify_arabia$»#!\n$TOOLTIP_DELIMITER$\n$dp_unify_arabia_desc$" 
+ dp_un , 'метою війни')] анексію всіх малих арабських держав. 
+ ARA_tt:1 "[SCOPE.sCountry('target').GetName] може утворити Аравію" 
+
+ dp_unify_india:0 "Об'єднати Індію" 
+ dp_unify_india_tooltip:1 "#header Почати [Concept('concept_diplomatic_play', 'дипломатичну гру $»#!\n$TOOLTIP_DELIMITER$\n$dp_unify_india_desc$" 
+ dp_unify_india_desc:0 "Визначає початковий [Concept('concept_war_goal', 'метою війни')
+
+ dp_unify_indonesia_tooltip:1 "#header Почати [Concept('concept_diplomatic_play', 'дипломатичну гру')] $dp_unify_indonesia$»#!\n$TOOLTIP_DELIMITER$\n$dp_unify_indonesia_desc$ 
+ ' dp_unify_indonesia_desc$' , 'метою війни')] анексію всіх малих індонезійських держав. 
+
+ dp_southern_secession:0 "Відділення Півдня" 
+ dp_southern_secession_tooltip:1 "#header Почати [Concept('concept_diplomatic_play', 'дипломатичну гру')] $dp_southern_secession$»#!\n$TOOLTIP_DE
+ dp_southern_secession_desc:0 "Визначає початковий [Concept('concept_war_goal', 'метою війни')] придушення південного руху за [Concept('concept_secession', 'відділення')] і примус повернути всі відкололися від нас [Concept('concept_state'') області')]." 
+ 
+ dp_humiliation:0 "Приниження" dp_humiliation_tooltip:1 " 
+ #header 
+ Почати [Concept('concept_diplomatic_play', 'дипломатичну гру')] «$dp_humiliation$»#!\n$TOOLTIP_DELIMITER$\n$dp_humiliation_desc$" [Concept('concept_war_goal', 'метою війни')] зниження престижу [Concept('concept_country', 'країни')] із забороною їй виступати проти вас у [Concept('concept_diplomatic_play', ' дипломатичних іграх')] протягом #v 5#! 
+
+ років." dp_leadership_germany:1 "Німецьке лідерство"
+ dp_leadership_germany_desc 
+ :1 "Почати [Concept('concept_diplomatic_play', 'дипломатичну гру')] $dp_leadership_germany$»\n$TOOLTIP_DELIMITER$\n$dp_leadership_germany_tooltip_desc$" ')] усунення вибраної [Concept('concept_country', 'країни')] як [Concept('concept_unification_candidate', 'кандидата')] на [Concept('concept_unification', 'велике об'єднання')] Німеччині." 
+ 
+ dp_leadership_italy:0 "Італійське лідерство" 
+ dp_leadership_italy_desc:1 "Почати [Concept('concept_diplomatic_play', 'дипломатичну гру')
+ dp_leadership_italy_tooltip_desc:0 "Визначає початковий [Concept('concept_war_goal', 'метою війни')] усунення обраної [Concept('concept_country', 'країни')] як [Concept('concept_unification_candidate', 'кандиа ('concept_unification', 'велике об'єднання')] Італії." 
+ 
+ dp_leadership_scandinavia:0 "Скандинавське лідерство" 
+ dp_leadership_scandinavia_desc:1 "Почати [Concept('concept_diplomatic_play', 'дипломатичну гру')] $dp_leadership_scandinavia$»\n$TOOLTIP_DELIMITER
+ dp_leadership_scandinavia_tooltip_desc:0 "Визначає початковий [Concept('concept_war_goal', 'метою війни')] усунення обраної [Concept('concept_country', 'країни')] як [Concept('concept_unification_candidate', 'канди ('concept_unification', 'велике об'єднання')] Скандинавії." 
+ 
+ war_goal_conquer_state_type_name:0 "Завоювання області" 
+ war_goal_conquer_state_type_desc:1 "Завоювання [Concept('concept_state', 'області')] в іншій [Concept('concept_country', 'країни')]." 
+ war_goal_conquer_state:0 "Завоювання області [WAR_GOAL.GetTargetState.GetName]"
+ war_goal_conquer_state_desc:1 "[WAR_GOAL.GetHolder.GetName] захоплює[WAR_GOAL.GetHolder.GetCustom('UA_CL_END_T')] [Concept('concept_state', 'область')] [WAR_GOAL.GetTargetState.GetName GetFlagTextIcon][WAR_GOAL.GetTarget.GetCustom('RU_CL_DP')]" 
+ war_goal_conquer_state_sway_desc:0 "Чтобы попытаться привлечь #tooltippable_name #tooltip:[WAR_GOAL.GetHolder.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [WAR_GOAL.GetHolder.GetFlagTextIcon][WAR_GOAL.GetHolder. GetCustom('RU_CL_VP')]#!#! на ваш бік, змусіть державу [WAR_GOAL.GetWarGoalStakeholder.GetName] передати їм область [WAR_GOAL.GetTargetState.GetName]." 
+ 
+ war_goal_return_state_type_name:0 "Повернення області"
+ war_goal_return_state_type_desc:1 "Примусити країну до повернення [Concept('concept_state', 'області')], що належить нам по праву." 
+ war_goal_return_state:0 "Повернення області [WAR_GOAL.GetTargetState.GetName]" 
+ war_goal_return_state_desc:1 "[WAR_GOAL.GetTarget.GetName] повертає[WAR_GOAL.GetTarget.GetCustom('UA_CL'] [WAR_GOAL.GetTargetState.GetName] [WAR_GOAL.GetHolder.GetFlagTextIcon][WAR_GOAL.GetHolder.GetCustom('UA_CL_DP')]"
+ war_goal_return_state_sway_desc:0 "Щоб спробувати залучити #tooltippable_name #tooltip:[WAR_GOAL.GetHolder.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [WAR_GOAL.GetHolder.GetFlag] змусіть державу [WAR_GOAL.GetWarGoalStakeholder.GetName] повернути їм область [WAR_GOAL.GetTargetState.GetName]." 
+ 
+ war_goal_revoke_claim_type_name:0 "Відмова від претензій" 
+ war_goal_revoke_claim_type_desc:1 "Примусити країну відмовитися від претензій на [Concept('concept_state_region', 'регіон')]." 
+ war_goal_revoke_claim:0 "Відмова від претензій на регіон [WAR_GOAL.GetTargetState.GetStateRegion.GetName]"
+ war_goal_revoke_claim_desc:0 "[WAR_GOAL.GetHolder.GetName] примус [WAR_GOAL.GetHolder.GetCustom('UA_CL_END_T')] #tooltippable_name #tooltip:[WAR_GOAL.GetTARget.GetTooltipTag. GetTarget.GetCustom('RU_CL_VP')]#!#! відмовитися від претензій на регіон [WAR_GOAL.GetTargetState.GetStateRegion.GetName]." 
+ war_goal_revoke_claim_sway_desc:0 "Щоб спробувати залучити #tooltippable_name #tooltip:[WAR_GOAL.GetHolder.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip[WAR_GOAL.GetHolder.GetFlag] змусіть державу [WAR_GOAL.GetWarGoalStakeholder.GetName] відмовитися від претензій на регіон [WAR_GOAL.GetTargetState.GetStateRegion.GetName].
+ 
+ war_goal_revoke_all_claims_type_name:0 "Відмова від усіх претензій" 
+ war_goal_revoke_all_claims_type_desc:0 "Примусити країну відмовитися від усіх [Concept('concept_claim', 'претензій')] на наші регіони." 
+ war_goal_revoke_all_claims:0 "Відмова від [WAR_GOAL.GetTarget.GetAdjectiveNoFormatting|l]їх [Concept('concept_claim', 'претензій')]" 
+ war_goal_revoke_all_claims_desc:0 "ДержаваGem. ', 'претензій')] на території #tooltippable_name #tooltip:[WAR_GOAL.GetHolder.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [WAR_GOAL.GetHolder.GetFlagTextIcon][WAR_GOAL.GetHolder.
+ war_goal_revoke_all_claims_sway_desc:0 "Щоб спробувати залучити #tooltippable_name #tooltip:[WAR_GOAL.GetHolder.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [WAR_GOAL.GetHolder.Get!" змусіть державу [WAR_GOAL.GetWarGoalStakeholder.GetName] відмовитися від [Concept('concept_claim', 'претензій')] на неї." 
+ 
+ war_goal_annex_country_type_name:0 "Аннексія країни" 
+ war_goal_annex_country_type_desc:0 "Повністю анексувати іншу країну." 
+ war_goal_annex_country:0 "Аннексія #tooltippable_name #tooltip:[WAR_GOAL.GetTarget.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [WAR_GOAL.GetTarget.GetFlagTextIcon][WAR_GOAL
+ war_goal_annex_country_desc:0 "[WAR_GOAL.GetHolder.GetName] анексір[WAR_GOAL.GetHolder.GetCustom('UA_CL_END_T')] #tooltippable_name #tooltip:[WAR_GOAL.GetTarget.GetTooltipTag. GetTarget.GetCustom('RU_CL_VP')]#!#!." 
+ war_goal_annex_country_sway_desc:0 "Щоб спробувати залучити #tooltippable_name #tooltip:[WAR_GOAL.GetHolder.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [WAR_GOAL.GetHolder.GetFlagText дозвольте їм анексувати #tooltippable_name #tooltip:[WAR_GOAL.GetTarget.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [WAR_GOAL.GetTarget.GetFlagTextIcon][WAR_GOAL.GetTarget.Get
+
+ war_goal_annex_native_type_name:0 "Аннексія корінних народів" 
+ war_goal_annex_native_type_desc:0 "Повністю анексувати [Concept('concept_decentralized_nation', 'децентралізована держава')]." 
+ war_goal_annex_native:0 "Аннексія #tooltippable_name #tooltip:[WAR_GOAL.GetTarget.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [WAR_GOAL.GetTarget.GetFlagTextIcon][WAR_GOAL." 
+ war_goal_annex_native_desc:0 "[WAR_GOAL.GetHolder.GetName] анексір[WAR_GOAL.GetHolder.GetCustom('UA_CL_END_T')] [Concept('concept_decentralized_nation', 'децентралізована держава')] [WAR_GOAL. 
+
+ war_goal_secession_type_name:0 "Придушення повстання"
+ war_goal_secession:1 "Придушення [WAR_GOAL.GetTarget.GetAdjectiveNoFormatting|l]ого руху за відділення" 
+ war_goal_secession_desc:1 "Повернення всіх відділених від нас [WAR_GOAL.GetTarget.GetAdjectiveNoFormatting| ." 
+ war_goal_secession_sway_desc:2 "Щоб спробувати залучити #tooltippable_name #tooltip:[WAR_GOAL.GetHolder.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [WAR_GOAL.GetHolder.GetFlagText поверніть йому все, що відокремилося від нього [WAR_GOAL.GetTarget.GetAdjectiveNoFormatting|l]ие [Concept('concept_state', 'області')]." 
+ 
+ war_goal_revolution_type_name:0 "Придушення революції"
+ war_goal_revolution_type_desc:0 "Придушити революційний [Concept('concept_political_movement', 'політичний рух')]." 
+ war_goal_revolution:1 "Придушення [WAR_GOAL.GetTarget.GetAdjectiveNoFormatting|l]ого [Concept('concept_revolution', 'революційного руху')]" 
+ war_goal_revolution_desc:2 "Придушення [WAR_GOAL.GetTarget. , 'революції')]" 
+ war_goal_revolution_sway_desc:1 "Щоб спробувати залучити [WAR_GOAL.GetHolder.GetFlagTextIcon][WAR_GOAL.GetHolder.GetCustom('RU_CL_VP')] на ваш бік, допоможіть їм подавити| [Concept('concept_revolution', 'революційний рух')]."
+ 
+ war_goal_contain_threat_type_desc:0 "Примусити країну, що представляє загрозу, до залишення нещодавно завойованих територій." 
+ war_goal_contain_threat:0 "Скорочення території #tooltippable_name #tooltip:[WAR_GOAL.GetTarget.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [WAR_GOAL.GetTarget.GetFlagTextIcon][WAR_GOAL.GetTarget.GetFlagTextIcon][WAR_GOAL.GetTarget.GetTooltipTag]
+ war_goal_contain_threat_desc:0 "[WAR_GOAL.GetHolder.GetName] примус[WAR_GOAL.GetHolder.GetCustom('UA_CL_END_T')] #tooltippable_name #tooltip:[WAR_GOAL.GetTARget.GetToolTip GetTarget.GetCustom('RU_CL_VP')]#!#! дати незалежність всім областям і суб'єктам, завойованим ними за останні #v [GetDefine('NDiplomacy', 'WAR_GOAL_CONTAIN_THREAT_YEARS_SINCE_CONQUEST')]#! років."
+ war_goal_contain_threat_sway_desc:0 "Щоб спробувати залучити #tooltippable_name #tooltip:[WAR_GOAL.GetHolder.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [WAR_GOAL.GetHolder.GetF#[WAR_GOAL.GetHolder.GetF! змусіть державу [WAR_GOAL.GetWarGoalStakeholder.GetName] дати незалежність усім територіям, завойованим ними останнім часом." 
+  
+ war_goal_war_reparations_type_name:0 "Військові репарації" 
+ war_goal_war_reparations_type_desc:1 "Примусити іншу країну до виплати [Concept('concept_war_reparations', 'репарацій')]." 
+ war_goal_war_reparations:2 "[WAR_GOAL.GetTarget.GetAdjectiveNoFormatting|l]є [concept_war_reparations|l]"
+ war_goal_war_reparations_desc:1 "[WAR_GOAL.GetHolder.GetName] примус[WAR_GOAL.GetHolder.GetCustom('UA_CL_END_T')] [WAR_GOAL.GetTarget.GetFlagTextIcon][WAR_GOAL.GetTar' , 'військові репарації')] у вигляді #variable 10%#! від їх податкових зборів протягом 5 років." 
+ war_goal_war_reparations_sway_desc:1 "Щоб спробувати залучити [WAR_GOAL.GetHolder.GetFlagTextIcon][WAR_GOAL.GetHolder.GetCustom('RU_CL_VP']] на ваш бік, змусіть державу [WAR_GOAL.GetWar репарації')] у вигляді #variable 10%#! від податкових зборів протягом 5 років." 
+ 
+ war_goal_unification_leadership_type_name:0 "
+ war_goal_unification_leadership_type_desc:0 "Змусити іншу країну відмовитися від амбіцій щодо об'єднання нації." 
+ war_goal_unification_leadership:0 "#tooltippable_name [WAR_GOAL.GetCountryFormation.GetAdjective]ое#! лидерство" 
+ war_goal_unification_leadership_desc:0 "Вынудить #tooltippable_name #tooltip:[WAR_GOAL.GetTarget.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [WAR_GOAL.GetTarget.GetFlagTextIcon][WAR_GOAL.GetTarget .GetCustom('RU_CL_VP')]#!#! відмовитися від амбіцій щодо об'єднання #tooltippable_name [WAR_GOAL.GetCountryFormation.GetAdjective|l]ой#! нації."
+ war_goal_unification_leadership_sway_desc:0 "Щоб спробувати залучити #tooltippable_name #tooltip:[WAR_GOAL.GetHolder.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [WAR_GOAL.GetHolder.GetF! заставте #tooltippable_name #tooltip:[WAR_GOAL.GetTarget.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [WAR_GOAL.GetTarget.GetFlagTextIcon][WAR_GOAL.GetTarget.GetCustom('RU_CL GetCountryFormation.GetAdjective|l]ой#! нації." 
+ 
+ war_goal_humiliation_type_name:0 "Приниження" 
+ war_goal_humiliation_type_desc:1 "[Concept('concept_humiliation', 'Принизити')] іншу країну."
+ war_goal_humiliation:0 "Приниження #tooltippable_name #tooltip:[WAR_GOAL.GetTarget.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [WAR_GOAL.GetTarget.GetFlagTextIcon][WAR_GOAL.Get. 
+ war_goal_humiliation_desc:0 "Підриває престиж #tooltippable_name #tooltip:[WAR_GOAL.GetTarget.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [WAR_GOAL.GetTarget.GetFlagTextIcon][WAR_GOAL.GetFlagTextIcon][WAR_GOAL.GetTarget.GetFlagTextIcon] #tooltippable_name #tooltip:[WAR_GOAL.GetHolder.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [WAR_GOAL.GetHolder.GetFlagTextIcon][WAR_GOAL.GetHolder.GetCustom('UA_CL_DP')'## ')] протягом 5 років."
+ war_goal_humiliation_sway_desc:0 "Щоб спробувати залучити #tooltippable_name #tooltip:[WAR_GOAL.GetHolder.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [WAR_GOAL.GetHolder.GetFlagText підірвати престиж #tooltippable_name #tooltip:[WAR_GOAL.GetTarget.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [WAR_GOAL.GetTarget.GetFlagTextIcon][WAR_GOAL.GetTarget.GetCustom tooltip:[WAR_GOAL.GetHolder.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [WAR_GOAL.GetHolder.GetFlagTextIcon][WAR_GOAL.GetHolder.GetCustom('RU_CL_DP')]#!#! протягом 5 років.
+  
+ war_goal_open_market_type_name:0 "Відкриття ринків"
+ war_goal_open_market_type_desc:0 "Примусити іншу країну [Concept('concept_open_market', 'відкрити ринки')]." 
+ war_goal_open_market:2 "[Concept('concept_open_market', 'Відкрити')] [WAR_GOAL.GetTarget.GetAdjectiveNoFormatting|l]ий ринок" 
+ war_goal_open_market_desc:1 "[WAR_GOAL.GetHolder.GetName] )] [WAR_GOAL.GetTarget.GetFlagTextIcon][WAR_GOAL.GetTarget.GetCustom('RU_CL_VP')] прийняти закон про вільну торгівлю і [Concept('concept_open_market', 'відкрити')] свої ринки для іноземних товарів."
+ war_goal_open_market_sway_desc:0 "Щоб спробувати залучити #tooltippable_name #tooltip:[WAR_GOAL.GetHolder.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [WAR_GOAL.GetHolder.GetFlagText заставте #tooltippable_name #tooltip:[WAR_GOAL.GetTarget.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [WAR_GOAL.GetTarget.GetFlagTextIcon][WAR_GOAL.GetTarget.GetCustom('RU_CL іноземних товарів. 
+
+ war_goal_regime_change_type_name:0 "Зміна режиму"
+ war_goal_regime_change_type_desc:1 "Примусити іншу країну до зміни [Concept('concept_government', 'уряду')] і зміни [Concept('concept_law', 'законів')] на ближчі до вашого [Concept('concept_government'", ' ]." 
+ war_goal_regime_change:0 "Зміна режиму в [WAR_GOAL.GetTarget.GetFlagTextIcon][WAR_GOAL.GetTarget.GetCustom('UA_CL_PP')]"
+ war_goal_regime_change_desc:1 "[WAR_GOAL.GetHolder.GetName] примус [WAR_GOAL.GetHolder.GetCustom('UA_CL_END_T')] #tooltippable_name #tooltip:[WAR_GOAL.GetTARget.GetTooltipTag. GetTarget.GetCustom('RU_CL_VP')]#!#! до зміни [Concept('concept_government', 'уряду')] та зміни [Concept('concept_law', 'законів')] на ближчі їх [Concept('concept_government ', 'уряду')]."
+ war_goal_regime_change_sway_desc:0 "Спробувати переконати #tooltippable_name #tooltip:[WAR_GOAL.GetHolder.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [WAR_GOAL.GetHolder.GetFlagTextIcon. примусивши #tooltippable_name #tooltip:[WAR_GOAL.GetTarget.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [WAR_GOAL.GetTarget.GetFlagTextIcon][WAR_GOAL.GetTarget.GetCustom('RU_не' уряду')] і зміни [Concept('concept_law', 'законів')] на ближчі їх [Concept('concept_government', 'уряду')]." 
+  
+ war_goal_ban_slavery_type_name:0 "Скасування рабства" 
+ war_goal_ban_slavery_type_desc:0 "
+ war_goal_ban_slavery:0 "Скасування рабства в #tooltippable_name #tooltip:[WAR_GOAL.GetTarget.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [WAR_GOAL.GetTarget.GetFlagTextIcon][WAR_GO_. 
+ war_goal_ban_slavery_desc:0 "[WAR_GOAL.GetHolder.GetName] примус [WAR_GOAL.GetHolder.GetCustom('UA_CL_END_T')] #tooltippable_name #tooltip:[WAR_GOAL.GetTarget.GetTooltipTag], GetTarget.GetCustom('RU_CL_VP')]#!#! заборонити рабство."
+ war_goal_ban_slavery_sway_desc:0 "Щоб спробувати залучити #tooltippable_name #tooltip:[WAR_GOAL.GetHolder.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [WAR_GOAL.GetHolder.GetFlagText заставте #tooltippable_name #tooltip:[WAR_GOAL.GetTarget.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [WAR_GOAL.GetTarget.GetFlagTextIcon][WAR_GOAL.GetTarget.GetCustom('UA_CL 
+  
+ war_goal_take_treaty_port_type_name:0 "Передача договірного порту" 
+ war_goal_take_treaty_port_type_desc:1 "Примусити іншу країну до передачі [Concept('concept_treaty_port', 'договірного порту')], розташованого в її [Concept('і")".
+ war_goal_take_treaty_port:1 "[concept_treaty_port] в регіоні [WAR_GOAL.GetTargetState.GetStateRegion.GetName]" 
+ war_goal_take_treaty_port_desc:1 "[WAR_GOAL.GetHolder.GetName] примушує[. [WAR_GOAL.GetTarget.GetCustom('RU_CL_VP')] передати [Concept('concept_treaty_port', 'договірний порт')] в [Concept('concept_state_region', 'регіоні')] [WAR_GOAL.GetTargetState.GetStateRegion.
+ war_goal_take_treaty_port_sway_desc:1 "Щоб спробувати залучити [WAR_GOAL.GetHolder.GetFlagTextIcon][WAR_GOAL.GetHolder.GetCustom('RU_CL_VP')] на ваш бік, змусіть державу [WAR_GOALGet. ')] в [Concept('concept_state_region', 'регіоні')] [WAR_GOAL.GetTargetState.GetStateRegion.GetName]." 
+  
+ war_goal_independence_type_name:0 "Незалежність" 
+ war_goal_independence_type_desc:0 "Примусити сюзерена дати вашій країні незалежність." 
+ war_goal_independence:0 "Незалежність" 
+ war_goal_independence_desc:0 "[WAR_GOAL.GetHolder.GetName] примус [WAR_GOAL.GetHolder.GetCustom('RU_CL_END_T')] держава [WAR_GOAL.
+ war_goal_independence_sway_desc:0 "Щоб спробувати залучити #tooltippable_name #tooltip:[WAR_GOAL.GetHolder.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [WAR_GOAL.GetHolder.GetFlagText змусіть державу [WAR_GOAL.GetWarGoalStakeholder.GetName] дати їй незалежність." 
+  
+ war_goal_liberate_subject_type_name:0 "Звільнення суб'єкта" 
+ war_goal_liberate_subject_type_desc:1 "Примусити країну дати незалежність одному з її [Concept('concept_subject', 'суб'єктів')]." 
+ war_goal_liberate_subject:0 "Звільнення #tooltippable_name #tooltip:[WAR_GOAL.GetTarget.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [WAR_GOAL.GetTarget.GetFlagTextIcon][WAR_GOAL.GetTarget.Get
+ war_goal_liberate_subject_desc:0 "[WAR_GOAL.GetHolder.GetName] примушує[WAR_GOAL.GetHolder.GetCustom('UA_CL_END_T')] держава [WAR_GOAL.GetWarGoalStakeholder.GetName] дати незалежність #to_GTO_NAME. [WAR_GOAL.GetTarget.GetFlagTextIcon][WAR_GOAL.GetTarget.GetCustom('RU_CL_DP')]#!#!."
+ war_goal_liberate_subject_sway_desc:0 "Щоб спробувати залучити #tooltippable_name #tooltip:[WAR_GOAL.GetHolder.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [WAR_GOAL.GetHolder.GetF#[WAR_GOAL.GetHolder.GetF| змусіть державу [WAR_GOAL.GetWarGoalStakeholder.GetName] дати незалежність #tooltippable_name #tooltip:[WAR_GOAL.GetTarget.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip[WAR_GOAL.GetTarget.GET! ." 
+  
+ war_goal_liberate_country_type_name:0 "Звільнення країни" 
+ war_goal_liberate_country_type_desc:0 "Примусити державу дати незалежність іншому народові." 
+ war_goal_liberate_country:0 "Звільнення країни [WAR_GOAL.
+ war_goal_liberate_country_desc:0 "[WAR_GOAL.GetHolder.GetName] примус[WAR_GOAL.GetHolder.GetCustom('UA_CL_END_T']] #tooltippable_name #tooltip:[WAR_GOAL.GetTARget.GetToolTip GetTarget.GetCustom('RU_CL_VP')]#!#! дати незалежність #tooltippable_name #tooltip:[WAR_GOAL.GetCountryCreation.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip[WET_GOAL.GetCountryCreation.
+ war_goal_liberate_country_sway_desc:0 "Щоб спробувати залучити #tooltippable_name #tooltip:[WAR_GOAL.GetHolder.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip[WAR_GOAL.GetHolder.GetF#[WAR_GOAL.GetHolder.GetF| змусіть державу [WAR_GOAL.GetWarGoalStakeholder.GetName] дати незалежність #tooltippable_name #tooltip:[WAR_GOAL.GetCountryCreation.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [WAR_GOAL.GetCount 
+  
+ war_goal_force_recognition_type_name:0 "Примус до визнання" 
+ war_goal_force_recognition_type_desc:0 "Примусити велику державу визнати невизнану державу." 
+ war_goal_force_recognition:0 "Визнання країни [WAR_GOAL.GetHolder.
+ war_goal_force_recognition_desc:0 "[WAR_GOAL.GetHolder.GetName] примус[WAR_GOAL.GetHolder.GetCustom('UA_CL_END_T')] #tooltippable_name #tooltip:[WAR_GOAL.GetTARget.GetToolTip GetTarget.GetCustom('RU_CL_VP')]#!#! визнати його." 
+ war_goal_force_recognition_sway_desc:0 "Щоб спробувати залучити #tooltippable_name #tooltip:[WAR_GOAL.GetHolder.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip[WAR_GOAL.GetHolder.GetF#[WAR_GOAL.GetHolder.GetF#] змусіть державу [WAR_GOAL.GetWarGoalStakeholder.GetName] визнати її." 
+  
+ war_goal_transfer_subject_type_name:0 "Передача суб'єкта"
+ war_goal_transfer_subject_type_desc:0 "Стати новим сюзереном одного із суб'єктів іншої країни." 
+ war_goal_transfer_subject:0 "Передача #tooltippable_name #tooltip:[WAR_GOAL.GetTarget.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [WAR_GOAL.GetTarget.GetFlagTextIcon][WAR_GOAL_GAL_GAL 
+ ! 0 "Сюзеренітет над #tooltippable_name #tooltip:[WAR_GOAL.GetTarget.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [WAR_GOAL.GetTarget.GetFlagTextIcon][WAR_GOAL.GetTarget.Get [WAR_GOAL.GetHolder.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [WAR_GOAL.GetHolder.GetFlagTextIcon][WAR_GOAL.GetHolder.GetCustom('RU_CL_DP')]#!#!
+ war_goal_transfer_subject_sway_desc:0 "Щоб спробувати залучити #tooltippable_name #tooltip:[WAR_GOAL.GetHolder.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip[WAR_GOAL.GetHolder.GetFlag] змусіть державу [WAR_GOAL.GetWarGoalStakeholder.GetName] передати їй сюзеренітет над #tooltippable_name #tooltip:[WAR_GOAL.GetTarget.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [WAR_GOAL.Get_GAL_GAL. #!." 
+   
+ war_goal_make_puppet_type_name:0 "Перетворення в маріонетку" 
+ war_goal_make_puppet_type_desc:1 "Примусити іншу країну стати [Concept('concept_puppet', 'маріонеткою')]."
+ war_goal_make_puppet:0 "Перетворення #tooltippable_name #tooltip:[WAR_GOAL.GetTarget.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [WAR_GOAL.GetTarget.GetFlagTextIcon][WAR_GO|GetFlagTextIcon][WAR_GO 
+ | "[WAR_GOAL.GetHolder.GetName] примушує[WAR_GOAL.GetHolder.GetCustom('RU_CL_END_T')] [WAR_GOAL.GetTarget.GetFlagTextIcon][WAR_GOAL.GetTarget.GetCustom('RU_CL_VP')] ')]." 
+ war_goal_make_puppet_sway_desc:1 "Щоб спробувати залучити [WAR_GOAL.GetHolder.GetFlagTextIcon][WAR_GOAL.GetHolder.GetCustom('RU_CL_VP')] на ваш бік, змусіть [WAR_GOAL.GetGarTGget
+ 
+ war_goal_make_dominion_type_name:0 "Перетворення на домініон" 
+ war_goal_make_dominion_type_desc:1 "Примусити іншу країну стати [Concept('concept_dominion', 'домініоном')]." 
+ war_goal_make_dominion:0 "Підпорядкування #tooltippable_name #tooltip:[WAR_GOAL.GetTarget.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [WAR_GOAL.GetTarget.GetFlagTextIcon][WAR_GO!" 
+ war_goal_make_dominion_desc:1 "[WAR_GOAL.GetHolder.GetName] примус [WAR_GOAL.GetHolder.GetCustom('UA_CL_END_T')] [WAR_GOAL.GetTarget.GetFlagTextIcon][WAR_GOAL.GetTar , 'домініоном')]."
+ war_goal_make_dominion_sway_desc:1 "Щоб спробувати залучити [WAR_GOAL.GetHolder.GetFlagTextIcon][WAR_GOAL.GetHolder.GetCustom('RU_CL_VP')] на ваш бік, змусіть [WAR_GOAL.GetGarTGget стати вашим [Concept('concept_dominion', 'домініоном')]." 
+  
+ war_goal_make_vassal_type_name:0 "Перетворення у васала" 
+ war_goal_make_vassal_type_desc:1 "Примусити іншу країну стати [Concept('concept_vassal', 'васалом')]." 
+ war_goal_make_vassal:1 "[Concept('concept_vassal', 'Васалізація')] [WAR_GOAL.GetTarget.GetFlagTextIcon][WAR_GOAL.GetTarget.GetCustom('RU_CL_DP')]"
+ war_goal_make_vassal_desc:1 "[WAR_GOAL.GetHolder.GetName] примус [WAR_GOAL.GetHolder.GetCustom('UA_CL_END_T')] [WAR_GOAL.GetTarget.GetFlagTextIcon][WAR_GOAL.GetTar , 'васалом')]." 
+ war_goal_make_vassal_sway_desc:1 "Щоб спробувати залучити [WAR_GOAL.GetHolder.GetFlagTextIcon][WAR_GOAL.GetHolder.GetCustom('RU_CL_VP')] на ваш бік, змусіть [WAR_GOAL.GetTGget_GET_GET стати вашим [Concept('concept_vassal', 'васалом')]." 
+  
+ war_goal_unification_type_name:0 "Об'єднання" 
+ war_goal_unification_type_desc:1 "Спробувати анексувати всі малі країни тією самою культурою і об'єднати націю."
+ war_goal_unification_desc:1 "[WAR_GOAL.GetHolder.GetName] спроби[WAR_GOAL.GetHolder.GetCustom('RU_CL_END_T')]є анексувати всі малі #tooltippable_name [WAR_GOAL.GetCountryFormation.GetAdjective.l" 
+ war_goal_unification_sway_desc:1 "Щоб спробувати залучити #tooltippable_name #tooltip:[WAR_GOAL.GetHolder.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [WAR_GOAL.GetHolder.GetFlagText дозвольте йому анексувати всі малі #tooltippable_name [WAR_GOAL.GetCountryFormation.GetAdjective|l]ие#! країни." 
+  
+
+# === [LocEditor:OrphanedKeys] Keys that do not exist in English ===
+ WARGOAL_NO_INTEREST_MARKER_IN_REGION:0 "#bold #N Держава #variable $COUNTRY_NAME$#! не має [Concept('concept_interest', 'інтересів')] у регіоні #variable $REGION_NAME$#!#!#!" 
+ OWES_FAVOR_TO_TARGET:0 "#N Держава [COUNTRY.GetName] має [Concept('concept_favor', 'зобов'язання')] перед державою [TARGET_COUNTRY.GetName|v]#!" 
+ DIPLO_PLAY_BACKER_PROMISED_INITIATOR_FAVOR:0 "Держава [Country.GetName] може розраховувати на [Concept('concept_favor', 'зобов'язання')], якщо підтримає ініціатора цієї [Concept('concept_diplomatic_play', 'дипломатичної гри') 
+ : Country.GetName] може розраховувати на [Concept('concept_favor', '
+ DIPLO_PLAY_SWAY_OFFER_FAVOR_DESC:0 "Щоб спробувати залучити державу [COUNTRY.GetName] на вашу сторону, погодьтеся взяти на себе [Concept('concept_favor', 'зобов'язання')] перед ними.[ConcatIfNeitherEmpty( '\n$TOOLTIP_ $ERRORS$' )]" 
+ JOIN_DIPLO_PLAY_FACTOR_OFFERED_FAVOR:0 "Запропоновано [Concept('concept_favor', 'зобов'язання')]: #bold $VALUE|+=$#!" 
+ JOIN_DIPLO_PLAY_FACTOR_CURRENT_OFFERED_FAVOR:0 "Протилежна сторона запропонувала [Concept('concept_favor', 'зобов'язання')]: #bold $VALUE|+=$#!" 
+ DIPLO_PLAY_NOT_NOW:0 "Не зараз" 
+ WARGOAL_IG_NOT_RADICAL:0 "#bold #N [INTEREST_GROUP.GetName] — не [Concept('concept_radicalized', 'радикалізована')

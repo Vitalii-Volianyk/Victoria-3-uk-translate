@@ -1,0 +1,13 @@
+﻿	l_russian:
+ label_flat:0 "Рівний"
+ label_flat_desc:0 "[Concept('concept_terrain', 'Тип місцевості')]: $label_flat$"
+ label_elevated:0 "Нерівний"
+ label_elevated_desc:0 "[Concept('concept_terrain', 'Тип місцевості')]: $label_elevated$"
+ label_hazardous:0 "Пересічений"
+ label_hazardous_desc:0 "[Concept('concept_terrain', 'Тип місцевості')]: $label_hazardous$"
+ label_developed:0 "Рівний"
+ label_developed_desc:0 "[Concept('concept_terrain', 'Тип місцевості')]: $label_developed$"
+ label_water:0 "Рівний"
+ label_water_desc:0 "[Concept('concept_terrain', 'Тип місцевості')]: $label_water$"
+ label_forested:0 "Лісистий"
+ label_forested_desc:0 "[Concept('concept_terrain', 'Тип місцевості')]: $label_forested$"

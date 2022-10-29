@@ -1,0 +1,461 @@
+﻿	l_russian:
+ SET_CHARACTER_EFFECT:0 "#V $CHARACTER|v$#! приписується до військової частини #V $COMMAND$#!."
+ SET_CHARACTER_NONE_EFFECT:0 "Персонаж з військової частини #V $COMMAND$#! не має призначення."
+
+ ADD_TREASURY_EFFECT_POSITIVE:1 "Держава отримує @money!$VALUE|+=$"
+ ADD_TREASURY_EFFECT_NEGATIVE:1 "Держава втрачає @money!$VALUE|+=$"
+ ADD_TREASURY_EFFECT_FIRST_POSITIVE:0 "[COUNTRY.GetNameNoFlag] отримає[COUNTRY.GetCustom('RU_CL_END_T')] @money!$VALUE|+=$"
+ ADD_TREASURY_EFFECT_FIRST_NEGATIVE:0 "[COUNTRY.GetNameNoFlag] втрати[COUNTRY.GetCustom('RU_CL_END_T')] @money!$VALUE|+=$"
+ ADD_TREASURY_EFFECT_THIRD_POSITIVE:0 "[COUNTRY.GetName] отримує @money!$VALUE|+=$"
+ ADD_TREASURY_EFFECT_THIRD_NEGATIVE:0 "[COUNTRY.GetName] втрачає @money!$VALUE|+=$"
+
+ SET_COUNTRY_ARMY_SP_TARGET:1 "Встановлено цільову кількість очок сили (@army_SP!) #variable [COUNTRY.GetAdjectiveNoFormatting|l]#!ой армії: #variable $VALUE$#!."
+ SET_COUNTRY_NAVY_SP_TARGET:1 "Встановлено цільову кількість очок сили (@navy_SP!) #variable [COUNTRY.GetAdjectiveNoFormatting|l]#!ого флоту: #variable $VALUE$#!."
+ SET_RELATIONS:1 "Встановлено рівень відношення #variable [COUNTRY.GetAdjectiveNoFormatting|l]ого#! держави до #variable #tooltip:[TARGET_COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [TARGET_COUNTRY.GetCustom #variable $VALUE|0$#!."
+ SET_TENSION:1 "Встановлено рівень [Concept('concept_tension', 'напруги')] у відносинах держав [COUNTRY.GetName] та [TARGET_COUNTRY.GetName]: #variable $VALUE|0$#!."
+ SET_STRATEGY:0 "[COUNTRY.GetName] приймає стратегію «#variable [AIStrategy.GetName]»#!."
+ SET_DIPLOMATS_EXPELLED:0 "[COUNTRY.GetName] виганяє #tooltippable_name [TARGET_COUNTRY.GetAdjective|l]їх#! дипломатів. Поліпшення відносин неможливе протягом #b 5 років#!."
+ SET_SECRET_GOAL:0 "[COUNTRY.GetName] ставить таємну мету «#variable $SECRET_GOAL$#!» щодо #tooltippable_name #tooltip:[TARGET_COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [TARGET_COUNTRY.GetFlagTextIcon][TARGET_COUNTRY.GetCustom('RU_CL_RP')]#!#!."
+ SET_MUTUAL_SECRET_GOAL:0 "[COUNTRY.GetName] та [TARGET_COUNTRY.GetName] ставлять таємну мету «#variable $SECRET_GOAL$#!» щодо один одного."
+ SET_TAX_LEVEL:2 "Встановлено рівень [Concept('concept_taxes','податків')] у #tooltippable_name #tooltip:[COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [COUNTRY.GetFlagTextIcon][COUNT #!: #variable $TARIFF_LEVEL$#!."
+ SET_TAX_LEVEL_FIRST:0 "Встановлено рівень [Concept('concept_taxes','податків')] в #tooltippable_name #tooltip:[COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip[COUNTRY.GetFlagTextIcon #!: #variable $TARIFF_LEVEL$#!."
+ SET_TAX_LEVEL_THIRD:0 "Встановлено рівень [Concept('concept_taxes','податків')] у #tooltippable_name #tooltip:[COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip[COUNTRY.GetFlagTextIcon #!: #variable $TARIFF_LEVEL$#!."
+ SET_TARIFF_FOCUS:0 "[COUNTRY.GetName] зосередив[COUNTRY.GetCustom('UA_CL_END_FEM')] [Concept('concept_tariffs','мита')] на #tooltippable_name #tooltip:[Goods.GetTooltipTag],DATA GetTextIcon][Goods.GetCustom('RU_GL_PP')|l]#!#! на #variable $TAX_FOCUS$#!"
+ SET_GOVERNMENT_WAGE_LEVEL:0 "Встановлено рівень [Concept('concept_government_wage', 'державних зарплат')] в #tooltippable_name #tooltip:[COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [COUNT !#!: #v $WAGE_LEVEL$#!."
+ SET_MILITARY_WAGE_LEVEL:0 "Встановлено рівень [Concept('concept_military_wage', 'військових зарплат')] в #tooltippable_name #tooltip:[COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [COUNTRY.Get !#!: #v $WAGE_LEVEL$#!."
+ ADD_CHANGE_RELATIONS_PROGRESS:1 "#variable [COUNTRY.GetName]#! змінює рівень відносин з #tooltippable_name #tooltip:[TARGET_COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [TARGET_COUNTRY.GetF! на #variable $VALUE$#!."
+ ADD_TECHNOLOGY_PROGRESS:0 "[COUNTRY.GetName] отримує $VALUE|+D$ од. розвитку технології «[TECHNOLOGY.GetName]»."
+ ADD_TECHNOLOGY_PROGRESS_NEG:0 "[COUNTRY.GetName] втрачає $VALUE|+$ од. розвитку технології «[TECHNOLOGY.GetName]»."
+ ADD_TECHNOLOGY_PROGRESS_FIRST:0 "[COUNTRY.GetNameNoFlag] отримує $VALUE|+D$ од. розвитку технології «[TECHNOLOGY.GetName]»"
+ ADD_TECHNOLOGY_PROGRESS_FIRST_NEG:0 "[COUNTRY.GetNameNoFlag] втрачає $VALUE|+$ од. розвитку технології «[TECHNOLOGY.GetName]»"
+ SET_ARMY_STOCKPILE:1 "Встановлено розмір накопичень #variable [COUNTRY.GetAdjectiveNoFormatting|l]ой#! армії: $VALUE|+$ компл."
+ SET_NAVY_STOCKPILE:1 "Встановлено розмір накопичень #variable [COUNTRY.GetAdjectiveNoFormatting|l]ого#! флоту: $VALUE|+$ компл."
+ SET_STOCKPILE:0 "$SET_ARMY_STOCKPILE$"
+ ACTIVATE_LAW:0 "[COUNTRY.GetName] приймає закон "[Law.GetFullNameWithStatus]"."
+ SET_INSTITUTION_INVESTMENT_LEVEL:0 "[COUNTRY.GetName] виводить інвестиції інституту «[INSTITUTION.GetName]» на рівень $LEVEL|v$."
+ CHANGE_INSTITUTION_INVESTMENT_LEVEL:0 "[Country.GetName] змінює рівень інвестицій інституту «[Institution.GetName]» на $INVESTMENT|v$."
+ ACTIVATE_LAW_WITH_INVESTMENT_LEVEL:0 "[COUNTRY.GetName] приймає закон «[Law.GetFullNameWithStatus]» з рівнем інвестицій $LEVEL|v$."
+ DEACTIVATE_LAW:0 "[COUNTRY.GetName] скасовує закон «[Law.GetFullNameWithStatus]»."
+ CALL_ELECTION:0 "[COUNTRY.GetName] проведе #variable вибори через $MONTHS$ міс.#!"
+ SET_INTEREST_GROUP_NAME:0 "[IG.GetName] тепер називається #variable «$IG_NAME$»#!."
+ SET_AS_INTEREST_GROUP_LEADER:0 "[Character.GetInterestGroup.GetName|v] отримають лідера [Character.GetFullName|v]."
+ REMOVE_AS_INTEREST_GROUP_LEADER:0 "[Character.GetInterestGroup.GetName|v] втратить лідера [Character.GetFullName|v]."
+ DO_REVOLUTION_CLEANUP:0 "Громадянська війна завершується."
+ 
+ ADD_IDEOLOGY:0 "[InterestGroup.GetName] отримує ідеологію «[Ideology.GetName]»."
+ REMOVE_IDEOLOGY:0 "[InterestGroup.GetName] втрачає ідеологію «[Ideology.GetName]»."
+ SET_IDEOLOGY:0 "[Character.GetFullName|v] прийме ідеологію «[Ideology.GetName]»."
+ SET_IDEOLOGY_FIRST:0 "[Character.GetFullName|v] прийме ідеологію «[Ideology.GetName]»."
+ SET_IDEOLOGY_THIRD:0 "[Character.GetFullName|v] прийме ідеологію «[Ideology.GetName]»."
+ 
+ CHANGE_RELATIONS:2 "#variable [COUNTRY.GetName]#! покращує [Concept('concept_relations', 'відносини')] з #variable #tooltippable_name #tooltip:[TARGET_COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_COOLTA[TAOLTIP] .GetCustom('RU_CL_TP')]#!#!#! на $VALUE|0+$."
+ CHANGE_RELATIONS_NEG:2 "#variable [COUNTRY.GetName]#! погіршує [Concept('concept_relations', 'відносини')] з #variable #tooltippable_name #tooltip:[TARGET_COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME .GetCustom('RU_CL_TP')]#!#!#! на $VALUE|0-$."
+ CHANGE_RELATIONS_FIRST:0 "#variable [COUNTRY.GetName]#! покращує [Concept('concept_relations', 'відносини')] з #variable #tooltippable_name #tooltip:[TARGET_COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME .GetCustom('RU_CL_TP')]#!#!#! на $VALUE|0+$."
+ CHANGE_RELATIONS_FIRST_NEG:0 "#variable [COUNTRY.GetName]#! погіршує [Concept('concept_relations', 'відносини')] з #variable #tooltippable_name #tooltip:[TARGET_COUNTRY.GetTooltipTag],DATA_COTTRY .GetCustom('RU_CL_TP')]#!#!#! на $VALUE|0-$."
+ CHANGE_RELATIONS_THIRD:0 "#variable [COUNTRY.GetName]#! покращує [Concept('concept_relations', 'відносини')] з #variable #tooltippable_name #tooltip:[TARGET_COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME .GetCustom('RU_CL_TP')]#!#!#! на $VALUE|0+$."
+ CHANGE_RELATIONS_THIRD_NEG:0 "#variable [COUNTRY.GetName]#! погіршує [Concept('concept_relations', 'відносини')] з #variable #tooltippable_name #tooltip:[TARGET_COUNTRY.GetTooltipTag],DATA_COTTRY .GetCustom('RU_CL_TP')]#!#!#! на $VALUE|0-$."
+ 
+ CHANGE_TENSION:1 "[Concept('concept_tension', '$concept_tensions$')] між #tooltippable_name #tooltip:[COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [COUNTRY.GetFlagTextIcon][COUNTRY. #! і #tooltippable_name #tooltip:[TARGET_COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [TARGET_COUNTRY.GetFlagTextIcon][TARGET_COUNTRY.GetCustom('RU_CL_TP')]#!#!
+ CHANGE_TENSION_NEG:1 "[Concept('concept_tension', '$concept_tensions$')] між #tooltippable_name #tooltip:[COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [COUNTRY.GetFlagTextIcon][COUNTRY.GetFlagTextIcon][ #! і #tooltippable_name #tooltip:[TARGET_COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [TARGET_COUNTRY.GetFlagTextIcon][TARGET_COUNTRY.GetCustom('RU_CL_TP')]#!#!
+ 
+ SET_OWES_OBLIGATION_TO:2 "Має [Concept('concept_obligation', 'зобов'язання')] перед #tooltippable_name #tooltip:[TARGET_COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [TARGET_COUNTRY.TARGET_COUNTRY. !"
+ SET_OWES_OBLIGATION_TO_NEG:2 "Більше немає [Concept('concept_obligation', 'зобов'язань')] перед [TARGET_COUNTRY.GetFlagTextIcon][TARGET_COUNTRY.GetCustom('RU_CL_TP')]"
+ SET_OWES_OBLIGATION_TO_FIRST:0 "[COUNTRY.GetNameNoFlag] має[COUNTRY.GetCustom('UA_CL_END_T')] [Concept('concept_obligation', 'зобов'язання')] перед [TARGET_COUNTRY.GetFlagTextIcon][TARG
+ SET_OWES_OBLIGATION_TO_FIRST_NEG:0 "У #tooltippable_name #tooltip:[COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [COUNTRY.GetCustom('RU_CL_RP')]#!#! більше немає [Concept('concept" .GetFlagTextIcon][TARGET_COUNTRY.GetCustom('UA_CL_TP')]"
+ SET_OWES_OBLIGATION_TO_THIRD:0 "[COUNTRY.GetName] має[COUNTRY.GetCustom('UA_CL_END_T')] [Concept('concept_obligation', 'зобов'язання')] перед #tooltippable_name #tooltip:[TARGET_COUNTRY.GetTool GetFlagTextIcon][TARGET_COUNTRY.GetCustom('RU_CL_TP')]#!#!"
+ SET_OWES_OBLIGATION_TO_THIRD_NEG:0 "У #tooltippable_name #tooltip:[COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [COUNTRY.GetFlagTextIcon][COUNTRY.GetCustom('UA_CL_RP') )] перед #tooltippable_name #tooltip:[TARGET_COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [TARGET_COUNTRY.GetFlagTextIcon][TARGET_COUNTRY.GetCustom('RU_CL_TP')]#!#!"
+ 
+ RECALCULATE_LAWS:0 "[COUNTRY.GetName] перегляне свої [Concept('concept_law', 'закони')]."
+ RECALCULATE_LAWS_NEG:0 "[COUNTRY.GetName] НЕ переглядатиме [Concept('concept_law', 'закони')]."
+ VALIDATE_SUBSIDIES:0 "[COUNTRY.GetName] гарантує законність своїх промислових субсидій."
+ VALIDATE_SUBSIDIES_NEG:0 "[COUNTRY.GetName] НЕ гарантує законності своїх промислових субсидій."
+ RECALCULATE_POP_IG_SUPPORT:0 "[Concept('concept_pop', '$concept_pops$')] в #tooltippable_name #tooltip:[COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip[COUNTRY.GetFlagText #! переглянуть підтримку своєї [Concept('concept_interest_group', 'зацікавленої групи')]."
+ RECALCULATE_POP_IG_SUPPORT_NEG:0 "[Concept('concept_pop', '$concept_pops$')] в #tooltippable_name #tooltip:[COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [COUNTRY.GetFL" #! НЕ переглядатимуть підтримку своєї [Concept('concept_interest_group', 'зацікавленої групи')]."
+ 
+ SET_COUNTRY_TYPE:0 "[COUNTRY.GetName] тепер #variable $COUNTRY_TYPE$#!."
+ SET_COUNTRY_TYPE_FIRST:0 "[COUNTRY.GetNameNoFlag] тепер #variable $COUNTRY_TYPE$#!."
+ SET_COUNTRY_TYPE_THIRD:0 "[COUNTRY.GetName] тепер #variable $COUNTRY_TYPE$#!."
+ 
+ SET_CAPITAL:1 "#variable [COUNTRY.GetAdjectiveNoFormatting]ая#! [Concept('concept_capital_state', 'столиця')] переміщується в регіон #variable $STATE_REGION_NAME$#!"
+ SET_CAPITAL_FIRST:0 "#variable [COUNTRY.GetAdjectiveNoFormatting]ая#! [Concept('concept_capital_state', 'столиця')] переміщується в регіон #variable $STATE_REGION_NAME$#!."
+ SET_CAPITAL_THIRD:0 "#variable [COUNTRY.GetAdjectiveNoFormatting]ая#! [Concept('concept_capital_state', 'столиця')] переміщується в регіон #variable $STATE_REGION_NAME$#!."
+ 
+ SET_MARKET_CAPITAL:1 "#variable [COUNTRY.GetAdjectiveNoFormatting]ая#! [concept_market_capital|l] переміщується в регіон #variable $STATE_REGION_NAME$#!."
+ SET_MARKET_CAPITAL_FIRST:0 "#variable [COUNTRY.GetAdjectiveNoFormatting]ая#! [concept_market_capital|l] переміщується в регіон #variable $STATE_REGION_NAME$#!."
+ SET_MARKET_CAPITAL_THIRD:0 "#variable [COUNTRY.GetAdjectiveNoFormatting]ая#! [concept_market_capital|l] переміщується в регіон #variable $STATE_REGION_NAME$#!."
+ 
+ CLEAR_DEBT:1 "Фінансова заборгованість #variable [COUNTRY.GetAdjectiveNoFormatting|l]ого#! держави покрита"
+ CLEAR_DEBT_NEG:1 "Фінансова заборгованість #variable [COUNTRY.GetAdjectiveNoFormatting|l]ого#! держави НЕ покрита"
+ CLEAR_SCALED_DEBT:1 "Фінансова заборгованість #variable [COUNTRY.GetAdjectiveNoFormatting|l]ого#! держави покрита завдяки показнику ВВП #variable $VALUE$#!"
+ 
+ TAKE_ON_SCALED_DEBT:1 "Приймає на себе #tooltippable_name [TARGET_COUNTRY.GetAdjective|l]ий#! [Concept('concept_credit','борг")] у розмірі @money!#variable $VALUE|vD$#!"
+ TAKE_ON_SCALED_DEBT_FIRST:0 "[COUNTRY.GetNameNoFlag] приймає[COUNTRY.GetCustom('RU_CL_END_T')] на себе #tooltippable_name [TARGET_COUNTRY.GetAdjective|l]ий#! [Concept('concept_credit','дол" !#variable $VALUE|vD$#!"
+ TAKE_ON_SCALED_DEBT_THIRD:0 "[COUNTRY.GetName] приймає[COUNTRY.GetCustom('RU_CL_END_T')] на себе #tooltippable_name [TARGET_COUNTRY.GetAdjective|l]ий#! [Concept('concept_credit','борг") !#variable $VALUE|vD$#!"
+ 
+ CREATE_TRADE_ROUTE:1 "[COUNTRY.GetName] створює торговий шлях $TRADE_DIR$а $LEVEL|v0$ рівня для транспортування #tooltippable_name #tooltip:[Goods.GetTooltipTag],DATA_GOODS_NAME_TOOLTIP,GoodsTooltip [GoodsToolGood] ('RU_GL_RP')|l]#!#! на #tooltippable_name [TARGET_MARKET.GetName|l]ий#! ринок."
+ LOCK_TRADE_ROUTE:0 "Шлях "[TradeRoute.GetName]" заблокований на $DURATION$."
+ 
+ ADD_PRIMARY_CULTURE:0 "#tooltippable_name #tooltip:[TARGET_CULTURE.GetTooltipTag],DATA_CULTURE_NAME_TOOLTIP,CultureTooltip [TARGET_CULTURE.GetCustom('UA_CUL_ADJ')]яна#!#! #tooltip:[COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [COUNTRY.GetFlagTextIcon][COUNTRY.GetCustom('RU_CL_RP')]#!#!."
+ ADD_PRIMARY_CULTURE_FIRST:0 "#tooltippable_name #tooltip:[TARGET_CULTURE.GetTooltipTag],DATA_CULTURE_NAME_TOOLTIP,CultureTooltip [TARGET_CULTURE.GetCustom('ur_c_c_c_s_cl_adj')]на #! #tooltip:[Country.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [COUNTRY.GetCustom('RU_CL_PP')]#!#!."
+ ADD_PRIMARY_CULTURE_THIRD:0 "#tooltippable_name #tooltip:[TARGET_CULTURE.GetTooltipTag],DATA_CULTURE_NAME_TOOLTIP,CultureTooltip [TARGET_CULTURE.GetCustom('ru_Cul_ADJ')]яна#!# #tooltip:[COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [COUNTRY.GetFlagTextIcon][COUNTRY.GetCustom('RU_CL_PP')]#!#!."
+ REMOVE_PRIMARY_CULTURE:0 "#tooltippable_name #tooltip:[TARGET_CULTURE.GetTooltipTag],DATA_CULTURE_NAME_TOOLTIP,CultureTooltip [TARGET_CULTURE.GetCustom('UA_CUL_ADJ')]я#!#!#! tooltippable_name #tooltip:[COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [COUNTRY.GetFlagTextIcon][COUNTRY.GetCustom('RU_CL_RP')]#!#!."
+ REMOVE_PRIMARY_CULTURE_FIRST:0 "#tooltippable_name #tooltip:[TARGET_CULTURE.GetTooltipTag],DATA_CULTURE_NAME_TOOLTIP,CultureTooltip [TARGET_CULTURE.GetCustom"#'con'#'con' #'con'#'con'! #tooltippable_name #tooltip:[Country.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [COUNTRY.GetCustom('UA_CL_PP')]#!#!."
+ REMOVE_PRIMARY_CULTURE_THIRD:0 "#tooltippable_name #tooltip:[TARGET_CULTURE.GetTooltipTag],DATA_CULTURE_NAME_TOOLTIP,CultureTooltip [TARGET_CULTURE.GetCustom"#'con'#'con' #'con #tooltippable_name #tooltip:[COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [COUNTRY.GetFlagTextIcon][COUNTRY.GetCustom('RU_CL_PP')]#!#!."
+ 
+ SET_STATE_RELIGION:1 "[TARGET_RELIGION.GetName] стає державною релігією #tooltippable_name #tooltip:[COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [COUNTRY.GetFlagTextIcon][COUNTRY."
+ SET_STATE_RELIGION_FIRST:0 "[TARGET_RELIGION.GetName] стає [Concept('concept_state_religion', 'державною релігією')] #tooltippable_name #tooltip:[Country.GetTooltipTag],DATA_COUNTRY_NAME_TOOL !."
+ SET_STATE_RELIGION_THIRD:0 "[TARGET_RELIGION.GetName] стає [Concept('concept_state_religion', 'державною релігією')] #tooltippable_name #tooltip:[COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TO_TORY. )]#!#!."
+ 
+ ADD_CULTURAL_OBSESSION:0 "[CULTURE.GetName] відчувають потяг до #tooltippable_name #tooltip:[GOODS.GetTooltipTag],DATA_GOODS_NAME_TOOLTIP,GoodsTooltip [GOODS.GetTextIcon][GOODS.GetCustom
+ ADD_CULTURAL_OBSESSION_FIRST:0 "[CULTURE.GetName] у #tooltippable_name #tooltip:[COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [COUNTRY.GetCustom('RU_CL_RP')]#!#![! ] до #tooltippable_name #tooltip:[GOODS.GetTooltipTag],DATA_GOODS_NAME_TOOLTIP,GoodsTooltip [GOODS.GetTextIcon][GOODS.GetCustom('RU_GL_DP')|l]#!#!."
+ ADD_CULTURAL_OBSESSION_THIRD:0 "#tooltippable_name #tooltip:[CULTURE.GetTooltipTag],DATA_CULTURE_NAME_TOOLTIP,CultureTooltip [CULTURE. [COUNTRY.GetFlagTextIcon][COUNTRY.GetCustom('RU_CL_RP')]#!#![Concept('concept_obsession', 'зазнають тяги')] до #tooltippable_name #tooltip:[GOODS.GetTooltipTag],DATA_GOODS_NAME_TO GetTextIcon][GOODS.GetCustom('RU_GL_DP')|l]#!#!."
+ REMOVE_CULTURAL_OBSESSION:0 "[CULTURE.GetName] більше не відчувають тягу до #tooltippable_name #tooltip:[GOODS.GetTooltipTag],DATA_GOODS_NAME_TOOLTIP,GoodsTooltip [GOODS.GetTextIcon][GOODS.| "
+ REMOVE_CULTURAL_OBSESSION_FIRST:0 "#tooltippable_name #tooltip:[CULTURE.GetTooltipTag],DATA_CULTURE_NAME_TOOLTIP,CultureTooltip [CULTURE.GetCustom('UA_CUL_ADJ')]є#!#! .GetCustom('RU_CL_RP')]#!#! більше не [Concept('concept_obsession', 'зазнають тягу')] до #tooltippable_name #tooltip:[GOODS.GetTooltipTag],DATA_GOODS_NAME_TOOLTIP,GoodsTooltip [GOODS. GetCustom('RU_GL_DP')|l]#!#!."
+ REMOVE_CULTURAL_OBSESSION_THIRD:0 "#tooltippable_name #tooltip:[CULTURE.GetTooltipTag],DATA_CULTURE_NAME_TOOLTIP,CultureTooltip [CULTURE.GetCustom('UA_CUL_ADJ')]є#!#! .GetFlagTextIcon][COUNTRY.GetCustom('RU_CL_RP')]#!#! більше не [Concept('concept_obsession', 'зазнають тяги')] до #tooltippable_name #tooltip:[GOODS.GetTooltipTag],DATA_GOODS_NAME_TO GetTextIcon][GOODS.GetCustom('RU_GL_DP')|l]#!#!."
+ 
+ CREATE_RANDOM_CHARACTER_NAME:0 "Персонаж"
+ 
+ CREATE_CHARACTER:0 "$CHARACTER_NAME$ з'являється в #tooltippable_name #tooltip:[COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [COUNTRY.GetFlagTextIcon][COUNTRY.GetCustom('RU_CL_PP')]#
+ CREATE_CHARACTER_FIRST:0 "$CHARACTER_NAME$ з'являється в #tooltippable_name #tooltip:[COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [COUNTRY.GetCustom('RU_CL_PP')]#!#!."
+ CREATE_CHARACTER_THIRD:0 "$CHARACTER_NAME$ з'являється в #tooltippable_name #tooltip:[COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [COUNTRY.GetFlagTextIcon][COUNTRY.GetCustom('RU_CL_PP
+ 
+ ADD_INNOVATION:0 "#variable [COUNTRY.GetAdjectiveNoFormatting]#!ие [Concept('concept_innovation', 'інновації')] збільшено на $VALUE|+$"
+ ADD_INNOVATION_NEG:0 "#variable [COUNTRY.GetAdjectiveNoFormatting]#!ие [Concept('concept_innovation', 'інновації')] знижено на $VALUE|+$"
+ 
+ ADD_INVESTMENT_POOL:1 "#variable [COUNTRY.GetAdjectiveNoFormatting]ий#! [concept_investment_pool|l] збільшено на @money!$VALUE|D+$"
+ ADD_INVESTMENT_POOL_FIRST:0 "#variable [COUNTRY.GetAdjectiveNoFormatting]ий#! [concept_investment_pool|l] збільшено на @money!$VALUE|D+$."
+ ADD_INVESTMENT_POOL_THIRD:0 "#variable [COUNTRY.GetAdjective]ий#! [concept_investment_pool|l] збільшено на @money!$VALUE|D+$."
+ 
+ ADD_TECHNOLOGY_RESEARCHED:0 "#variable [COUNTRY.GetName]#! отримує[COUNTRY.GetCustom('RU_CL_END_T')] технологію #variable «[TECHNOLOGY.GetName]»#!."
+ ADD_TECHNOLOGY_RESEARCHED_FIRST:0 "[COUNTRY.GetNameNoFlag] отримує[COUNTRY.GetCustom('RU_CL_END_T')] технологію #variable «[TECHNOLOGY.GetName]»#!."
+ ADD_TECHNOLOGY_RESEARCHED_THIRD:0 "#variable [COUNTRY.GetName]#! отримує[COUNTRY.GetCustom('RU_CL_END_T')] технологію #variable «[TECHNOLOGY.GetName]»#!."
+ 
+ ADD_ERA_RESEARCHED:0 "#variable [COUNTRY.GetName]#! тепер володіє всіма технологіями епохи #variable [ERA.GetName]#!."
+ ADD_ERA_RESEARCHED_FIRST:0 "#variable [COUNTRY.GetNameNoFlag]#! тепер володіє[COUNTRY.GetCustom('RU_CL_END_T')] всіма технологіями епохи #variable [ERA.GetName]#!."
+ ADD_ERA_RESEARCHED_THIRD:0 "#variable [COUNTRY.GetName]#! тепер володіє[COUNTRY.GetCustom('RU_CL_END_T')] всіма технологіями епохи #variable [ERA.GetName]#!."
+ 
+ CREATE_DIPLOMATIC_PACT:1 "[DIPLOMATIC_ACTION_TYPE.GetEffectDescriptionNoContext( COUNTRY.Self, TARGET_COUNTRY.Self )]"
+ CREATE_DIPLOMATIC_PACT_FIRST:1 "[DIPLOMATIC_ACTION_TYPE.GetEffectDescriptionFirst( COUNTRY.Self, TARGET_COUNTRY.Self )]"
+ CREATE_DIPLOMATIC_PACT_THIRD:1 "[DIPLOMATIC_ACTION_TYPE.GetEffectDescriptionThird( COUNTRY.Self, TARGET_COUNTRY.Self )]"
+ 
+ CHANGE_INFAMY:0 "[concept_infamy] збільшується на #variable $VALUE$#!."
+ CHANGE_INFAMY_NEG:0 "[concept_infamy] зменшується на #variable $VALUE$#!."
+ CHANGE_INFAMY_FIRST:0 "[COUNTRY.GetAdjectiveNoFormatting]ая [Concept('concept_infamy', 'дурна слава')] збільшується на #variable $VALUE$#!."
+ CHANGE_INFAMY_FIRST_NEG:0 "[COUNTRY.GetAdjectiveNoFormatting]ая [Concept('concept_infamy', 'дурна слава')] зменшується на #variable $VALUE$#!."
+ CHANGE_INFAMY_THIRD:0 "#tooltippable_name [COUNTRY.GetAdjective]ая#! [Concept('concept_infamy', 'дурна слава')] збільшується на #variable $VALUE$#!."
+ CHANGE_INFAMY_THIRD_NEG:0 "#tooltippable_name [COUNTRY.GetAdjective]ая#! [Concept('concept_infamy', 'дурна слава')] зменшується на #variable $VALUE$#!."
+ 
+ CREATE_INCIDENT:0 "$DESC$"
+ CREATE_INCIDENT_FIRST:0 "$DESC$"
+ CREATE_INCIDENT_THIRD:0 "$DESC$"
+ 
+ PLAY_AS:0 "Активною державою гравця стає [TARGET_COUNTRY.GetName], а не [COUNTRY.GetName]."
+ PLAY_AS_FIRST:0 "Активною державою гравця стає #tooltippable_name #tooltip:[TARGET_COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [TARGET_COUNTRY.GetFlagTextIcon][TARGET_COUNTRY.GetCustom[TARGET_COUNTRY.GetCustom. "
+ PLAY_AS_THIRD:0 "Активною державою гравця стає #tooltippable_name #tooltip:[TARGET_COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [TARGET_COUNTRY.GetFlagTextIcon][TARGET_COUNTRY.GetCustom[TARGET_COUNTRY.GetCustom. "
+
+ REMOVE_INITIATOR_BACKERS:0 "[COUNTRY.GetName] виходить із дипломатичної гри «[TARGET_DIPLOMATIC_PLAY.GetName]»."
+ REMOVE_TARGET_BACKERS:0 "[COUNTRY.GetName] виходить із дипломатичної гри «[TARGET_DIPLOMATIC_PLAY.GetName]»."
+ ADD_INITIATOR_BACKERS:0 "[COUNTRY.GetName] приєднується до дипломатичної гри "[TARGET_DIPLOMATIC_PLAY.GetName]" на стороні ініціатора."
+ ADD_TARGET_BACKERS:0 "[COUNTRY.GetName] приєднується до дипломатичної гри "[TARGET_DIPLOMATIC_PLAY.GetName]" на стороні мети."
+ ADD_ESCALATION:0 "Ескалація дипломатичної гри "[DIPLOMATIC_PLAY.GetName]" зросла на $VALUE|-$."
+ ADD_ESCALATION_NEG:0 "Ескалація дипломатичної гри «[DIPLOMATIC_PLAY.GetName]» знизилася на $VALUE|-$."
+ END_PLAY:0 "[DIPLOMATIC_PLAY.GetName] завершується."
+ END_PLAY_NEG:0 "[DIPLOMATIC_PLAY.GetName] продовжується."
+ SET_KEY:0 "[DIPLOMATIC_PLAY.GetName] тепер називається #variable «$KEY$»#!."
+ ADD_DIPLOMATIC_PLAY_WAR_SUPPORT:1 "[Country.GetAdjectiveNoFormatting]ая [Concept('concept_war_support', 'войовничість')] у дипломатичній грі «[TARGET_DIPLOMATIC_PLAY.GetName]» підвищується на $VALUE|+$"
+ ADD_DIPLOMATIC_PLAY_WAR_SUPPORT_NEG:1 "[Country.GetAdjectiveNoFormatting]ая [Concept('concept_war_support', 'войовничість')] у дипломатичній грі «[TARGET_DIPLOMATIC_PLAY.GetName]» знижується на $VALUE|+$"
+ ADD_WAR_WAR_SUPPORT:1 "[Country.GetAdjectiveNoFormatting]ая [Concept('concept_war_support', 'войовничість')] на війні «[War.GetName]» підвищується на $VALUE|+$."
+ ADD_WAR_WAR_SUPPORT_NEG:1 "[Country.GetAdjectiveNoFormatting]ая [Concept('concept_war_support', 'войовничість')] на війні «[War.GetName]» знижується на $VALUE|+$."
+ ADD_WAR_EXHAUSTION:1 "[Country.GetAdjectiveNoFormatting]е [Concept('concept_war_exhaustion', 'втома війною')] «[TARGET_WAR.GetName]» підвищується на $VALUE|+$."
+ ADD_WAR_EXHAUSTION_NEG:1 "[Country.GetAdjectiveNoFormatting]е [Concept('concept_war_exhaustion', 'втома війною')] "[TARGET_WAR.GetName]» знижується на $VALUE|+$."
+ 
+ ADD_WAR_GOAL:1 "[COUNTRY.GetName] додає[COUNTRY.GetCustom('RU_CL_END_T')] ціль "[WAR_GOAL.GetName]" в [Concept('concept_diplomatic_play', 'дипломатичній грі')] "[DIPLOMATIC_PLAY_TYPE. "
+ ADD_WAR_GOAL_FIRST:1 "[COUNTRY.GetNameNoFlag] додає[COUNTRY.GetCustom('RU_CL_END_T')] ціль "[WAR_GOAL.GetName]" у [Concept('concept_diplomatic_play', 'дипломатичній грі')] "[DIPLOMA. "
+ ADD_WAR_GOAL_THIRD:1 "[COUNTRY.GetName] додає[COUNTRY.GetCustom('UA_CL_END_T')] мету «[WAR_GOAL.GetName]» у [Concept('concept_diplomatic_play', 'дипломатичній грі'.]] «[DIPLOMATIC_PLAY "
+ REMOVE_WAR_GOAL:1 "[COUNTRY.GetName] відмовляється[COUNTRY.GetCustom('RU_CL_END_T')]ся від мети «[WAR_GOAL.GetName]» [Concept('concept_diplomatic_play', 'дипломатичної гри')] «[DIPLOMATIC_PLAY_TY "
+ REMOVE_WAR_GOAL_FIRST:0 "[COUNTRY.GetNameNoFlag] відмовляється[COUNTRY.GetCustom('RU_CL_END_T')]ся від мети «[WAR_GOAL.GetName]» [Concept('concept_diplomatic_play', 'дипломатичної гри')] «[DIP ."
+ REMOVE_WAR_GOAL_THIRD:0 "[COUNTRY.GetName] відмовляється[COUNTRY.GetCustom('RU_CL_END_T')]ся від мети «[WAR_GOAL.GetName]» [Concept('concept_diplomatic_play', 'дипломатичної гри')] «[DIPLOMATIC. ."
+ REMOVE_WAR_GOAL_NONE:0 "[COUNTRY.GetName] не відмовляється[COUNTRY.GetCustom('RU_CL_END_T')]ся від цілей [Concept('concept_diplomatic_play', 'дипломатичної гри')] «[DIPLOMATIC_PLAY_TYPE.GetName]»"
+ 
+ CREATE_DIPLOMATIC_PLAY:0 "[COUNTRY.GetName] створює [Concept('concept_diplomatic_play', 'дипломатичну гру')] #variable «[DIPLOMATIC_PLAY_TYPE.GetName]»#! проти #tooltippable_name #tooltip:[TARGET_CO TARGET_COUNTRY.GetFlagTextIcon][TARGET_COUNTRY.GetCustom('RU_CL_RP')]#!#!."
+ 
+ SET_WAR:0 "[DIPLOMATIC_PLAY.GetName] переростає у війну!"
+ SET_WAR_NEG:0 "[DIPLOMATIC_PLAY.GetName] НЕ переростає у війну."
+ 
+ CREATE_TRUCE:1 "[COUNTRY.GetName] та [TARGET_COUNTRY.GetName] укладають #variable перемир'я на $MONTHS|0v$ міс.#!"
+ 
+ VIOLATE_SOVEREIGNTY_JOIN:2 "[COUNTRY.GetName] приєднавши[COUNTRY.GetCustom('RU_CL_END_T')]ся до [Concept('concept_war', 'війні')] на стороні #tooltippable_name #tooltip:[TARGET_COUNTRY.GetTool [TARGET_COUNTRY.GetFlagTextIcon][TARGET_COUNTRY.GetCustom('RU_CL_RP')]#!#!"
+ VIOLATE_SOVEREIGNTY_JOIN_FIRST:0 "[TARGET_COUNTRY.GetName] приєднавши[TARGET_COUNTRY.GetCustom('RU_CL_END_T')]ся до [Concept('concept_war', 'війні')] на стороні #tooltippable_name #TOoltip:[ [COUNTRY.GetFlagTextIcon][COUNTRY.GetCustom('RU_CL_RP')]#!#!"
+ VIOLATE_SOVEREIGNTY_JOIN_THIRD:0 "[COUNTRY.GetName] вступу[COUNTRY.GetCustom('UA_CL_END_T')] у [Concept('concept_war', 'війну')] проти #tooltippable_name #tooltip:[TARGET_COUNTRY.GETTooltip .GetFlagTextIcon][TARGET_COUNTRY.GetCustom('RU_CL_DP')]#!#!"
+
+ SET_INTEREST_MARKER_EFFECT:0 "[COUNTRY.GetName] встановлює #variable рівень [Concept('concept_interest', 'інтересу')] $LEVEL$#! в регіоні #variable [STRATEGIC_REGION.GetName]#!."
+
+ KILL_CHARACTER_GLOBAL:0 "[CHARACTER.GetFullName] вмирає."
+ KILL_CHARACTER_GLOBAL_NEG:0 "[CHARACTER.GetFullName] живе."
+ KILL_CHARACTER_FIRST:0 "[CHARACTER.GetFullName] вмирає."
+ KILL_CHARACTER_FIRST_NEG:0 "[CHARACTER.GetFullName] живе."
+ KILL_CHARACTER:0 "[CHARACTER.GetFullName] вмирає."
+ KILL_CHARACTER_NEG:0 "[CHARACTER.GetFullName] живе."
+ PLACE_CHARACTER_IN_VOID:0 "[CHARACTER.GetFullName] безвісти зникає."
+ FREE_CHARACTER_FROM_VOID:0 "[CHARACTER.GetFullName] знаходиться серед живих."
+ FREE_CHARACTER_FROM_VOID_NEG:0 "[CHARACTER.GetFullName] пропадає безвісти."
+ ADD_TRAIT_GLOBAL:0 "[CHARACTER.GetFullName] отримує рису характеру «[CHARACTER_TRAIT.GetName]»."
+ ADD_TRAIT_FIRST:0 "[CHARACTER.GetFullName] отримує рису характеру "[CHARACTER_TRAIT.GetName]"."
+ ADD_TRAIT:0 "[CHARACTER.GetFullName] отримує рису характеру "[CHARACTER_TRAIT.GetName]»."
+ REMOVE_TRAIT:0 "[CHARACTER.GetFullName] позбавляється риси характеру "[CHARACTER_TRAIT.GetName]"."
+ REMOVE_TRAIT_GLOBAL:0 "[CHARACTER.GetFullName] втрачає риси характеру «[CHARACTER_TRAIT.GetName]»."
+ REMOVE_TRAIT_FIRST:0 "[CHARACTER.GetFullName] позбавляється риси характеру "[CHARACTER_TRAIT.GetName]"."
+ TRANSFER_CHARACTER:0 "[CHARACTER.GetFullName] надходить на службу #tooltippable_name #tooltip:[TARGET_COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [TARGET_COUNTRY.GetFlagTextIcon][TARGET_COUNT
+ SET_CHARACTER_BUSY:0 "Персонаж [CHARACTER.GetFullName] тепер зайнятий і скасовує всі завдання."
+ SET_CHARACTER_BUSY_NEG:0 "Персонаж [CHARACTER.GetFullName] більше не зайнятий."
+ SET_CHARACTER_BUSY_GLOBAL:0 "Персонаж [CHARACTER.GetFullName] тепер зайнятий і скасовує всі завдання."
+ SET_CHARACTER_BUSY_GLOBAL_NEG:0 "Персонаж [CHARACTER.GetFullName] більше не зайнятий."
+
+ ADD_ORGANIZATION:0 "Організація #tooltippable_name #tooltip:[COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [COUNTRY.GetFlagTextIcon][COUNTRY.GetCustom('UA_CL_RP')]#!#! на $VALUE|+$."
+ ADD_ORGANIZATION_NEG:0 "Організація #tooltippable_name #tooltip:[COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [COUNTRY.GetFlagTextIcon][COUNTRY.GetCustom('UA_CL_RP')]#!#!# на $VALUE|+$."
+ ADD_SPIRIT:0 "Дух #tooltippable_name #tooltip:[COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [COUNTRY.GetFlagTextIcon][COUNTRY.GetCustom('RU_CL_RP')]#!#! в області #variable на $VALUE|+$."
+ ADD_SPIRIT_NEG:0 "Дух #tooltippable_name #tooltip:[COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [COUNTRY.GetFlagTextIcon][COUNTRY.GetCustom('UA_CL_RP')]#!#! на $VALUE|+$."
+ SET_ORGANIZATION:0 "Встановлено організацію #tooltippable_name #tooltip:[COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [COUNTRY.GetFlagTextIcon][COUNTRY.GetCustom('UA_CL_RP')]#!#! в області #.#! : $VALUE|+$."
+ SET_SPIRIT:0 "Встановлено дух #tooltippable_name #tooltip:[COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [COUNTRY.GetFlagTextIcon][COUNTRY.GetCustom('RU_CL_RP')]#!#! в області #vari : $VALUE|+$."
+
+ SET_OWNER_OF_PROVINCES:0 "[COUNTRY.GetName] отримує провінції ($NUM_PROVINCES|v$) у регіоні [TARGET_STATE_REGION.GetName]."
+ CREATE_STATE:0 "[COUNTRY.GetName] отримує область в регіоні [TARGET_STATE_REGION.GetName]."
+ SET_STATE_TYPE:0 "[STATE.GetName] тепер $STATE_TYPE|v$."
+ SET_STATE_OWNER:0 "[TARGET_COUNTRY.GetName] тепер володіє областю [STATE.GetName]."
+ CREATE_BUILDING:0 "В області [State.GetName] створюється [BuildingType.GetName] (розмір $LEVEL|v$)."
+ ADD_BUILDING_LEVEL:0 "Рівень споруди [BuildingType.GetName] в області [State.GetName] змінюється на $LEVEL|v$."
+ START_BUILDING_CONSTRUCTION:0 "Почати будівництво [BuildingType.GetName] в області [State.GetName]."
+ CREATE_POP:0 "[STATE.GetName] отримує групу населення #variable [POP_TYPE.GetName]#! ($SIZE|+$)."
+ ADD_HOMELAND:0 "[STATE_REGION.GetName] тепер [Concept('concept_homeland', 'батьківщина')] #tooltippable_name #variable #tooltip:[CULTURE.GetTooltipTag],DATA_CULTURE_NAME_TOOLTIP,CultureTooltip [CULTURE. ой#!#!#! культури."
+ REMOVE_HOMELAND:0 "[STATE_REGION.GetName] більше не [Concept('concept_homeland', 'батьківщина')] #tooltippable_name #variable #tooltip:[CULTURE.GetTooltipTag],DATA_CULTURE_NAME_TOOLTIP,CultureTooltip [CULT ]ой#!#!#! культури."
+ ADD_CLAIM:0 "[TARGET_COUNTRY.GetName] отримує [Concept('concept_claim', 'претензію')] на регіон [STATE_REGION.GetName]."
+ ADD_CLAIM_THIRD:0 "[TARGET_COUNTRY.GetName] отримує [Concept('concept_claim', 'претензію')] на регіон [STATE_REGION.GetName]."
+ REMOVE_CLAIM:0 "[TARGET_COUNTRY.GetName] втрачає [Concept('concept_claim', 'претензію')] на регіон [STATE_REGION.GetName]."
+ ACTIVATE_BUILDING:0 "Розбудова «[BUILDING_TYPE.GetName]» в області [STATE.GetName] активована."
+ DEACTIVATE_BUILDING:0 "Побудова «[BUILDING_TYPE.GetName]» у [STATE.GetName] деактивована."
+ REMOVE_BUILDING:0 "Побудова «[BUILDING_TYPE.GetName]» в області [STATE.GetName] знищена."
+ CREATE_MARKET_EFFECT:0 "В області [STATE.GetName] створено новий ринок."
+ ADD_ARABLE_LAND_POSITIVE_EFFECT:0 "[STATE_REGION.GetName] отримує [Concept('concept_arable_land', 'орні землі')] ($VALUE|+0$)."
+ ADD_ARABLE_LAND_NEGATIVE_EFFECT:0 "[STATE_REGION.GetName] втрачає [Concept('concept_arable_land', 'орні землі')] ($VALUE|-0$)."
+ 
+ ADD_DEVASTATION_POSITIVE_EFFECT:0 "[concept_devastation] у регіоні [STATE_REGION.GetName] збільшується на $VALUE|-0$%."
+ ADD_DEVASTATION_NEGATIVE_EFFECT:0 "[concept_devastation] у регіоні [STATE_REGION.GetName] знижується на $VALUE|+0$%."
+ ADD_DEVASTATION_POSITIVE_EFFECT_FIRST:0 "[concept_devastation] у регіоні [STATE_REGION.GetName] збільшується на $VALUE|-0$%."
+ ADD_DEVASTATION_NEGATIVE_EFFECT_FIRST:0 "[concept_devastation] у регіоні [STATE_REGION.GetName] знижується на $VALUE|+0$%."
+ ADD_DEVASTATION_POSITIVE_EFFECT_THIRD:0 "[concept_devastation] у регіоні [STATE_REGION.GetName] збільшується на $VALUE|-0$%."
+ ADD_DEVASTATION_NEGATIVE_EFFECT_THIRD:0 "[concept_devastation] у регіоні [STATE_REGION.GetName] знижується на $VALUE|+0$%."
+ 
+ SET_DEVASTATION_POSITIVE_EFFECT:0 "Встановлено [Concept('concept_devastation', 'спустошення')] регіону [STATE_REGION.GetName]: #variable $VALUE|0$%#!"
+ SET_DEVASTATION_NEGATIVE_EFFECT:0 "Встановлено [Concept('concept_devastation', 'спустошення')] регіону [STATE_REGION.GetName]: #variable $VALUE|0$%#!"
+ ADD_POLLUTION_EFFECT:0 "Рівень забруднення регіону [StateRegion.GetName] збільшений на $VALUE|-0$."
+ REMOVE_POLLUTION_EFFECT:0 "Рівень забруднення регіону [StateRegion.GetName] знижений на $VALUE|+0$."
+  
+ ADD_POP_WEALTH:0 "[Pop.GetName] в області [POP.GetState.GetName] отримує добробут ($VALUE|+$)."
+ ADD_POP_WEALTH_NEG:0 "[Pop.GetName] в області [POP.GetState.GetName] втрачає добробут ($VALUE|+$)."
+ SET_POP_WEALTH:0 "Встановлено добробут групи населення [Pop.GetName] в області [POP.GetState.GetName]: $VALUE|+$."
+ SET_POP_LITERACY:0 "Встановлено грамотність групи населення [Pop.GetName] в області [POP.GetState.GetName]: $VALUE|+0%$."
+ SET_POP_QUALIFICATIONS:0 "Встановлено [Concept('concept_pop_qualifications', 'кваліфікація')] групи населення [Pop.GetName] ([POP_TYPE.GetName]) в області [POP.GetState.GetName]: $VALUE|+0%$."
+ SET_POP_HAPPINESS:0 "Встановлено щастя групи населення [Pop.GetName] в області [POP.GetState.GetName]: $VALUE|+$."
+ CHANGE_POPTYPE:0 "[Pop.GetName] в області [Pop.GetState.GetName] тепер #variable [POP_TYPE.GetName]#!."
+ CHANGE_POP_RELIGION:0 "[Pop.GetName] ($VALUE|0v%$) в області [Pop.GetState.GetName] стають адептами релігії [Religion.GetName]."
+ CONVERT_POPULATION:0 "Всі, хто не сповідує [Religion.GetName] ($VALUE|0v%$) в області [STATE.GetName], стають адептами релігії [Religion.GetName]"
+ CHANGE_POP_CULTURE:0 "$VALUE|0v%$ групи населення [Pop.GetName] в області [Pop.GetState.GetName] приєднаються до #tooltippable_name #tooltip:[Culture.GetTooltipTag],DATA_CULTURE_NAME_TOOLTIP,CultureTool )|l]ой#!#! культурі."
+
+ MOVE_POP:0 "[POP.GetName] переміститься з області [POP.GetState.GetName] до області [TARGET_STATE.GetName]."
+ 
+ EFFECT_CREATE_ASSIGNMENT:0 "Призначити персонажа [CHARACTER.GetFullName] до регіону [STRATEGIC_REGION.GetName]."
+ EFFECT_PROJECT_POWER:0 "[CHARACTER.GetFullName] проектуватиме силу в регіон [STRATEGIC_REGION.GetName]."
+  
+
+ TRIGGER_EVENT_DELAY_ONE_DAY:0 "через #v 1#! день"
+ TRIGGER_EVENT_DELAY_NUM_DAYS:0 "(через #v $NUM_DAYS$#! дн.)"
+ TRIGGER_EVENT_DELAY_RANGE_DAYS:0 "через #v $DAYS_MIN$#!–#v $DAYS_MAX$#! дн."
+ TRIGGER_EVENT:1 "Запускає подію #variable $EVENT_NAME$#![ConcatIfNeitherEmpty(' ', '$DELAY_DESCRIPTION$')]"
+ TRIGGER_EVENT_COUNTRY:0 "Держава $COUNTRY_NAME$ отримує подію #variable $EVENT_NAME$#![ConcatIfNeitherEmpty(' ', '$DELAY_DESCRIPTION$')]"
+ custom_trigger_event_unspecific:0 "Запускає подію"
+
+ ANNEX_EFFECT:0 "[COUNTRY.GetName] анексує #tooltippable_name #tooltip:[TARGET_COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [TARGET_COUNTRY.GetFlagTextIcon][TARGET_#PUNT."
+ ANNEX_EFFECT_FIRST:0 "[COUNTRY.GetNameNoFlag] анексір[COUNTRY.GetCustom('UA_CL_END_T')] #tooltippable_name #tooltip:[TARGET_COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTool !#!."
+ ANNEX_EFFECT_THIRD:0 "[COUNTRY.GetName] анексір[COUNTRY.GetCustom('UA_CL_END_T')] #tooltippable_name #tooltip:[TARGET_COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [TAG !#!."
+  
+ ADD_JOURNAL_ENTRY:0 "Додає запис #variable «$JOURNAL_ENTRY_NAME$»#! в щоденник #tooltip:[COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [COUNTRY.GetCustom('RU_CL_RP')|v]#!.
+ ADD_JOURNAL_ENTRY_FIRST:0 "Додає запис #variable «$JOURNAL_ENTRY_NAME$»#! в щоденник #tooltip:[COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [COUNTRY.GetCustom('RU_CL_RP')||
+ ADD_JOURNAL_ENTRY_THIRD:0 "Додає запис #variable «$JOURNAL_ENTRY_NAME$»#! у щоденник #tooltip:[COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [COUNTRY.GetCustom('RU_CL_RP')||
+ START_TUTORIAL_LESSON:0 "Запуск уроку #variable «$TUTORIAL_NAME$»#!."
+  
+ ADD_RULING_INTEREST_GROUP:0 "[INTEREST_GROUP.GetName] приєднується до уряду."
+ REMOVE_RULING_INTEREST_GROUP:0 "[INTEREST_GROUP.GetName] виходить з уряду."
+ SET_RULING_INTEREST_GROUPS:0 "Зазначені зацікавлені групи приєднуються до уряду, а всі інші виходять із нього."
+ 
+ ADD_MODIFIER:1 "$SUBJECT_NAME$ отримає модифікатор #tooltippable #tooltip:[GetRawTextTooltipTag('$ADD_MODIFIER_BREAKDOWN$')] $MODIFIER_NAME$#!#! $MAYBE_DECAYING_WITH_SPACE_AFTER !"
+ ADD_MODIFIER_NEG:0 "$ADD_MODIFIER$"
+ ADD_MODIFIER_FIRST:0 "$SUBJECT_NAME$ отримає модифікатор #tooltippable #tooltip:[GetRawTextTooltipTag('$ADD_MODIFIER_BREAKDOWN$')] $MODIFIER_NAME$#!#! $MAYBE_DECAYING_WITH_SP !"
+ ADD_MODIFIER_FIRST_NEG:0 "$ADD_MODIFIER_FIRST$"
+ ADD_MODIFIER_THIRD:0 "$SUBJECT_NAME$ отримає модифікатор #tooltippable #tooltip:[GetRawTextTooltipTag('$ADD_MODIFIER_BREAKDOWN$')] $MODIFIER_NAME$#!#! $MAYBE_DECAYING_WITH_SP !"
+ ADD_MODIFIER_THIRD_NEG:0 "$ADD_MODIFIER_THIRD$"
+ 
+ ADD_MODIFIER_BREAKDOWN:0 "#header $MODIFIER_NAME$#!\n$MODIFIER_DESC$."
+ 
+ ADD_ENACTMENT_MODIFIER:1 "[COUNTRY.GetName] отримує[COUNTRY.GetCustom('UA_CL_END_T')] модифікатор #tooltippable #tooltip:[GetRawTextTooltipTag('$ADD_MODIFIER_BREAKDOWN$')] $MODIFIER! закону «[COUNTRY.GetLawBeingEnacted.GetName]»\n$TAB$#indent_newline:3 $MODIFIER_DESC$#!"
+ ADD_ENACTMENT_MODIFIER_NEG:1 "$ADD_ENACTMENT_MODIFIER$"
+ ADD_ENACTMENT_MODIFIER_FIRST:1 "$ADD_ENACTMENT_MODIFIER$"
+ ADD_ENACTMENT_MODIFIER_FIRST_NEG:1 "$ADD_ENACTMENT_MODIFIER$"
+ ADD_ENACTMENT_MODIFIER_THIRD:1 "$ADD_ENACTMENT_MODIFIER$"
+ ADD_ENACTMENT_MODIFIER_THIRD_NEG:1 "$ADD_ENACTMENT_MODIFIER$"
+ 
+ REMOVE_MODIFIER:0 "$SUBJECT_NAME$ втрачає модифікатор #tooltippable #tooltip:[GetRawTextTooltipTag('$REMOVE_MODIFIER_BREAKDOWN$')] #variable $MODIFIER_NAME$#!#!#!#!\n$TAB$#ind "
+ REMOVE_MODIFIER_FIRST:0 "$SUBJECT_NAME$ втрачає модифікатор #tooltippable #tooltip:[GetRawTextTooltipTag('$REMOVE_MODIFIER_BREAKDOWN$')] #variable $MODIFIER_NAME$#!#!#!\n$TAB "
+ REMOVE_MODIFIER_THIRD:0 "$SUBJECT_NAME$ втрачає модифікатор #tooltippable #tooltip:[GetRawTextTooltipTag('$REMOVE_MODIFIER_BREAKDOWN$')] #variable $MODIFIER_NAME$#!#!#!\n$TAB "
+ REMOVE_MODIFIER_BREAKDOWN:0 "#header $MODIFIER_NAME$#!\n$MODIFIER_DESC$."
+ REMOVE_ENACTMENT_MODIFIER:0 "$REMOVE_MODIFIER$"
+
+ ACTIVATE_PRODUCTION_METHOD:0 "Активує метод "[PRODUCTION_METHOD.GetName]" для споруд типу "[BUILDING_TYPE.GetName]" ($TARGET|v$)."
+ ADD_COMMANDER_RANK:1 "[Character.GetFullName] $DESC_STR$ #variable [COMMANDER_RANK.GetName(Character.Self)]#!"
+ SET_COMMANDER_RANK:1 "[Character.GetFullName] $DESC_STR$ #variable [COMMANDER_RANK.GetName(Character.Self)]#!"
+ ADD_CHARACTER_ROLE:0 "[CHARACTER.GetFullName] тепер #v $ROLE$#!"
+ ADD_EXPERIENCE:0 "[CHARACTER.GetFullName] отримує [Concept('concept_life_experience', 'життєвий досвід')]."
+
+ CREATE_COUNTRY:0 "Створено нову державу"
+ CREATE_COUNTRY_FIRST:0 "Створено нову [Concept('concept_country', 'держава')]"
+ CREATE_COUNTRY_THIRD:0 "Створено нову [Concept('concept_country', 'держава')]"
+ 
+ ADD_DYNAMIC_SOL_MODIFIER:0 "[STATE.GetName] отримує модифікатор $MODIFIER_NAME|v$ $DURATION$\n #header $MODIFIER_NAME$#!\n $MODIFIER_DESC$."
+ ADD_CULTURE_SOL_MODIFIER:1 "$ADD_DYNAMIC_SOL_MODIFIER$"
+ ADD_CULTURE_SOL_MODIFIER_FIRST:1 "$ADD_DYNAMIC_SOL_MODIFIER$"
+ ADD_CULTURE_SOL_MODIFIER_THIRD:1 "$ADD_DYNAMIC_SOL_MODIFIER$"
+ 
+ ADD_RELIGION_SOL_MODIFIER:0 "$ADD_DYNAMIC_SOL_MODIFIER$"
+ ADD_RELIGION_SOL_MODIFIER_FIRST:0 "$ADD_DYNAMIC_SOL_MODIFIER$"
+ ADD_RELIGION_SOL_MODIFIER_THIRD:0 "$ADD_DYNAMIC_SOL_MODIFIER$"
+ 
+ FORCE_RESOURCE_DISCOVERY:0 "Знайдено ресурси #variable $BUILDING_GROUP$#! області [State.GetName]."
+ FORCE_RESOURCE_DEPLETION:0 "Виснажені ресурси #variable $BUILDING_GROUP$#! області [State.GetName]."
+
+ SET_NEXT_ELECTION_DATE:1 "Дата виборів до #tooltip:[COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [COUNTRY.GetCustom('RU_CL_PP')|v]#! — $DATE|v$"
+
+ JOIN_REVOLUTION:0 "[INTEREST_GROUP.GetName] стають бунтівними."
+ ABANDON_REVOLUTION:0 "[INTEREST_GROUP.GetName] припиняє заколот."
+
+ START_BOLSTER_IG:0 "[concept_bolster] групу «[INTEREST_GROUP.GetName]»"
+ STOP_BOLSTER_IG:0 "Припинити [Concept('concept_bolster','підтримку')] групи "[INTEREST_GROUP.GetName]""
+ START_SUPPRESS_IG:1 "[concept_suppress] групу «[INTEREST_GROUP.GetName]»"
+ STOP_SUPPRESS_IG:1 "Припинити [Concept('concept_suppress','пригнічення')] групи "[INTEREST_GROUP.GetName]""
+  
+ ADD_BANNED_GOODS:0 "[COUNTRY.GetName] оголошує[COUNTRY.GetCustom('UA_CL_END_T')] повну заборону товару «[TARGET_GOODS.GetName]»."
+ ADD_BANNED_GOODS_FIRST:0 "[COUNTRY.GetNameNoFlag] оголошує[COUNTRY.GetCustom('RU_CL_END_T')] повну заборону товару «[TARGET_GOODS.GetName]»."
+ ADD_BANNED_GOODS_THIRD:0 "[COUNTRY.GetName] оголошує[COUNTRY.GetCustom('RU_CL_END_T')] повну заборону товару «[TARGET_GOODS.GetName]»."
+ REMOVE_BANNED_GOODS:0 "[COUNTRY.GetName] знімає[COUNTRY.GetCustom('UA_CL_END_T')] заборона на #tooltippable_name #tooltip:[TARGET_GOODS.GetTooltipTag],DATA_GOODS_NAME_TOOLTIP,GoodsTool #!."
+ REMOVE_BANNED_GOODS_FIRST:0 "[COUNTRY.GetNameNoFlag] знімає[COUNTRY.GetCustom('RU_CL_END_T')] заборону на #tooltippable_name #tooltip:[TARGET_GOODS.GetTooltipTag],DATA_GOODS_NAME_TOOL| #!."
+ REMOVE_BANNED_GOODS_THIRD:0 "[COUNTRY.GetName] знімає[COUNTRY.GetCustom('UA_CL_END_T')] заборону на #tooltippable_name #tooltip:[TARGET_GOODS.GetTooltipTag],DATA_GOODS_NAME_TOOLTIP,G| #!."
+ 
+ ADD_EMBARGOED_GOODS:1 "[COUNTRY.GetName] оподатковується[COUNTRY.GetCustom('UA_CL_END_T')] [Concept('concept_embargo', 'ембарго')] на #tooltippable_name #tooltip:[TARGET_GOODS.GetTooltipTOG], GetCustom('RU_GL_VP')|l]#!#!."
+ ADD_EMBARGOED_GOODS_FIRST:0 "[COUNTRY.GetNameNoFlag] оподатковується[COUNTRY.GetCustom('UA_CL_END_T')] [Concept('concept_embargo', 'ембарго')] на #tooltippable_name #Golden_Goods. GetCustom('RU_GL_VP')|l]#!#!."
+ ADD_EMBARGOED_GOODS_THIRD:0 "[COUNTRY.GetName] оподаткування[COUNTRY.GetCustom('UA_CL_END_T')] [Concept('concept_embargo', 'ембарго')] на #tooltippable_name #tooltip:[TARGET_GOODS.GetTool GetCustom('RU_GL_VP')|l]#!#!."
+ REMOVE_EMBARGOED_GOODS:1 "[COUNTRY.GetName] знімає[COUNTRY.GetCustom('RU_CL_END_T')] [Concept('concept_embargo', 'ембарго')] з товару «[TARGET_GOODS.GetName]»."
+ REMOVE_EMBARGOED_GOODS_FIRST:0 "[COUNTRY.GetNameNoFlag] знімає[COUNTRY.GetCustom('RU_CL_END_T')] [Concept('concept_embargo', 'ембарго')] з товару "[TARGET_GOODS.GetName]»."
+ REMOVE_EMBARGOED_GOODS_THIRD:0 "[COUNTRY.GetName] знімає[COUNTRY.GetCustom('RU_CL_END_T')] [Concept('concept_embargo', 'ембарго')] з товару "[TARGET_GOODS.GetName]"."
+ 
+ ADD_ENCOURAGED_GOODS:1 "[COUNTRY.GetName] тепер [Concept('concept_encourage_consumption', 'заохочує споживання')] товару «[TARGET_GOODS.GetName]»."
+ ADD_ENCOURAGED_GOODS_FIRST:0 "Держава [COUNTRY.GetNameNoFlag] тепер [Concept('concept_encourage_consumption', 'заохочує споживання')] #tooltippable_name #tooltip:[TARGET_GOODS.GetTooltipTag],DAT_GOODS.GetTooltipTag] #!#!."
+ ADD_ENCOURAGED_GOODS_THIRD:0 "Держава [COUNTRY.GetName] тепер [Concept('concept_encourage_consumption', 'заохочує споживання')] #tooltippable_name #tooltip:[TARGET_GOODS.GetTooltipTag],DATA_GO| #!#!."
+ REMOVE_ENCOURAGED_GOODS:1 "Держава [COUNTRY.GetName] більше не [Concept('concept_encourage_consumption', 'заохочує споживання')] #tooltippable_name #tooltip:[TARGET_GOODS.GetTooltipTag],DATA_GOODS| ]#!#!."
+ REMOVE_ENCOURAGED_GOODS_FIRST:0 "Держава [COUNTRY.GetNameNoFlag] більше не [Concept('concept_encourage_consumption', 'заохочує споживання')] #tooltippable_name #tooltip:[TARGET_GOODS.GetTooltipTag| ]#!#!."
+ REMOVE_ENCOURAGED_GOODS_THIRD:0 "Держава [COUNTRY.GetName] більше не [Concept('concept_encourage_consumption', 'заохочує споживання')] #tooltippable_name #tooltip:[TARGET_GOODS.GetTooltipTag],DATA| ]#!#!."
+ 
+ ADD_DISCOURAGED_GOODS:1 "Держава [COUNTRY.GetName] тепер [Concept('concept_discourage_consumption', 'перешкоджає споживанню')] #tooltippable_name #tooltip:[TARGET_GOODS.GetTooltipTag],DATA_GOODS_NAME #!#!."
+ ADD_DISCOURAGED_GOODS_FIRST:0 "Держава [COUNTRY.GetNameNoFlag] тепер [Concept('concept_discourage_consumption', 'перешкоджає споживанню')] товару "[TARGET_GOODS.GetName]»."
+ ADD_DISCOURAGED_GOODS_THIRD:0 "Держава [COUNTRY.GetName] тепер [Concept('concept_'discourage_consumption', 'перешкоджає споживанню')] #tooltippable_name #tooltip:[TARGET_GOODS.GetTooltipTag],DATA_GO| #!#!."
+ REMOVE_DISCOURAGED_GOODS:1 "Держава [COUNTRY.GetName] більше не [Concept('concept_discourage_consumption', 'перешкоджає споживанню')] #tooltippable_name #tooltip:[TARGET_GOODS.GetTooltipTag],DATA_GOOD| ]#!#!."
+ REMOVE_DISCOURAGED_GOODS_FIRST:0 "Держава [COUNTRY.GetNameNoFlag] більше не [Concept('concept_discourage_consumption', 'запобігає споживанню')] #tooltippable_name #tooltip:[TARGET_GOODS.GetTooltipTGTTA ]#!#!."
+ REMOVE_DISCOURAGED_GOODS_THIRD:0 "Держава [COUNTRY.GetName] більше не [Concept('concept_discourage_consumption', 'перешкоджає споживанню')] #tooltippable_name #tooltip:[TARGET_GOODS.GetTooltipTag],DATA ]#!#!."
+ 
+ ADD_TAXED_GOODS:1 "[COUNTRY.GetName] починає[COUNTRY.GetCustom('UA_CL_END_T')] стягувати [Concept('concept_consumption_tax', 'споживчий податок')] на #tooltippable_name #tooltip:[TARGET_GOODS.GetTool TARGET_GOODS.GetCustom('RU_GL_VP')|l]#!#!."
+ ADD_TAXED_GOODS_FIRST:0 "[COUNTRY.GetNameNoFlag] починає[COUNTRY.GetCustom('UA_CL_END_T')] стягувати [Concept('concept_consumption_tax', 'споживчий податок')] на #tooltippable_name #tooltip:[TARGET TARGET_GOODS.GetCustom('RU_GL_VP')|l]#!#!."
+ ADD_TAXED_GOODS_THIRD:0 "[COUNTRY.GetName] починає[COUNTRY.GetCustom('UA_CL_END_T')] стягувати [Concept('concept_consumption_tax', 'споживчий податок')] на #tooltippable_name #tooltip:[TARGET_GOODS. TARGET_GOODS.GetCustom('RU_GL_VP')|l]#!#!."
+ REMOVE_TAXED_GOODS:1 "[COUNTRY.GetName] припиняє[COUNTRY.GetCustom('UA_CL_END_T')] стягувати [Concept('concept_consumption_tax', 'споживчий податок')] на #tooltippable_name #tooltip:[TARGET_GOODS. TARGET_GOODS.GetCustom('RU_GL_VP')|l]#!#!."
+ REMOVE_TAXED_GOODS_FIRST:0 "[COUNTRY.GetNameNoFlag] припиняє[COUNTRY.GetCustom('RU_CL_END_T')] стягувати [Concept('concept_consumption_tax', 'споживчий податок')] на #TOoltippable_name #tooltip:[TA TARGET_GOODS.GetCustom('RU_GL_VP')|l]#!#!."
+ REMOVE_TAXED_GOODS_THIRD:0 "[COUNTRY.GetName] припиняє[COUNTRY.GetCustom('UA_CL_END_T')] стягувати [Concept('concept_consumption_tax', 'споживчий податок')] на #tooltippOD_name #tooltip:[TARGET_GO TARGET_GOODS.GetCustom('RU_GL_VP')|l]#!#!."
+
+ SET_TARIFFS:0 "[COUNTRY.GetName] починає[COUNTRY.GetCustom('RU_CL_END_T')] стягувати #v непріоритетні#! [Concept('concept_tariffs', 'мита')] за #tooltippable_name #tooltip:[TARGET_GOODS. DATA_GOODS_NAME_TOOLTIP,GoodsTooltip [TARGET_GOODS.GetCustom('RU_GL_VP')|l]#!#!."
+ SET_TARIFFS_FIRST:0 "[COUNTRY.GetNameNoFlag] починає[COUNTRY.GetCustom('UA_CL_END_T')] стягувати #v непріоритетні#! [Concept('concept_tariffs', 'мита')] за #tooltippable_name #tooltip:[TA DATA_GOODS_NAME_TOOLTIP,GoodsTooltip [TARGET_GOODS.GetCustom('RU_GL_VP')|l]#!#!."
+ SET_TARIFFS_THIRD:0 "[COUNTRY.GetName] починає[COUNTRY.GetCustom('UA_CL_END_T')] стягувати #v непріоритетні#! [Concept('concept_tariffs', 'мита')] за #tooltippable_name #tooltip:[TARGET_GO DATA_GOODS_NAME_TOOLTIP,GoodsTooltip [TARGET_GOODS.GetCustom('RU_GL_VP')|l]#!#!."
+
+ SET_TARIFFS_IMPORT_PRIORITY:0 "[COUNTRY.GetName] починає[COUNTRY.GetCustom('UA_CL_END_T')] стягувати [Concept('concept_tariffs', 'мита')] за #tooltippable_name #tooltip:[TARGET_GOODS.GetTool .GetCustom('RU_GL_VP')|l]#!#! #v з пріоритетом на імпорт#!."
+ SET_TARIFFS_IMPORT_PRIORITY_FIRST:0 "[COUNTRY.GetNameNoFlag] починає[COUNTRY.GetCustom('UA_CL_END_T')] стягувати [Concept('concept_tariffs', 'мито')] за #tooltippable_name #TOOLTIP:[TARG .GetCustom('RU_GL_VP')|l]#!#! #v з пріоритетом на імпорт#!."
+ SET_TARIFFS_IMPORT_PRIORITY_THIRD:0 "[COUNTRY.GetName] починає[COUNTRY.GetCustom('UA_CL_END_T')] стягувати [Concept('concept_tariffs', 'мита')] за #tooltippable_name #tooltip:[TARGET_GOOD .GetCustom('RU_GL_VP')|l]#!#! #v з пріоритетом на імпорт#!."
+ 
+ SET_TARIFFS_EXPORT_PRIORITY:0 "[COUNTRY.GetName] починає[COUNTRY.GetCustom('UA_CL_END_T')] стягувати [Concept('concept_tariffs', 'мита')] за #tooltippable_name #tooltip:[TARGET_GOODS.GetTool .GetCustom('RU_GL_VP')|l]#!#! #v з пріоритетом на експорт#!."
+ SET_TARIFFS_EXPORT_PRIORITY_FIRST:0 "[COUNTRY.GetNameNoFlag] починає[COUNTRY.GetCustom('UA_CL_END_T')] стягувати [Concept('concept_tariffs', 'мито')] за #tooltippable_name #TOOLTIP:[TARG .GetCustom('RU_GL_VP')|l]#!#! #v з пріоритетом на експорт#!."
+ SET_TARIFFS_EXPORT_PRIORITY_THIRD:0 "[COUNTRY.GetName] починає[COUNTRY.GetCustom('UA_CL_END_T')] стягувати [Concept('concept_tariffs', 'мита')] за #tooltippable_name #tooltip:[TARGET_GOOD .GetCustom('RU_GL_VP')|l]#!#! #v з пріоритетом на експорт#!."
+  
+ ADD_RADICALS:2 "#variable $NUM|-=1%$#! [Concept('concept_pop', 'груп населення')] $FILTER$ $SUBJECT_NAME$ стають більш [Concept('concept_radical', 'радикальними')]. "
+ ADD_RADICALS_FIRST:2 "#variable $NUM|-=1%$#! [Concept('concept_pop', 'груп населення')] $FILTER$ $SUBJECT_NAME$ стають більш [Concept('concept_radical', 'радикальними')]. "
+ ADD_RADICALS_THIRD:2 "#variable $NUM|-=1%$#! [Concept('concept_pop', 'груп населення')] $FILTER$ $SUBJECT_NAME$ стають більш [Concept('concept_radical', 'радикальними')]. "
+ 
+ ADD_LOYALISTS:2 "#variable $NUM|+=1%$#! [Concept('concept_pop', 'груп населення')] $FILTER$ $SUBJECT_NAME$ стають більш [Concept('concept_loyalist', 'лояльними')]. "
+ ADD_LOYALISTS_FIRST:2 "#variable $NUM|+=1%$#! [Concept('concept_pop', 'груп населення')] $FILTER$ $SUBJECT_NAME$ стають більш [Concept('concept_loyalist', 'лояльними')]. "
+ ADD_LOYALISTS_THIRD:2 "#variable $NUM|+=1%$#! [Concept('concept_pop', 'груп населення')] $FILTER$ $SUBJECT_NAME$ стають більш [Concept('concept_loyalist', 'лояльними')]. "
+
+ ADD_CIVIL_WAR_PROGRESS:0 "Змінити прогрес громадянської війни на $VALUE|%$."
+ ADD_LAW_PROGRESS:0 "Змінити прогрес закону «[Law.GetName]» на $VALUE|0%$."
+
+ MAKE_INDEPENDENT:0 "[COUNTRY.GetName] набуває незалежності від #tooltippable_name #tooltip:[TARGET_COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [TARGET_COUNTRY.GetFlagTextIcon][TARGET_CO
+ MAKE_INDEPENDENT_NEG:0 "[COUNTRY.GetName] НЕ набуває незалежності від #tooltippable_name #tooltip:[TARGET_COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [TARGET_COUNTRY.GetFlagTextIcon]['
+  
+ OBJECTIVE_SUBGOAL_EFFECT:0 "Вторинна мета (гравець цього не побачить)"
+  
+ REMOVE_DIPLOMATIC_PACT:1 "Розриває дипломатичні відносини «[DIPLOMATIC_ACTION_TYPE.GetName]» ([Concept('concept_diplomatic_action', 'дипломатична дія')]) між #tooltippable_name #tooltip:[COUNTRY.GetTooltipTag],D COUNTRY.GetCustom('RU_CL_TP')]#!#! і #tooltippable_name #tooltip:[TARGET_COUNTRY.GetTooltipTag],DATA_COUNTRY_NAME_TOOLTIP,CountryTooltip [TARGET_COUNTRY.GetFlagTextIcon][TARGET_COUNTRY.
+  
+ SET_SUBSIDIZED:1 "Почати [Concept('concept_subsidies', 'субсидування')] споруди "[Building.GetName]"."
+ SET_SUBSIDIZED_NEGATIVE:1 "Припинити [Concept('concept_subsidies', 'субсидування')] споруди «[Building.GetName]»."
+  
+ ADD_MOMENTUM:1 "[Party.GetName] отримає #v $VALUE|%+=0$#! до [Concept('concept_momentum', 'мотивації')]"
+ ADD_MOMENTUM_FIRST:1 "[Party.GetName] отримає #v $VALUE|%+=0$#! до [Concept('concept_momentum', 'мотивації')]"
+ ADD_MOMENTUM_THIRD:1 "[Party.GetName] отримає #v $VALUE|%+=0$#! до [Concept('concept_momentum', 'мотивації')]"
+ RESOLVE_PLAY_FOR:0 "[Country.GetName] нав'язує свої військові цілі та припиняє дипломатичну гру «[TARGET_DIPLOMATIC_PLAY.GetName]»."
+
+ CHANGE_CHARACTER_RELIGION:0 "[Character.GetFullName] стає представником релігії «[TARGET_RELIGION.GetName]»."
+ 
+ CHANGE_TAG:0 "[COUNTRY.GetName] тепер $NEW_TAG|v$."
+ CHANGE_TAG_FIRST:0 "[COUNTRY.GetNameNoFlag] тепер $NEW_TAG|v$."
+ CHANGE_TAG_THIRD:0 "[COUNTRY.GetNameNoFlag] тепер $NEW_TAG|v$."
+ 
+ ADD_DECLARED_INTEREST:1 "Додати [Concept('concept_declared_interest', 'відкритий інтерес')] у регіоні $REGION_NAME|v$"
+ CHANGE_SUBJECT_TYPE:0 "[Country.GetName] тепер $SUBJECT_TYPE$, чий господар - [Country.GetOverlord.GetName]."
+
+ PARTIES_EMERGENCE:0 "Це призведе до утворення партій."
+ PARTIES_DISAPPEARENCE:0 "Це призведе до зникнення партій."
+ UPDATE_PARTY_SUPPORT_EFFECT:0 "Зацікавлені групи переглянуть підтримку своїх партій."
+ 
+ ADD_CULTURE_STANDARD_OF_LIVING_MODIFIER:0 "Додати $MODIFIER_DESC$ до області [State.GetName]"
+
+# === [LocEditor:OrphanedKeys] Keys that do not exist in English ===
+ START_PROMOTE_IG:0 "Почати просування групи "[INTEREST_GROUP.GetName]"."
+ STOP_PROMOTE_IG:0 "Припинити просування групи "[INTEREST_GROUP.GetName]"."
+ SET_INCOME_TAX_LEVEL:0 "Встановлено рівень [Concept('concept_budget_income_taxes', 'прибуткових податків')] держави [COUNTRY.GetName]: #variable $TAX_LEVEL$#!."
+ SET_POLL_TAX_LEVEL:0 "Встановлено рівень [Concept('concept_budget_poll_taxes', 'подушних податків')] держави [COUNTRY.GetName]: #variable $TAX_LEVEL$#!."
+ SET_CONSUMPTION_TAX_LEVEL:0 "Встановлено рівень [Concept('concept_budget_consumption_taxes', 'споживчих податків')] держави [COUNTRY.GetName]: #variable $TAX_LEVEL$#!."
+ SET_OWES_FAVOR_TO:0 "У держави [COUNTRY.GetName] є [Concept('concept_favor', 'зобов'язання')] перед державою [TARGET_COUNTRY.GetName]."
+ SET_OWES_FAVOR_TO_NEG:0 "У держави [COUNTRY.GetName] більше немає [Concept('concept_favor', 'зобов'язань')] перед державою [TARGET_COUNTRY.GetName]."
+ SET_ARMY_BUDGET:0 "Визначено бюджет #variable [COUNTRY.GetAdjective|l]ой#! армії: #variable $VALUE$#!."
+ SET_NAVY_BUDGET:0 "Визначено бюджет #variable [COUNTRY.GetAdjective|l]ого#! флоту: #variable $VALUE$#!."
+ SET_STOCKPILE_BUDGET:0 "Визначено бюджет #variable [COUNTRY.GetAdjective|l]їх#! накопичень: #variable $VALUE$#!."
+ ADD_STOCKPILE:0 "#variable [COUNTRY.GetAdjective]є#! накопичення збільшено на $VALUE|+$."
+ ADD_STOCKPILE_NEG:0 "#variable [COUNTRY.GetAdjective]є#! накопичення зменшено на $VALUE|+$."
+ ADD_INNOVATION_POINTS:0 "Окуляри інновації держави #variable [COUNTRY.GetName]#! збільшені на $VALUE|+$."
+ ADD_INNOVATION_POINTS_NEG:0 "Окуляри інновації держави #variable [COUNTRY.GetName]#! зменшені на $VALUE|+$."
+ MULT_DIPLOMATIC_PLAY_WAR_SUPPORT:0 "[Country.GetAdjective]ая [Concept('concept_war_support', 'войовничість')] у дипломатичній грі «[TARGET_DIPLOMATIC_PLAY.GetName]» множиться на $VALUE|+$."
+ MULT_WAR_WAR_SUPPORT:0 "[Country.GetAdjective]ая [Concept('concept_war_support', 'войовничість')] на війні «[War.GetName]» множиться на $VALUE|+$."
+ OCCUPY_STATE_EFFECT_SUSTAINABLE:0 "достатній рівень"
+ OCCUPY_STATE_EFFECT_STAGE:0 "етап $NUMBER$"
+ OCCUPY_STATE_EFFECT_DESC:0 "$COUNTRY_NAME$ окупує область $STATE_NAME$ на етапі $STAGE_DESC$."
+ SPAWN_ISSUE_EFFECT_DESC:0 "Видати указ «#variable $ISSUE_NAME$#!» в області $STATE_NAME$."
+ SET_TARIFF_LEVEL:0 "Встановлено рівень [Concept('concept_tariffs','мита')] в державі [COUNTRY.GetName]: #variable $TAX_LEVEL$#!."
+ SET_INFAMY:0 "[concept_infamy] виставляється на $VALUE|v$."
+ TRIGGER_EVENT_FIRST:0 "Запускає подію #variable «$EVENT_NAME$»#!."
+ TRIGGER_EVENT_THIRD:0 "Запускає подію #variable «$EVENT_NAME$»#!."
+ ADD_CULTURE_WELFARE_MODIFIER:0 "[STATE.GetName] отримує модифікатор $MODIFIER_NAME|v$ $DURATION$\n #header $MODIFIER_NAME$#!\n $MODIFIER_DESC$."
+ ADD_CULTURE_WELFARE_MODIFIER_FIRST:0 "[STATE.GetName] отримує модифікатор $MODIFIER_NAME|v$ $DURATION$\n #header $MODIFIER_NAME$#!\n $MODIFIER_DESC$."
+ ADD_CULTURE_WELFARE_MODIFIER_THIRD:0 "[STATE.GetName] отримує модифікатор $MODIFIER_NAME|v$ $DURATION$\n #header $MODIFIER_NAME$#!\n $MODIFIER_DESC$."
+ ADD_RELIGION_WELFARE_MODIFIER:0 "Держава [STATE.GetName] отримує модифікатор $MODIFIER_NAME|v$ $DURATION$\n #header $MODIFIER_NAME$#!\n $MODIFIER_DESC$"
+ SET_INTEREST_MARKER_IN_REGION:0 "Встановлює позначку інтересу в регіоні $REGION_NAME|v$."
